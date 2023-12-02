@@ -1,0 +1,48 @@
+.content-wrapper{
+    font-size: -webkit-xxx-large;
+}
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.buscador-wrapper{
+    display: flex;
+    justify-content: center;
+    @include input-element();
+}
+.listaCompra{
+    padding-top: 188px;
+    @include listaCompra
+}
+.products{
+    @include products();
+}
+.dataList{
+    font-family: 'Indie Flower,sans-serif';
+}
+.option{
+    font-family: 'Indie Flower,sans-serif'; 
+}
+
+.parteIzquierda{
+    @include parteIzquierda()
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+
+}
+.parteDerecha{
+    @include parteDerecha()
+}
+.comprar{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 388px;
+    font-size: 40px;
+
+}
+.icon{
+ 
+         @include icon();
+}

@@ -1,0 +1,174 @@
+
+.container{
+    padding: 0;
+}
+.content{
+    font-size: xx-large;
+    background-size: contain;
+   
+}
+.productsHacerCompra{
+    display:flex;
+    width: -webkit-fill-available;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 154px;
+  
+}
+.listaCompraHacerCompra{
+  
+   
+@include listaCompra();
+padding-top: 0px;
+margin-left: 122px;
+overflow-y: scroll;
+overflow-x: hidden;
+height: fit-content;
+
+}
+.parteIzquierdaHacerCompra{
+    
+    width: 692px;
+    font-size: 35px;
+    margin-right: 42px
+}
+.parteDerechaHacerCompra{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    width: 626px;
+    justify-content: space-around;
+
+}
+.numberHacerCompra{
+    @include input-cantidad();
+    width: 48px;
+    font-size: 25px;
+}
+.iconHacerCompra{
+    margin-top: -58px;
+    margin-left: 9px
+   }
+.productsBySupermarket{
+    width: 569px;
+    margin-bottom: 0px;
+
+    @include products();
+}
+.parteIzquierdaBySupermarket{
+   
+    @include parteIzquierda();
+    font-size: 23px;
+    width: 268px;
+    margin-left: -28px;
+    margin-right: 23px;
+}
+.parteBaja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 232px;
+    padding-right: 98px;
+
+}
+.añadir-productos{
+   @include añadir-producto()
+}
+.total{
+    display: flex;
+    align-items: center;
+}
+.total-title{
+    margin-right: 20px;
+
+}
+.total-cantidad{
+    font-size: 57px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.compra-by-supermarket-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    contain: content;
+    background-color: white;
+    width: 1459px;
+    flex-wrap: wrap;
+}
+.compra-by-supermarket{
+    display: flex;
+    flex-direction: column;
+    background-size: 743px;
+    background-repeat: no-repeat;
+    margin-left:-95px;
+    margin-right: -63px;
+    height: 735px;
+    width: 818px;
+    position: static;
+  
+   ::-webkit-scrollbar{
+    width: 6px;
+    height: 8px;
+    }
+    ::-webkit-scrollbar-track-piece {
+    background-color:#ede652;
+    }
+    ::-webkit-scrollbar-thumb  {
+    background-color: #54a878;
+    }
+}
+
+.listaCompraBySupermarket{
+    
+    @include listaCompra();
+    padding-top: 0px;
+    margin-left: 47px;
+    margin-right: 6px;
+    height: 248px;
+    overflow: hidden scroll;
+    width: 591px;
+}
+.products-by-supermarket-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: fit-content;
+    padding-top: 198px;
+    padding-left: 150px;
+    margin-top: -68px;
+    padding-bottom: 20px;
+}
+.supermarket{
+    font-size: 42px;
+    h3{
+        margin-bottom: 25px;
+    }
+}
+.selected-title{
+    font-size: 18px;
+    margin-right: 20px;
+}
+.total-by-supermarket{
+    display: flex;
+    justify-content: end;
+    margin-right: 11px;
+ 
+    i{
+        text-decoration: underline;
+    }
+
+.iconBySupermarket{
+    @include icon();
+    font-size: 25px;
+    margin-top: -52px;
+}
+   
+}
+

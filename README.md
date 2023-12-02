@@ -1,5 +1,4 @@
-# React/Redux/Router Starter Project
+#Eficompra
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
-
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*"# Pruebas" 
+Esta aplicación te permite elaborar una lista de la compra, calcular el coste total de ésta, 
+ y te agrupa los productos seleccionados por supermercados.
