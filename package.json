@@ -84,7 +84,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gulp-sass": "^5.1.0",
     "postcss": "^8.4.31",
     "sass": "^1.69.5",
