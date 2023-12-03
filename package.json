@@ -79,5 +79,9 @@
       "extract-text-webpack-plugin": "^4.0.0-beta.0",
       "uglifyjs-webpack-plugin": "^1.2.7",
       "webpack": "^4.16.4"
+    },
+    "engines": {
+        "node": "20.10.0",
+        "npm": "10.2.4"
     }
   }
