@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "react-redux-router",
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
@@ -95,4 +96,86 @@
     "node": "20.9.0",
     "npm": "10.2.4"
   }
+=======
+    "name": "jordan-hudgens-react-portfolio",
+    "version": "1.0.0",
+    "description": "Personal portfolio app built in React",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack/dev.config.js --watch",
+        
+      
+        "precommit": "eslint src",
+        "prod": "NODE_ENV=production node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:bottega-code-school/js-builder.git"
+    },
+    "keywords": [
+        "es6",
+        "es7",
+        "webpack2",
+        "webpack3",
+        "starter",
+        "template",
+        "postcss",
+        "sass",
+        "css module"
+    ],
+    "author": "Jordan Hudgens",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bottega-code-school/js-builder/issues"
+    },
+    "homepage": "https://github.com/bottega-code-school/js-builder",
+    "dependencies": {
+        "ajv": "^5.5.2",
+        "autoprefixer": "^9.1.0",
+        "axios": "^0.18.0",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^7.2.3",
+        "babel-plugin-async-to-promises": "^1.0.5",
+        "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "clean-webpack-plugin": "^0.1.16",
+        "copy-webpack-plugin": "^4.5.2",
+        "cross-env": "^5.2.0",
+        "css-loader": "^6.8.1",
+        "eslint": "^4.2.0",
+        "eslint-loader": "^1.9.0",
+        "eslint-plugin-react": "^7.1.0",
+        "express": "^4.16.3",
+        "extract-loader": "^2.0.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^5.5.3",
+        "moment": "^2.22.2",
+        "postcss-loader": "^2.1.6",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "react-redux": "5.0.6",
+        "react-router": "^4.2.0",
+        "react-router-dom": "^4.3.1",
+        "redux": "^3.7.2",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^0.21.0",
+        "terser-webpack-plugin": "2.3.8"
+    
+    
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.5",
+        "@babel/preset-env": "^7.23.5",
+        "babel-loader": "^9.1.3",
+        "babel-preset-react": "^6.24.1",
+        "babel-register": "^6.26.0"
+      
+    },
+    "engines": {
+        "node": "20.10.0",
+        "npm": "10.2.4"
+    }
+>>>>>>> 32fca95e034a61f173a71369f5e610e706a71ca9
 }
