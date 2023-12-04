@@ -74,7 +74,7 @@
     "devDependencies": {
         "babel-preset-react": "^6.24.1",
         "babel-register": "^6.26.0",
-        "webpack": "^5.89.0"
+        "webpack": "^4.47.0"
     },
     "engines": {
         "node": "20.10.0",
