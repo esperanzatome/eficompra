@@ -31,7 +31,6 @@
   },
   "homepage": "https://github.com/bottega-code-school/js-builder",
   "dependencies": {
-    "@babel/core": "^7.23.5",
     "@babel/polyfill": "^7.12.1",
     "ajv": "^5.5.2",
     "autoprefixer": "^9.1.0",
@@ -43,7 +42,7 @@
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.5.2",
-    "core-js": "^3.33.3",
+    "core-js": "^3.34.0",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "eslint": "^4.2.0",
@@ -72,8 +71,12 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.5",
     "@babel/plugin-transform-class-properties": "^7.23.3",
     "@babel/plugin-transform-object-rest-spread": "^7.23.4",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/register": "^7.22.15",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
