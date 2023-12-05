@@ -7,7 +7,9 @@ import App from "./components/app";
 import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
-
+var babel = require("@babel/core");
+import { transform } from "@babel/core";
+import * as babel from "@babel/core";
 import "./style/main.scss";
 
 function main() {
