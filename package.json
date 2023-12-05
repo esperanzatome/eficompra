@@ -72,13 +72,14 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.23.3",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.4"
   },
-  "engines":{
+  "engines": {
     "node": "20.9.0"
   }
 }
