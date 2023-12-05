@@ -1,0 +1,231 @@
+@media (max-width:615px){
+
+    .container-home{
+        background-size: 177px;
+    }
+
+    .titulo-principal{
+        padding-top: 15px;
+        font-size: 59px;
+    
+    }
+       
+    .nav-link-wrapper a h2{
+        padding-top: 34px;
+        font-size: smaller;
+    }
+
+    .title-wrapper{
+        font-size: 30px;
+    }    
+  
+    .buscador-wrapper input{
+        width: -webkit-fill-available
+    }
+   
+    .listaCompra{
+        background-size: 730px;
+        padding-top: 109px;
+        margin-left: -57px;
+        height: 620px;
+    }
+
+    .products{
+        margin-left: 9px;
+    }
+
+    .parteIzquierda{
+        font-size: 20px;
+        width: 308px;
+        margin-left: 219px;
+    }
+    
+    .parteDerecha{
+        font-size: 33px;
+        width: 537px;
+        margin-right: 0px;
+    }
+
+    .products input{
+        font-size: 21px;
+        width: 32px;
+    }
+
+    .borrar{
+        margin-left: 5px
+    }
+
+    .icon{
+        font-size: x-large;
+        margin-top: -52px;
+        margin-left: 20px
+    }
+
+    .comprar{
+        margin-left: 227px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .listaCompraHacerCompra{    
+        height: fit-content;
+        margin-left: 50px;
+    }
+
+    .productsHacerCompra{
+        margin-right: 0;
+        margin-top: 46px;
+    }
+
+    .parteIzquierdaHacerCompra{
+        font-size: xxx-large;
+        width: 582px;
+        margin-left: 116px;
+    }
+
+    .parteDerechaHacerCompra{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cantidadPrecioProducto{
+        font-size: xxx-large;
+    }
+
+    .numberHacerCompra{
+        font-size: xxx-large;
+        width: 71px;
+    }
+
+    .supermarket{
+        font-size: xxx-large;
+    }
+
+    .parteBaja{
+        font-size: smaller;
+        display: flex;
+        width: auto;
+        justify-content: space-around;
+    }
+    
+    .añadir-productos{
+        margin-bottom: 31px;
+    }
+    
+    .compra-by-supermarket{
+        margin-left: -66px;
+        background-size: 809px;
+        background-position: center;
+    }
+    .listaCompraBySupermarket{
+        width: 648px;
+        height: 273px;
+    }
+    .products-by-supermarket-title{
+        margin-left: 17px;
+        margin-top: -88px;
+        margin-bottom: -16px;
+      
+    }
+    .parteIzquierdaBySupermarket{
+        width: 326px;
+        font-size: 33px;
+        margin-right: 23px;
+    }
+    .buscador-wrapper{
+        margin-left: 37px;
+        width: 548px;
+    }
+    .noMatch{
+    
+        margin-top: -68px;
+        h2{
+            font-size: xx-large;
+        }
+    }
+    
+    .miListaCompra{
+        width: auto;
+        background-size: 784px;
+        margin-left: -90px;
+        height: 785px;
+    }
+    .añadirWrapper{
+        height: 124px;
+    }
+    .buscador{
+        background-size: 979px;
+        margin-left: 129px;
+        margin-top: 4px;
+        width: 573px;
+        height: 63px;
+        margin-bottom: -43px;
+    }
+    .buscador input{
+        font-size: 30px;
+    }
+    .añadirProducto{
+        margin-top: inherit;
+        margin-left: 107px;
+    
+    }
+    
+    .añadirProductoButton{
+        font-size: xx-large;
+        width: fit-content;
+        height: 48px;
+        margin-top: -16px;
+        margin-left: 115px
+    }
+    .title{
+        font-size: xxx-large;
+        padding-top: 35px;
+    
+    }
+    .productsMiListaCompra{
+        width: auto;
+        margin-left: 10px;
+    }
+    .productsMiListaCompra input{
+        font-size: 20px;
+        width: 31px
+    }
+    .parteIzquierdaMiListaCompra{
+        font-size: 20px;
+        width: 249px;
+    }
+    .parteDerechaMiListaCompra{
+        font-size: 22px;
+    }
+    .content{
+        width: fit-content;
+        margin-left: -93px;
+        margin-top: 13px;
+        padding-left: 9px;
+    }
+    .btn{
+        height: 49px;
+        width: 50px;
+    }
+    .iconHacerCompra{
+        @include icon();
+        margin-top: -60px;
+        margin-left: 8px;
+    }
+    .iconBySupermarket{
+        @include icon();
+        font-size: 20px;
+    }
+    .total-by-supermarket{
+        margin-left: 439px;
+    }
+    .titleMiListaCompra{
+        font-size: xx-large;
+    }
+    .iconMiListaCompra{
+        margin-top: -52px;
+        font-size: 20px;
+    }
+}
