@@ -78,6 +78,7 @@
     "@babel/preset-env": "^7.23.5",
     "@babel/preset-react": "^7.23.3",
     "@babel/register": "^7.22.15",
+    "babel-loader": "^7.1.5",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.4"
