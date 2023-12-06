@@ -31,4 +31,4 @@ const NavigationComponent = props => {
   );
 };
 
-export default withRouter(NavigationComponent);
+export default NavigationComponent;
