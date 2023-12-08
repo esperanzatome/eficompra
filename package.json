@@ -36,16 +36,13 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "ajv": "^5.5.2",
     "autoprefixer": "^9.1.0",
-    "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
     "babel-generator": "^6.26.1",
     "babel-loader": "^7.1.5",
     "babel-plugin-async-to-promises": "^1.0.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -62,8 +59,6 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "moment": "^2.22.2",
-    "node-gyp": "^10.0.1",
-    "node-sass": "^9.0.0",
     "postcss-loader": "^2.1.6",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -71,7 +66,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.3.1",
     "redux": "^3.7.2",
-    "sass-loader": "^7.3.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^7.1.0",
     "source-map": "^0.7.4",
     "style-loader": "^0.21.0",
     "webpack-cli": "^3.1.0",
@@ -86,8 +82,5 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.4"
-  },
-  "engines": {
-    "node": "14.9.0"
   }
 }
