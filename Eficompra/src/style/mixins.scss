@@ -1,0 +1,103 @@
+@mixin base-btn {
+  cursor: pointer;
+  height: 42px;
+  font-size: 33px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  color: #54a878;
+  background-color: transparent;
+  width: 47px;
+  z-index: 1;
+  position: relative;   
+}
+
+@mixin input-element{
+  input {
+  font-family: 'Indie Flower',sans-serif;
+  color: #42454a;
+  padding: 5px 0px;
+  width: 65%;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid #26bfd4;
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+  font-size: xx-large;
+  margin-bottom: 21px;
+  
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $dark-teal;
+    }  
+  }
+}
+
+@mixin input-cantidad{
+  input{
+  
+    width: 58%;
+    font-size: 36px;
+    background-color: transparent
+  }
+}
+@mixin listaCompra{
+  
+  margin-right: 6px;
+  height: 1093px;
+  background-position: center;
+}
+   
+@mixin products{
+  display: flex;
+  align-items: center;
+  width: 953px;
+  margin-left: 273px;
+  margin-bottom: 27px;
+  justify-content: center;
+  @include input-cantidad();
+}
+
+@mixin parteIzquierda{
+  width: 44%;
+    font-size: xx-large;
+    margin-left: 47px;
+    display: list-item;
+    margin-right: 116px;
+    margin-bottom: 36px;
+}
+
+@mixin parteDerecha{
+  display: flex;
+  align-items: center;
+  width: 15%;
+  margin-right: 17px;
+  font-size: large;
+}
+
+@mixin añadir-producto{
+  margin-top: 20px;
+  
+  a{
+    color: black;
+    font-size: 42px;
+    font-weight: 600;
+  }
+}
+
+@mixin icon{
+  margin-left: 10px;
+  margin-top: -58px;
+  position: relative;
+  z-index: 0;
+} 
+@mixin comprar{
+ 
+    display: flex;
+    margin-top: 20px;
+  margin-left:-155px;
+    font-size: 40px;
+
+
+}

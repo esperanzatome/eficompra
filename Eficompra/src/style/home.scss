@@ -1,0 +1,26 @@
+.container-home{
+  background-image:url('../fondo-img.png');
+  background-size: 12%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  font-size: -webkit-xxx-large;
+  background-position-y: 158px;
+  background-position-x: center;
+  margin-top: 50px;
+}
+
+.titulo-principal {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: -13px;
+  font-size: 140%;   
+}
+
+  .seleccion-principal {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
