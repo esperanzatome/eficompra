@@ -96,7 +96,7 @@ export default class MisListasDeLaCompra extends Component {
  
       axios
       
-        .get("http://localhost:10000/palabrasLista")
+        .get("https://eficompraserver.onrender.com/palabrasLista")
         .then(response=> {
       
           this.setState({
