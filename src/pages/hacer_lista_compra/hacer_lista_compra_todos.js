@@ -633,9 +633,7 @@ this.setState({
  
 
 let listaActiva=this.state.listaActiva
-let content =""
-if(this.state.isLoading===false){
-content=
+let content =
  <div className="content">
     
 
@@ -730,7 +728,7 @@ content=
   {listaActiva}
 </div>
    </div>
-}
+
 
 if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0&&this.state.palabrasOnMouseOver[0].length>5){
   
@@ -885,7 +883,7 @@ if(listaActiva!=""){
 </div>
    </div>
 }
-
+if(this.state.isLoading===false){
 return(
  <div className="hacer-lista-compra-productos-wrapper">
       <div className="content-wrapper">
@@ -931,7 +929,7 @@ return(
       </div>
      
    )
-
+}
 }
 }
 
