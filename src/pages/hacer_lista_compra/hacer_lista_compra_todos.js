@@ -66,10 +66,10 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
           conectado:false,
-        socket : io("https://eficompraserver.onrender.com",
+        socket : io("https://eficompraserver.onrender.com",{
                    transports:["websocket"],
                    upgrade:false
-                   )
+            })
   
       
       
