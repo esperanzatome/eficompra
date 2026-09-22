@@ -592,8 +592,8 @@ this.setState({
 
   componentDidMount(){
    window.addEventListener("beforeunload", this.handleBeforeUnload);
-     this.getProductsList() 
-    
+ 
+     this.getProductsList()
        
   }
 
@@ -729,7 +729,9 @@ let content =
 </div>
    </div>
 
-
+if(this.state.isLoading===false){
+  return content
+}
 if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0&&this.state.palabrasOnMouseOver[0].length>5){
   
   content= 
@@ -883,7 +885,7 @@ if(listaActiva!=""){
 </div>
    </div>
 }
-if(this.state.isLoading===false){
+
 return(
  <div className="hacer-lista-compra-productos-wrapper">
       <div className="content-wrapper">
@@ -929,7 +931,7 @@ return(
       </div>
      
    )
-}
+
 }
 }
 
