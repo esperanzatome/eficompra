@@ -100,7 +100,8 @@ export default class MisListasDeLaCompra extends Component {
         .then(response=> {
       
           this.setState({
-              data:response.data
+              data:response.data,
+            isLoading: false
           
           
             })
@@ -632,7 +633,9 @@ this.setState({
  
 
 let listaActiva=this.state.listaActiva
-let content=
+let content =""
+if(this.state.isLoading===false){
+content=
  <div className="content">
     
 
@@ -727,6 +730,7 @@ let content=
   {listaActiva}
 </div>
    </div>
+}
 
 if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0&&this.state.palabrasOnMouseOver[0].length>5){
   
