@@ -66,11 +66,12 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
           conectado:false,
-        socket : io("https://eficompraserver.onrender.com",{
+       /*
+            socket : io("https://eficompraserver.onrender.com",{
                    transports:["websocket"],
                    upgrade:false
             })
-  
+  */
       
       
     }
@@ -596,6 +597,7 @@ this.setState({
 
   componentDidMount(){
    window.addEventListener("beforeunload", this.handleBeforeUnload);
+    /*
 this.state.socket.on("connect",()=>{
   this.setState({conectado: true })
   this.getProductsList()
@@ -603,8 +605,8 @@ this.state.socket.on("connect",()=>{
     this.state.socket.on("disconnect",()=>{
   this.setState({conectado: false })
 })
-    
-     
+  */  
+     this.getProductsList()
        
   }
 
@@ -741,8 +743,10 @@ let content =
 </div>
    </div>
 
-if(isLoading===false&&conectado===true){
+if(isLoading===false){
   return content
+}else{
+  content=<div>Cargando</div>
 }
 
 if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0&&this.state.palabrasOnMouseOver[0].length>5){
