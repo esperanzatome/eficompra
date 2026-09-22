@@ -1,0 +1,83 @@
+
+.buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.formulariosContentLogin{
+    backdrop-filter: blur(2.5px);
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 1%;
+    min-height: 100vh;
+
+padding-top:1%;
+
+   .form{
+    height: fit-content;
+    
+    padding-bottom: 2%;
+        input{
+    @include base-texto();
+    display: flex;
+    border: none;
+    border-bottom: solid #551a8b;
+    margin-inline: 18px;
+    width: -webkit-fill-available;
+   font-size: x-large;
+    font-family: unset;
+    -webkit-text-fill-color: black;
+
+
+    
+
+    } 
+   .contraseña{
+    .contraseñaInput{
+    input{
+width: 232%;
+    }
+    
+   }
+   }
+
+
+.loginTitle{
+    padding-bottom: 1%;
+}
+    
+.exit{
+    width: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-inline-end: 0%;
+    a{
+        display: flex;
+    width: 35px;
+    height: 35px;
+    }
+}
+    
+.loginBtn{
+    display: flex;
+
+    
+    button{
+        background: #c5bcc5;
+    border: groove;
+    padding-inline: 1%;
+    border-width: medium;
+    border-color: #6a6bcf;
+   font-family: 'Indie Flower';
+   margin-right: 4%;
+   font-size: large;
+    padding: 6%;
+    }
+}
+}
+}  

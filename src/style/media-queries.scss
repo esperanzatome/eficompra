@@ -1,0 +1,4553 @@
+@media (max-width:1024px){
+    .container{
+    .content-wrapper{
+        .content{
+        .productosFrecuentes{
+        grid-template-columns: repeat(8, 1fr);
+    padding-bottom: 4%;
+    
+    .productoFrecuente{
+        width:100%
+    }
+    }
+    .categories{
+        grid-template-columns: repeat(8, 1fr)
+    }
+}
+.productosPorCategory{
+.categoryPalabras{
+grid-template-columns: repeat(4, 1fr);
+}
+}
+ .contentWhithListTodos{
+ column-gap: 1%;
+ padding-bottom: 0%;
+     .productosFrecuentes{
+     grid-template-columns: repeat(7, 1fr);
+     height: 174px;
+    overflow-y: scroll;
+    margin-bottom: 2%;
+    padding-bottom: 0%;
+     }
+     .categories{
+     grid-template-columns: repeat(8, 1fr);
+     }
+     .listaActiva{
+  padding-top: 0%;
+background-position-y: 42%;
+        background-size: 320%;
+        
+       
+        .listaCompra{
+            width: 100%;
+        padding-top: 45%;
+  
+         .listaCompraProducts{
+            height: 464px;
+        }
+        }
+}
+    }
+    .contentWhithListasYActiva{
+        height: 900px;
+        .listasInactivasWrapper{
+            padding-left: 1%;
+            width: 23%;
+            .columnaTitle{
+                font-size:larger;
+            }
+            .listasGuardadas{
+                width: 100%;
+                div{
+     width: 100%;
+    padding-left: 7%;
+    margin-bottom: 2%;
+    .listaCompra{
+        width: 94%;
+        padding-left: 0%;
+        margin-bottom: -2%;
+        .listaCompraTitle{
+            padding-left: 3%;
+            width: 95%;
+        }
+        .listaCompraFecha{
+            padding-left: 3%;
+            width: 95%;
+        }
+                .optionsBarList{
+                    width: 100%;
+                    padding-left: 0%;
+                    button{
+                    font-size: x-small;
+                    padding: 1%;
+                }
+            }
+            .listaCompraProducts{
+                font-size: medium;
+                padding-left: 4%;
+    padding-top: 3%;
+    width: 96%;
+    .productSelected{
+        .productSelectedName{
+            padding-left: 0%;
+        }
+    }
+
+            }
+        }
+        .listaCompraCompartida{
+            width: 93%;
+    padding-left: 0%;
+    .columnaIzda{
+        padding-left: 0%;
+        .listaCompraTitle{
+            padding-left: 2%;
+    width: 96%;
+        }
+        .listaCompraFecha{
+            padding-left: 1%;
+    width: 96%;
+        }
+    }
+    .columnaDerecha{
+        padding-left: 0%;
+        .compartida{
+            width: 100%;
+            padding-left: 0%;
+            .compartidaTitle{
+                padding-left: 2%;
+    width: 98%;
+            }
+            .compartidaUsers{
+                padding-left: 0%;
+            }
+        }
+    }
+    .optionsBarList{
+        padding-left: 0%;
+        button{
+            font-size: x-small;
+    padding: 1%;
+        }
+    }
+    .listaCompraProducts{
+        width: 93%;
+    height: 36%;
+        .productSelected{
+            padding-left: 3%;
+    width: 97%;
+    .productSelectedName{
+        padding-left: 0%;
+        font-size: medium;
+    }
+        }
+    }
+        }
+            }
+            }
+        }
+        .columnaCentral{
+            width: 48%;
+    
+            .buscadorProductos{
+                input{
+                    margin-inline: 8px;
+                }
+            }
+            .productosFrecuentes{
+            height: 263px;
+            grid-template-columns: repeat(5, 1fr);
+            }
+            .categories{
+                 grid-template-columns: repeat(6, 1fr);
+                 margin-top: 0%;
+                .category{
+                    width: 70px;
+    height: 80px
+                }
+            }
+        }
+        .listaActiva{
+            width: 26%
+        }
+    }
+    }
+    }
+    
+//////////////////////////////////////////////////////////
+
+
+    
+  
+    .container .content-wrapper{
+
+    
+    .abecedario{
+        font-size: small;
+        padding-top: 1%;
+    }
+   .contentWhithList{
+    .columnaCentral{
+        width: 67%
+    }
+    .columnaListaActiva{
+        justify-content: center;
+        margin-top: 0%
+    }
+
+    .listaActiva .columnaListaActiva{
+
+.columnaTitle{
+    width: 100%;
+    text-align: center;
+}
+
+
+.opcionesGuardarLista{
+    width: 95%;
+    
+}
+    
+    .listaCompraProducts{
+         height: 320px;
+    }
+}
+    .categoryPalabras{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.productosPorLetra{
+   margin-inline: 10%;
+  
+  
+    
+    
+}
+}
+.contraseña{
+.contraseñaInput{
+         input{
+    
+        width: 172%
+    }
+}
+}
+.formulariosContentLogin{
+
+    .contraseña .contraseñaInput input{
+        width: 233%
+    }
+}
+.container .content-wrapper{
+.abcUser{
+    font-size: xx-large;
+}
+.contentWhithList{
+    height: auto;
+    .columnaCentral{
+    .productosFrecuentes{
+      grid-template-columns: repeat(8, 1fr);
+    padding-bottom: 4%
+    }
+    .categories{
+    grid-template-columns: repeat(8, 1fr);}
+    }
+    .listaActiva{
+        height: auto;
+        padding-top: 12%;
+        .columnaListaActiva{
+            .listaCompra{
+               width: 112.1%;
+        margin-left: -1%;
+            }
+        }
+        .columnaListaActivaGuardada{
+            width: 100%;
+        padding-top: 3%;
+        .columnaTitle{
+        font-size: 99%;
+        }
+        .optionsBarList{
+    
+        padding-bottom: 2%;
+        justify-content: space-evenly;
+  
+        button{
+        font-size: 12px;
+        }
+        }
+         .listaActivaCompartida{
+            width: 98%;
+    padding-left: 2%;
+        .listaCompraGuardada{
+        .listaCompraProducts{
+            height: 245px;
+        }
+    }
+       } 
+       
+        .listaActivaGuardada{
+      width: 97%;
+        padding-left: 3%;
+    .listaCompraGuardada{
+     width: 241px;
+        margin-left: -2%;
+        .listaCompraTitle{
+            width: 96%
+        }
+        .listaCompraProducts{
+            height: 300px
+        }
+    }
+    
+      
+    }
+    
+    }
+    }
+}
+}
+.content-wrapper
+
+.productosFrecuentes{
+    height: fit-content;
+    
+}
+.content-wrapper
+.abecedarioWhithListasGuardadas{
+  .letra{
+    font-size: medium;
+    padding-inline: 0.5%;
+  }
+}
+.container .content-wrapper
+.contentWhithListasGuardadas{
+    height: fit-content;
+    justify-content: space-between;
+    padding-bottom: 0%;
+    .listasInactivasWrapper{
+height: 589px;
+    .listasGuardadas{
+      height: 92%;
+        padding-left: 3%;
+        padding-top: 2%;
+  
+        div{
+            width: 100%;
+    margin-bottom: 0%;
+    height: fit-content;
+    margin-top: 2%;
+            .listaCompra{
+            .listaCompraProducts{
+                height: 80px;
+            
+margin-top: 3%;
+
+.productSelected{
+    height: fit-content;
+    margin: 0%;
+    .productSelectedName{
+        height: fit-content;
+        margin: 0%;
+        width: 91%;
+        padding-left: 0%;
+    }
+}
+            }
+        
+}
+.listaCompraCompartida{
+    width: 98%;
+    div{
+        margin-top: 0%;
+    }
+    .compartida{
+        width: 98%;
+    }
+}
+        }
+    }
+
+
+        .listaCompraTitle{
+            height: fit-content;
+            margin-top: 0%;
+        }
+        .listaCompraFecha{
+            height: fit-content;
+            margin-top: 0%;
+        }
+        .listaCompra{
+  width: 105%;
+    margin-left: -2%;
+    height: 87%;
+    margin-top: 0%;
+        }
+    }
+    .columnaCentral{
+        width: 75%;
+        height: fit-content;
+        .productosFrecuentes{
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .categories{
+            height: fit-content;
+            grid-template-columns: repeat(9, 1fr);
+            padding-top: 1%;
+        }
+    }
+}
+     .content-wrapper .contentWhithListasGuardadas .optionsBarList{
+
+    height: fit-content;
+    margin: 0%;
+    button{
+        font-size:11px;
+        padding-inline: 1%
+
+    }
+}
+
+
+
+.contentWhithListasGuardadas ::-webkit-scrollbar {
+    
+    width: 8px;
+}
+.contentWhithList{
+
+.abecedario{
+    font-size: large;
+    padding: 0%;
+}
+}
+.content-wrapper-listaCompartir{
+    .title-wrapper-listaCompartir{
+        width: 103%;
+    }
+        .listaCompraCompartir{
+            width: 51%;
+        }
+    
+    
+}
+}
+@media (max-width:768px){
+    .container-home{
+        font-size: xx-large
+    }
+    input{
+        font-size: large;
+    }
+    .container{
+    .content-wrapper{
+    font-size: x-large;
+    .notificacionesLista{
+        max-height: 78%;
+    }
+.abcUser{
+    font-size: x-large;
+}
+.categoryPalabras{
+    .palabra{
+
+width: 100%;
+}
+    }
+    .abecedario{
+    
+        padding-top: 3%;
+        display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    text-align: center;
+    }
+    .content{
+    .productosFrecuentes{
+        height: 111px;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: scroll;
+    margin-bottom: 2%;
+    }
+     .categories{
+        grid-template-columns: repeat(6, 1fr);
+     }
+     }
+     .productosPorCategory{
+        .categoryTitle{
+            background-size: 13%;
+            background-position-y: 67%;
+            .categoryName{
+                padding-left: 97px;
+    font-size: x-large;
+            }
+        
+        .exit{
+            margin-inline-end: 3%;
+            background-position-y: 83%;
+            width: 13%;
+        }
+    }
+     }
+     .contentWhithListTodos{
+     .buscadorProductos{
+     input{
+     font-size: larger
+     }
+     }
+     .productosFrecuentes{
+     grid-template-columns: repeat(6, 1fr);
+     height: 118px;
+     .productoFrecuente{
+        font-size: small;
+    width: 100%;
+   
+     }
+     }
+     .categories{
+     grid-template-columns: repeat(6, 1fr);
+     overflow-y: scroll;
+    height: 170px;
+     }
+     .listaActiva{
+    background-position-y: 23%;
+        background-size: 181%;
+        height: 349px;
+        .columnaListaActiva{
+            width: 97%;
+        .listaCompra{
+     padding-top: 32%;
+     align-self: flex-start;
+        width: 97%;
+     
+     input{
+     font-size: large;
+     }
+     .listaCompraProducts{
+      height: 217px;
+        width: 90%;
+        padding-left: 11%;
+     .productSelected{
+     .borrarBtn{
+     button{
+     height: 16px;
+    width: 16px;
+     }
+     }
+     }
+
+     }
+     .opcionesGuardarLista {
+     
+     button{
+        font-size:x-small;
+     }
+     }
+     }
+    }
+     }
+     }
+     .contentMisListas{
+        .productosFrecuentes{
+            grid-template-columns: repeat(8, 1fr);
+            padding-bottom: 5%
+        }
+        .categories{
+            grid-template-columns: repeat(7, 1fr);
+        }
+     }
+     .contentWhithListasGuardadas{
+     padding-bottom: 0%;
+     .listasInactivasWrapper{
+     height: 359px;
+     width: 42%;
+        font-size: medium;
+        padding-top: 0%;
+        .columnaTitle{
+        font-size: large;
+        margin-bottom: 2%;
+        margin-top: 7%;
+        }
+     .listasGuardadas{
+     height: 87%;
+     div{
+     padding-left: 4%;
+   margin-bottom: 0%;
+     .listaCompra{
+     width: 96%;
+    padding-left: 0%;
+    height: fit-content;
+    .optionsBarList{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0%;
+    button{
+    font-size: 9px;
+    }
+}
+    .listaCompraProducts{
+    font-size: smaller;
+    padding-left: 8%;
+    overflow-y: scroll;
+    height: 31%;
+    }
+     }
+     .listaCompraCompartida{
+       width: 182px;
+        padding-left: 0%;
+        div{
+            margin-top: 0%;
+        }
+        .columnaIzda{
+           
+    padding-left: 0%;
+        }
+        .columnaDerecha{
+            padding-left: 0%;
+            .compartida{
+                padding-left: 0%;
+                .compartidaTitle{
+                    padding-left: 2%;
+                    width: 98%;
+
+                }
+                .compartidaUsers{
+                    padding-left: 0%;
+                }
+            }
+        }
+        .optionsBarList{
+            padding-left: 0%;
+            display: flex;
+    justify-content: space-around;
+            button{
+                font-size: 9px;
+            }
+        }
+        .listaCompraProducts{
+            font-size: smaller;
+    padding-left: 7%;
+    width: 93%;
+        }
+     }
+     }
+     }
+     }
+     .columnaCentral{
+     .buscadorProductos{
+     input{
+     font-size: large;
+     }
+     }
+     .productosFrecuentes{
+     grid-template-columns: repeat(5, 1fr);
+        overflow-y: scroll;
+        height: 111px;
+     }
+     .categories{
+     grid-template-columns: repeat(7, 1fr);
+     overflow-y: scroll;
+    height: 170px;
+    margin-top: 2%;
+     }
+     }
+     }
+     .contentWhithListasYActiva{
+        margin-bottom: -2%;
+        height: fit-content;
+        .listasInactivasWrapper{
+            height: 394px;
+            width: 25%;
+            .columnaTitle{
+                font-size: large;
+            }
+            .listasGuardadas{
+                font-size: small;
+        div{
+             .listaCompra {
+              .optionsBarList{
+            button{
+            font-size: xx-small;
+        }
+    }
+            .listaCompraProducts{
+            font-size: small;
+          
+}
+        }
+        .listaCompraCompartida{
+            
+            .compartida{
+                font-size: smaller;
+            }
+            .optionsBarList{
+                button{
+                    font-size: xx-small;
+                }
+            }
+            .listaCompraProducts{
+                width: 94%;
+                .productSelected{
+                .productSelectedName{
+                    font-size: small;
+                }
+            }
+            }
+        }
+    }
+            }
+            .listasGuardadas::-webkit-scrollbar{
+                width: 8px;
+            }
+            .listaCompraProducts::-webkit-scrollbar{
+            width: 8px;
+            }
+        }
+        .columnaCentral{
+            width: 44%;
+            .buscadorProductos{
+                padding-bottom: 4%;
+                input{
+                    font-size: large;
+                }
+            }
+            .productosFrecuentes{
+                grid-template-columns: repeat(5, 1fr);
+                font-size: small;
+                height: 95px;
+    overflow-y: scroll;
+    margin-bottom: 3%;
+            .productoFrecuente{
+             width: 64px;
+        height: 46px;
+            }
+        }
+        .categories{
+            grid-template-columns: repeat(5, 1fr);
+            overflow-y: scroll;
+        height: 247px;
+            .category{
+                width: 57px;
+        height: 70px;
+                .categoryName{
+                    font-size: smaller;
+                }
+            }
+        }
+        }
+        .listaActiva{
+  height: 439px;
+        background-size: 280%;
+        background-position: top;
+        background-position-x: 42%;
+        width: 27%;
+             .columnaListaActiva{
+                padding-top: 50%;
+                font-size: small;
+           
+             div{
+                width: 94%;
+                #compradoCheck{
+                    height: 12px;
+                    width:12px;
+                }
+                .listaCompra{
+                    width: 100%;
+                    margin-top: 0%;
+                    input{
+                        font-size: larger;
+                    }
+            .listaCompraProducts{
+                width: 94%;
+     height: 216px;
+        padding-left: 9%;
+        font-size: small;
+            }
+            .opcionesGuardarLista{
+                padding-top: 3%;
+                button{
+                    font-size: x-small
+                }
+            }
+        }
+    }
+}
+.columnaListaActivaGuardada{
+    .columnaTitle{
+        width: 100%;
+    font-size: medium;
+    }
+    .optionsBarList{
+        button{
+            font-size: x-small;
+        }
+    }
+    .listaActivaGuardada {
+        font-size: smaller;
+            width: 97%;
+    padding-left: 3%;
+        .listaCompraGuardada{
+         width: 103%;
+    margin-left: -3%;
+    .listaCompraTitle{
+        width: 95%;
+        input{
+            font-size: large;
+        }
+    }
+    .listaCompraProducts{
+        height: 194px;
+    }
+    .opcionesGuardarLista{
+        .guardarBtnGuardado{
+            button{
+                font-size: smaller;
+            }
+        }
+    }
+}
+}
+.listaActivaCompartida{
+    font-size: small;
+   
+    .listaCompraGuardada{
+    width: 100%;
+    margin-left: -1%;
+        .listaCompraTitle{
+            width: 95%;
+            input{
+                font-size: large;
+            }
+        }
+        .listaCompraProducts{
+            height: 154px;
+        }
+        .guardarBtnGuardado{
+            button{
+                font-size: x-small
+            }
+        }
+    }
+}
+}
+        }
+        }
+     
+     }
+     }
+ 
+.content-wrapper .contentWhithListTodos.listaActiva .columnaListaActiva{
+    margin-top: 32%;
+    font-size: medium;
+    .columnaTitle{
+        font-size: medium;
+    }
+    div{
+        width: 91%;
+          .borrarListaButton{
+                width: fit-content;
+            }
+            .guardarBtn{
+                width: fit-content;
+            }
+    }
+    .listaCompra{
+        width: 111%;
+        height: 449px;
+    }
+    .listaCompraTitle{
+        width: 95%;
+    }
+    .listaCompraProducts{
+        height: 354px;
+        padding-left: 10%
+    }
+    .productSelected{
+        width: 101%;
+        .productSelectedName{
+            width: fit-content
+        }
+        .borrarBtn{
+            width: 9%;
+            button{
+                width: 100%
+            }
+        }
+        .opcionesGuardarLista{
+            width: 100%;
+          
+        }
+    }
+
+   .listaCompraProducts{
+        font-size: smaller;
+    }
+}
+.contentWhithListTodos .listaCompraTitle{
+    padding-bottom: 0%
+}
+.contentWhithListTodos .listaActiva .listaCompraProducts{
+    margin-top: 3%;
+    font-size: smaller;
+    width: 100%;
+}
+.contentWhithListTodos .borrarBtn{
+    width: 18%;
+}
+     .letra{
+        padding-inline: 0.7%;
+     }
+         .container .content-wrapper .contentWhithList.listaActiva{
+        width: 31%
+     }
+         .container .content-wrapper .contentWhithList.columnaListaActiva{
+        justify-content: space-evenly
+     }
+     
+        .container .content-wrapper .contentWhithList{
+            padding-bottom: 0%;
+            .columnaCentral{
+        .productosFrecuentes{
+      grid-template-columns: repeat(5, 1fr);
+        padding-bottom: 0%;
+        height: 100px;
+        overflow-y: scroll;
+        margin-bottom: 1%;
+  
+        }
+        .categories{
+            grid-template-columns: repeat(6, 1fr);
+    height: 172px;
+    overflow-y: scroll;
+        }
+    }
+.listaActiva {
+background-size: 238%;
+    padding-top: 8%;
+    background-position-y: 15%;
+.columnaListaActiva{
+.columnaTitle{
+font-size: smaller;
+}
+div{
+font-size: small;
+    width: 97%;
+    
+    .listaCompraTitle{
+    width: 93%
+    }
+
+   .listaCompra{
+  margin-right: 2%;
+    width: 107%;
+   
+   
+   .listaCompraProducts{
+    height: 167px;
+margin-bottom: 3%;
+    width: 91%;
+.borrarBtn{
+width: 11%;
+button{
+width: 16px;
+height: 16px;
+}
+}
+}
+ .opcionesGuardarLista{
+.borrarListaButton{
+width: fit-content;
+}
+.guardarBtn{
+width: fit-content;
+}
+.guardarBtnConNombre{
+    width: fit-content;
+}
+}
+}
+}
+}
+.columnaListaActivaGuardada{
+padding-top: 5%;
+
+.columnaTitle{
+font-size: smaller;
+
+}
+.optionsBarList{
+   width: 183px;
+button{
+font-size: 9px
+}
+}
+.listaActivaGuardada{ 
+font-size: small;
+    .listaCompraGuardada{
+        width: 184px;
+
+        .listaCompraTitle{
+width: 92%;
+            padding-bottom: 0%;
+        }
+.listaCompraProducts{
+height: 143px;
+        padding-left: 10%;
+}
+}
+.opcionesGuardarLista{
+    .guardarBtnGuardado{
+        width: 96%;
+        button{
+            font-size: smaller;
+        }
+    }
+}
+}
+.listaActivaCompartida{
+.listaCompraGuardada{
+.listaCompraProducts{
+height: 93px;
+}
+.opcionesGuardarLista{
+.guardarBtnGuardado{
+button{
+font-size: smaller;
+}
+}
+}
+}
+}
+}
+}
+}
+.productosPorLetra{
+ 
+   grid-template-columns: repeat(4, 1fr);
+   
+}
+.content-wrapper .contentWhithList .columnaListaActiva .optionsBarList button{
+    font-size: x-small;
+ 
+}
+    .container .content-wrapper .contentWhithList .listaActiva .columnaListaActiva .opcionesGuardarLista{
+    width:100%
+    }
+//REGISTRO
+.containerRegistro{
+    width:-webkit-fill-available;
+    backdrop-filter: blur(2.5px);
+}
+
+
+    .registroBtn{
+        margin-top: 4%;
+    }
+    .form{
+    .exit{
+        margin-top: -4%;
+}}
+//LOGIN
+.formulariosContentLogin{
+   
+    
+.contraseña .contraseñaInput input {
+        width: 301%;
+    }
+}
+
+.container.content-wrapper .contentWhithList {
+padding-bottom: 0%;
+.columnaCentral{
+    width: 65%;
+}
+.listaActiva{
+   width: 27%;
+      
+        font-size: small;
+      
+        background-position-x: 56%;
+        background-size: 220%;
+    background-position-y: top;
+    margin-top: -3%;
+    padding-top: 10%;
+    .columnaListaActiva{
+        width: 96%;
+    margin-left: -0.5%;
+       div{
+        justify-self: left;
+    width: 100%;
+    #compradoCheck{
+        width: 5%
+    }
+    .listaCompraTitle{
+        width: 94%;
+    }
+    .listaCompraProducts{
+       height: 175px;
+       width: 92%;
+       .productSelected{
+        width: 104%;
+    
+        .borrarBtn{
+          
+        width: 36%;
+        }
+       }
+       
+    }
+       }
+ 
+    .listaCompraGuardada .listaCompraProducts{
+        height: 362px;
+    padding-inline-start: 11%;
+    font-size: small;
+    }
+    .opcionesGuardarLista{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .borrarListaButton{
+  
+        width: fit-content;
+}
+.guardarBtn{
+width: fit-content;}
+}
+}
+.columnaListaActivaGuardada div .listaCompraGuardada {
+width: 105%;
+.optionsBarList{
+width: 99%;
+    padding-right: 1%
+    }
+.listaCompraProducts{
+height: 135px
+}
+}
+}
+}
+.contentWhithList .listaActiva .listaCompraGuardada input {
+    font-size: medium;
+}
+.contentWhithList .columnaListaActiva div .listaCompraGuardada .guardarBtnGuardado button{
+font-size: x-small;
+}
+.contentWhithListasGuardadas .listaActiva{
+    width: 0%;
+}
+
+.container.content-wrapper.contentWhithListasGuardadas {
+padding-bottom: 5%;
+.columnaCentral{
+width: 70%;
+}
+.listasGuardadas div{
+    width: 88%;
+    .listaCompraFecha{
+        margin-bottom: 1%;
+    }
+    .listaCompraTitle{
+        margin-bottom: 1%;
+    }
+    .optionsBarList{
+        display: flex;
+    width: auto;
+    }
+    .listaCompraProducts{
+        font-size: smaller;
+
+    padding-left: 12%;
+    height: 54%;
+    }
+}
+}
+.content-wrapper-listaCompartir{
+ .title-wrapper-listaCompartir .titleListaCompartir{
+    width: 67%
+ }
+ .listaCompraCompartir{
+   width: 74%
+ }
+}
+}
+@media (max-width:480px){
+    //Home//
+    .container-home{
+font-size: x-large;
+
+.seleccion-principal{
+background-size: 40%;
+
+h2{
+margin-top: 32%;
+
+}
+}
+    }
+
+.container .content-wrapper{
+font-size: medium;
+.notificacionesLista{
+width: 74%;
+font-size: medium;
+}
+.content{
+.productosFrecuentes{
+
+font-size: medium;
+}
+ .categories{
+.category{
+width: 78%;
+    height: 60px;
+    
+    line-height: 6px;
+    .categoryName{
+    
+font-size: 7px;
+
+    }
+    }
+    }
+    
+}
+.productosPorLetra{
+    margin-inline: 6%;
+    .palabra{
+        width: 100%;
+    }
+}
+
+    .productosPorCategory{
+        width: 84%;
+    margin-inline: 7%;
+    .categoryTitle{
+        background-size: 12%;
+        background-position-y: 65%;
+      height: 47px;
+    
+    .categoryName{
+        font-size:large;
+    text-align: center;
+    padding-left: 22%;
+    }
+    .exit{
+        width: 15%
+    }
+    }
+.categoryPalabras{
+.palabra{
+height: 100%;
+}
+}
+
+}
+    .content-wrapper .listaActiva .columnaListaActiva .opcionesGuardarLista{
+            padding-top: 0%;
+    }
+.contentWhithListTodos.columnaListaActiva{
+    font-size: smaller;
+    justify-content: start;
+    padding-top: 14%;
+    justify-content: start;
+    }
+    .contentWhithList.columnaListaActiva{
+    font-size: smaller;
+    justify-content: start;
+    padding-top: 14%;
+    justify-content: start;
+    }
+
+input{
+font-size: small;
+    margin-inline: 0%;
+    width: 95%;
+}
+
+
+.content-wrapper .contentWhithListTodos.listaActiva .columnaListaActiva{
+    margin-top: auto;
+    font-size: small;
+    .columnaTitle{
+        font-size: small;
+    }
+    div{
+        width: 79%;
+    }
+    .listaCompra{
+        width: 103%;
+        height: 179px
+    }
+    .listaCompraTitle{
+        width: 91%;
+    }
+    .listaCompraProducts{
+        height: 27%;
+    padding-inline: 10%;
+    width: 95%;
+    font-size: x-small;
+    height: 70%;
+    }
+    .productSelected .borrarBtn button{
+        height: 13px;
+    }
+    .opcionesGuardarLista{
+        padding-top: 0%;
+    }
+}
+.container.content-wrapper .contentWhithList.listaActiva .columnaListaActiva{
+    margin-top: auto;
+    font-size: small;
+    .columnaTitle{
+        font-size: small;
+    }
+    div{
+        width: 79%;
+    }
+    .listaCompra{
+        width: 103%;
+        height: 179px
+    }
+    .listaCompraTitle{
+        width: 91%;
+    }
+    .listaCompraProducts{
+        height: 27%;
+    padding-inline: 10%;
+    width: 95%;
+    font-size: x-small;
+    height: 70%;
+    }
+    .productSelected .borrarBtn button{
+        height: 13px;
+    }
+    .opcionesGuardarLista{
+        padding-top: 0%;
+    }
+}
+.contentWhithList #compradoCheck{
+    width: 4%;
+    height: 8px;
+}
+
+
+
+
+.contentWhithListTodos{
+  height: 263px;
+        margin-bottom: -3%;
+    .columnaCentral{
+        margin-left: 0%;
+    .buscadorProductos{
+        padding-bottom: 4%;
+        width: 94%;
+        input{
+        font-size: medium
+        }
+    }
+.productosFrecuentes{
+grid-template-columns: repeat(5, 1fr);
+height: 24%;
+}
+.productoFrecuente{
+font-size: x-small;
+        height: 30px;
+        width: 60px;
+        padding-top: 0%;
+        margin-top: -3%;
+        line-height: 8px;}
+.categories{
+grid-template-columns: repeat(5, 1fr);
+height: 52%;
+    overflow: scroll;
+}
+.category{
+width: 53px;
+        height: 59px;
+        line-height: 7px;
+        .categoryName{
+        font-size: smaller;
+        }
+}
+    }
+    .listaActiva{
+background-size: 209%;
+ 
+        width: 150px;
+        height: 256px;
+      
+.columnaListaActiva{
+   width:140px;
+        justify-self: baseline;
+      
+        input{
+            font-size: small;
+        }
+    
+    .listaCompra{
+       width: 100%;
+    margin-top: 0%;
+    font-size: small;
+    padding-top: 29%;
+      .listaCompraTitle{
+    padding-bottom: 0%;
+    input{
+        font-size: small;
+    }
+    
+    
+
+  
+}
+ .listaCompraProducts{
+padding-left: 12%;
+       
+        font-size: x-small;
+       height: 158px;
+        .productSelected{
+.borrarBtn{
+button{
+    height: 14px;
+        width: 14px;
+}
+
+}
+
+        }
+}
+}
+.opcionesGuardarLista{
+.guardarBtn{
+    button{
+   font-size: xx-small;
+}
+}
+}
+   }
+}
+    }
+    .contentMisListas{
+    padding-bottom: 7%;
+    .buscadorProductos{
+  input{
+  justify-self: center;
+  }
+    }
+    .productosFrecuentes{
+    grid-template-columns: repeat(5, 1fr);
+    height: 101px;
+    overflow-y: scroll;
+    .productoFrecuente{
+    font-size: small;
+    }
+    }
+    
+
+        .categories{
+grid-template-columns: repeat(5, 1fr);
+
+   
+
+.category{
+width: 77px;
+        height: 83px;
+        line-height: 10px;
+        }
+    }
+    }
+    .contentWhithList{
+   padding-bottom: 0%;
+   column-gap: 1%;
+    .buscadorProductos{
+        width: 96%;
+    padding-bottom: 3%;
+    }
+.columnaCentral {
+margin-left: 0%;
+.productosFrecuentes{
+grid-template-columns: repeat(4, 1fr);
+width: 100%;
+        height: 100px;
+}
+}
+.productoFrecuente{
+font-size: x-small;
+        height: 30px;
+        width: 60px;
+        padding-top: 0%;
+        margin-top: -3%;
+        line-height: 8px;
+        }
+.columnaCentral {
+.categories{
+grid-template-columns: repeat(4, 1fr);
+height: 138px;
+    overflow: scroll;
+   
+
+.category{
+width: 53px;
+        height: 58px;
+        line-height: 7px;
+        .categoryName{
+            font-size: smaller;
+        }
+}
+}
+}
+    .listaActiva{
+        height: 78%;
+        width: 42%;
+        background-position-y: 5%;
+        padding-top: 13%;
+    background-position-x: 53%;
+        input{
+            font-size: small;
+        }
+    
+    .columnaListaActiva{
+
+    .listaCompra{
+      width: 103%;
+        margin-top: 0%;
+        font-size: small;
+        height: 176px;
+    }
+}
+.columnaListaActivaGuardada{
+.listaActivaGuardada{
+.listaCompraGuardada{
+
+
+.listaCompraProducts{
+
+height: 96px
+}
+.opcionesGuardarLista{
+    padding-bottom: 1%;
+.guardarBtnGuardado{
+button{
+font-size: smaller;
+}
+}
+}
+}
+}
+.listaActivaCompartida{
+font-size: small;
+.listaCompraGuardada{
+.listaCompraProducts{
+height: 55px;
+}
+}
+}
+}
+
+}
+    .listaCompraTitle{
+    padding-bottom: 0%;
+}
+.listaActiva .columnaListaActiva div .listaCompraProducts{
+padding-left: 12%;
+    width: 94%;
+    font-size: x-small;
+height: 71%;}
+
+
+   
+    }
+         .contentWhithList .listaActiva .columnaListaActiva div {
+.borrarListaButton{
+    font-size: smaller;
+    width: fit-content;
+}
+.guardarBtn{
+     font-size: smaller;
+    width: fit-content;
+}
+} 
+        }
+
+        
+.productoFrecuente{
+font-size: x-small;
+height: 100%
+}
+
+       .content-wrapper .contentWhithList .category{
+
+width: 78%;
+        height: 58px;
+        }
+
+.letra{
+text-align: center;}
+
+
+//REGISTRO
+.containerRegistro{
+display: flex;
+    justify-content: center;}
+.formulariosContentRegistro{
+font-size: medium;
+.form {
+width: 110%;
+.contraseña{
+    .contraseñaInput{
+        input{
+            width: 151%;
+        }
+    }
+}
+}
+}
+.contraseña .contraseñaInput input {
+        width: 163%;
+    }
+     .form{
+    .exit{
+        margin-top: -7%;
+}}
+//LOGIN
+.container{
+.formulariosContentLogin {
+  font-size: large;
+  width: -webkit-fill-available;
+.form{
+    width: -webkit-fill-available;
+  
+    padding-inline: 3%;
+
+.contraseña{
+
+ .contraseñaInput{
+     input{
+width: 150%
+     }
+    }
+}
+}
+}
+}
+.content-wrapper .listaActiva .columnaListaActiva .opcionesGuardarLista{
+padding-top: 0%;
+}
+.content-wrapper.contentWhithList{
+    height: 279px;
+    .buscadorProductos{
+        padding-bottom: 4%
+    }
+.productosFrecuentes{
+grid-template-columns: repeat(4, 1fr);
+height: 27%;
+}
+.productoFrecuente{
+font-size: x-small;
+        height: 30px;
+        width: 60px;
+        padding-top: 0%;
+        margin-top: -3%;
+        line-height: 8px;}
+.categories{
+grid-template-columns: repeat(4, 1fr);
+
+    overflow: scroll;
+}
+.category{
+width: 45px;
+    height: 52px;
+    
+    line-height: 6px;}
+    .listaActiva{
+        height: 104%;
+        width: -webkit-fill-available;
+        input{
+            font-size: small;
+        }
+    
+    .listaCompra{
+       width: 81%;
+    margin-top: 0%;
+    font-size: small;
+    height: 87%;
+    }
+}
+    .listaCompraTitle{
+    padding-bottom: 0%;
+}
+.listaActiva .listaCompraProducts{
+padding-left: 12%;
+    width: 94%;
+    font-size: smaller;
+height: 71%;
+}
+button.guardarBtn{
+    font-size: smaller;
+}
+   
+    }
+        .container.content-wrapper .contentWhithList .columnaCentral .categories {
+        grid-template-columns: repeat(4, 1fr);
+        overflow: scroll;
+    }
+        .content-wrapper .contentWhithList .listaActiva {
+        height: 92%;
+        width: -webkit-fill-available;
+        margin-top: -2%
+    }
+    .content-wrapper .contentWhithList {
+        height: 279px;
+    }
+    .contentWhithList .listaActiva .columnaListaActiva{
+        font-size: x-small;
+    margin-top: -9%;
+    }
+    .container .content-wrapper .contentWhithList .listaActiva .columnaListaActiva div{
+  
+        .listaCompraProducts{
+        .listaCompraTitle{
+            width: 94%;
+        }
+        .productSelected{
+            width: 100%;
+        
+            
+           
+           
+        }
+        }
+    }
+    .container .content-wrapper .abcUser {
+        font-size: large;
+    }
+        .columnaListaActiva .optionsBarList button{
+            font-size: smaller;
+            padding-inline: 1%
+        }
+        .container .content-wrapper .contentWhithList .listaActiva .columnaListaActivaGuardada 
+        .optionsBarList{
+        width: 100%;
+        button{
+        font-size: xx-small;
+        padding: 0%;
+        }
+        .listaCompraGuardada .listaCompraProducts{
+            font-size: x-small;
+            height: 132px
+        }
+        }
+        
+       .container .content-wrapper .contentWhithList .listaActiva .columnaListaActivaGuardada div {
+        #compradoCheck{
+        width: 8%;
+        height: 8px;
+        }
+        .listaCompraGuardada{
+    
+        .listaCompraTitle{
+        width: 93%;
+        }
+        .listaCompraProducts{
+       
+        
+         .guardarBtnGuardado button{
+            font-size: smaller;
+        }
+        .productSelected .borrarBtn .borrarBtnGuardado{
+        height: 100%;
+        }
+        .productSelectedName{
+        font-size: x-small;
+        }
+        }
+        }
+        }
+       
+    .container .content-wrapper .contentWhithList .listaActiva .columnaListaActiva {
+    .columnaTitle{
+        font-size: small;}
+        div{
+        font-size: x-small;
+        .listaCompra{
+        .listaCompraProducts{
+        height: 72%
+        }
+        }
+        }
+    }
+
+
+
+
+.container .content-wrapper .contentWhithListasGuardadas .listasInactivasWrapper{
+    width: 47%;
+    padding-top: 0%;
+    font-size: small;
+    height: 379px
+}
+.container .content-wrapper.contentWhithListasGuardadas .listasInactivasWrapper .listasGuardadas{
+    height: 88%;
+}
+ .container .content-wrapper.contentWhithListasGuardadas .listasInactivasWrapper .columnaTitle{
+        font-size: medium;
+    padding-bottom: 1%;
+    }
+    .container.content-wrapper .contentWhithListasGuardadas div .optionsBarList button{
+        font-size: xx-small;
+    }
+    .container .content-wrapper .contentWhithListasGuardadas{
+        height: 69%;
+        padding-bottom: 0%;
+        .listasInactivasWrapper{
+        font-size: small;
+        height: 263px;
+        .listasGuardadas{
+        div{
+        font-size: small;
+        #compradoCheckGuardado{
+       width: 12px;
+        height: 9px;
+        }
+        .listaCompra{
+        height: fit-content;
+        .optionsBarList{
+            button{
+                font-size: 8px;
+            }
+        }
+        .listaCompraProducts{
+        height: fit-content;
+        padding-left: 9%;
+        .productSelected{
+        .productSelectedName{
+        font-size: smaller;
+        }
+        }
+        }
+        }
+        .listaCompraCompartida{
+            width: 156px;
+            .optionsBarList{
+                button{
+                    font-size: 8px;
+                }
+            }
+        }
+        }
+        }
+        }
+        .columnaCentral{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    .buscadorProductos{
+        width: 100%;
+    
+    input{
+       font-size: medium;
+   
+    justify-self: center;
+    }
+    }
+    .productosFrecuentes{
+    grid-template-columns: repeat(4, 1fr);
+    height: 84px;
+    .productoFrecuente{
+   height: 41px;
+    font-size: x-small;
+    width: 61px;
+    
+    }
+    }
+    .categories{
+    grid-template-columns: repeat(4, 1fr);
+    align-self: baseline;
+    width: 100%;
+    height: 131px;
+    .category{
+    font-size: 7px;
+   line-height: 86%;
+   width:50px;
+   height: 54px;
+    }
+    }
+        }
+    }
+    .title-wrapper-listaCompartir{
+        margin-bottom: 0%;
+    
+    .titleListaCompartir{
+        font-size: x-large;
+    }
+    }
+    .subtitle-wrapper .subtitle{
+        font-size: medium;
+    }
+
+   .content-wrapper-listaCompartir .listaCompraCompartir{
+        font-size: medium;
+      width: 76%;
+    }
+    .optionsBar-listaCompartir{
+        button{
+            font-size: x-small
+        }
+    }
+       .container .content-wrapper  .contentWhithListasYActiva{
+        .listasInactivasWrapper{
+            height: fit-content;
+        padding-top: 0%;
+        margin-top: -5%;
+        margin-left: -70%;
+        position: fixed;
+            .columnaTitle{
+                font-size: x-small;
+        border: groove;
+        border-width: thick;
+        background-color: #dcd6dc;
+
+    }
+     .listasGuardadas{
+                display: none;
+                
+            }
+        }
+         .listasInactivasWrapper:hover{
+.listasGuardadas{
+            display: flex;
+            height: 89%;
+        #compradoCheckGuardado{
+            width: 19px;
+           
+        }
+            }
+         }
+.listasInactivasWrapper:hover ~.columnaCentral{
+            display: none;
+        
+            }
+  .listasInactivasWrapper:hover ~.listaActiva{
+ height: 382px;
+    margin-left: 50%;
+    .columnaListaActivaGuardada.listaActivaCompartida.listaCompraGuardada.listaCompraProducts{
+    height: 129px;
+    }
+  }
+ .listasInactivasWrapper:hover{
+    width: 41%;
+    padding-left: 21%;
+    padding-top: 6%;
+    height: 78%;
+ }      
+   .listasInactivasWrapper:hover ~.listaActiva .columnaListaActivaGuardada .listaActivaGuardada .listaCompraGuardada .listaCompraProducts{
+    height: 170px;
+    }
+      
+        .columnaCentral{
+            width: 57%;
+            .productosFrecuentes{
+                font-size: 12px;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .categories{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .listaActiva{
+            width: 41%;
+        background-position-y: 12%;
+        height: 420px;
+           .columnaListaActiva {
+            font-size: 12px;
+            padding-top: 43%;
+            div {
+                #compradoCheck{
+                    width: 19px
+                }
+                .listaCompra {
+              
+                .listaCompraProducts{
+               height: 219px;
+            }
+        }
+        }
+        }
+        .columnaListaActivaGuardada{
+            padding-top: 46%;
+             .columnaTitle{
+                font-size: smaller;
+            }
+            .listaActivaGuardada{
+                #compradoCheck{
+    margin-left: 2%;
+}
+.listaCompraGuardada {
+    
+    .listaCompraTitle{ 
+    input{
+    font-size: large;
+}
+}
+    .listaCompraProducts{
+       height: 204px;
+        padding-left: 10%;
+    }
+.opcionesGuardarLista{
+    .guardarBtnGuardado{
+        button{
+            font-size: x-small
+        }
+    }
+}
+}
+}
+
+        
+        .listaActivaCompartida{
+        .listaCompraGuardada{
+        .listaCompraProducts{
+       height: 167px;
+        }
+        }
+        }
+        }
+        }
+    }
+    .content-wrapper-listaCompartir{
+        .title-wrapper-listaCompartir{
+            height: 60px;
+    width: 82%;
+    margin: 0%;
+        }
+    }
+           .container .content-wrapper .contentWhithListasGuardadas .listasInactivasWrapper 
+           .listasGuardadas div .listaCompraCompartida{
+            .columnaDerecha .compartida {
+                .compartidaTitle{
+                font-size: smaller;
+            }
+            .compartidaUsers{
+                font-size: smaller;
+                div{
+                    padding-left: 2%;
+                    width: 98%;
+                    margin-top: 0%;
+                    font-size: smaller;
+                }
+            }
+        }
+        .listaCompraProducts{
+            .productSelectedName{
+                font-size: smaller;
+            }
+        }
+        }
+    
+    .content-wrapper .notificaciones button{
+        font-size: x-small;
+    }
+    }
+@media(max-width:375px){
+.content-wrapper{
+        font-size: medium;
+    .abecedario{
+    padding-top: 0%}
+    input{
+font-size: small;
+        margin-inline: 6px}
+
+    }
+    h2{
+    font-size: x-large
+}
+.productosFrecuentes{
+margin-bottom: 1%;
+height: 55px;
+}
+.productoFrecuente{
+font-size: x-small;
+        height: 100%;
+        line-height: 8px;
+        padding-inline: 0;}
+        .category{
+        background-position-y: top;
+    line-height: 6px;
+    height: 42px}
+}
+
+@media(max-width:320px){
+h1{
+font-size: xxx-large;}
+h2{
+font-size: large;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (max-width:1440px){
+    .container-home{
+        background-position-y: 109px;
+        background-size: 211px;
+        margin-top: 164px;
+    }
+        .titulo-principal{
+        font-size: 44px;
+        h1{
+        margin-top: 68px;
+        }
+        }
+    .nav-link-wrapper{
+        
+            font-size: xx-large;
+        margin-top: 128px;
+    }
+        
+   
+    .content-wrapper{
+        font-size: xx-large;
+    }
+    .listaCompra{
+        background-size: contain;
+        background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 127px;
+    height: 776px;
+    ::-webkit-scrollbar{
+        width: 6px;
+        height: 1000px;
+        }
+        ::-webkit-scrollbar-track-piece {
+        background-color:#ede652;
+        }
+        ::-webkit-scrollbar-thumb  {
+        background-color: #54a878;
+        }
+    
+    }
+    .productsList{
+        overflow: hidden scroll;
+        height: 686px;
+        margin-right: 350px;
+    
+    }
+    .products{
+        width: 533px;
+        margin-left: 502px;
+    margin-bottom: -12px;
+    }
+    .parteIzquierda{
+        font-size: 23px;
+        width: 57%;
+        margin-right: 46px;
+    }
+    .products input{
+        font-size: 28px;
+        width: 65%;
+    }
+    .btn{
+        font-size: 23px;
+    }
+    .parteDerecha{
+        width: 23%;
+    }
+    .icon{
+        margin-top: -46px;
+    }
+    .comprar{
+        margin-left: 187px;
+        font-size: 36px;
+    }
+    .listaCompraHacerCompra{
+        margin-left: 48px;
+    }
+    .numberHacerCompra {
+        font-size: 23px;
+    }
+    .buscador-wrapper input{
+        width: 39%;
+        font-size: x-large;
+    }
+   
+    .iconHacerCompra {
+        margin-top: -36px;
+    }
+    .iconBySupermarket{
+        font-size: 20px;
+    margin-top: -47px;
+    }
+    .listaMiListaCompra{
+        width: 52%;
+    }
+    .titleMiListaCompra{
+        margin-left: 47px;
+
+    }
+    .comprarMiListaCompra{
+        margin-left: -343px;
+        font-size: xxx-large;
+    }
+    .titleMiListaCompra{
+        font-size: xxx-large;
+        margin-left: -92px;
+    }
+    .buscador-wrapper-MiListaCompra{
+        margin-left: -7%;
+
+    }
+    .productsMiListaCompra{
+        margin-left: -44px;
+        width: 126%;
+    }
+    .parteIzquierdaMiListaCompra{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:1350px){
+    .productsList {
+      
+        margin-right: 343px;
+
+    }
+    .listaMiListaCompra {
+        width: 58%;
+        margin-left: 82px;
+    }
+}
+@media (max-width:1290px){
+      
+      .buscador-wrapper{
+        margin-left: 30px;
+      }  
+       
+       
+        .productsList{
+            
+            margin-right: 318px;
+        
+        }
+        .products{
+         
+            margin-left: 426px;
+    
+        }
+        
+        
+       
+       
+        
+        .comprar{
+            margin-left: 103px;
+           
+        }
+        .listaCompraHacerCompra{
+            margin-left: 154px;
+            width: 91%;
+        }
+        .productsHacerCompra{
+            width: 92%;
+        }
+        .parteIzquierdaHacerCompra{
+            font-size: 29px;
+
+        }
+        .parteDerechaHacerCompra{
+            font-size: 29px;
+
+        }
+        .numberHacerCompra{
+            font-size: 20px;
+            width: 40px;
+        }
+        .supermarket {
+            font-size: 33px;
+        }
+        .iconHacerCompra{
+            margin-top: -46px;
+        }
+        .parteBaja{
+            justify-content: space-evenly;
+        }
+        .total-cantidad{
+            font-size: larger;
+        }
+        .añadir-productos {
+            margin-left: 144px;
+        }
+        .compra-by-supermarket{
+            width: 96%;
+        }
+        .products-by-supermarket-title{
+            padding-left: 158px;
+        }
+        .selected-title {
+            font-size: 14px;
+        }
+        .listaCompraBySupermarket{
+            width: 761px;
+        }
+        .parteIzquierdaBySupermarket{
+            font-size: 19px;
+        }
+        .productsBySupermarket{
+            margin-left: 352px;
+        }
+        .parteDerechaBySupermarket{
+            font-size: 20px;
+        }
+        .supermarketBySupermarket{
+            margin-top: 20px;
+    font-size: 35px;
+        }
+        .iconBySupermarket{
+            font-size: 19px;
+        }
+        .titleMiListaCompra{
+            margin-left: 49px;
+        }
+        .listaMiListaCompra{
+            margin-left: 127px;
+        width: 60%;
+        }
+        .buscador-wrapper-MiListaCompra {
+            margin-left: 10%;
+        }
+        .comprarMiListaCompra {
+            margin-left: -296px;
+}
+}
+@media (max-width:1250px){
+      
+        
+       
+    .productsList {
+        margin-right: 300px;
+    }
+          
+            .products{
+             
+                margin-left: 412px;
+        
+            }
+            .listaMiListaCompra{
+                margin-left: 167px;
+        width: 62%;
+            }
+            .buscadorMiListaCompra input{
+                width: 76%;
+            }
+            .buscador-wrapper-MiListaCompra {
+                margin-left: 12%;
+            }
+           
+                .añadir-producto {
+                    margin-left: 88px;
+            }
+}     
+@media (max-width:1200px){
+      
+        
+                   
+       .buscador-wrapper input{
+        font-size: x-large;
+       }
+          
+                    .products{
+                     
+                        margin-left: 386px;
+                
+                    }
+                    .productsList {
+                        margin-right: 272px;
+            }
+            .compra-by-supermarket {
+                width: 84%;
+                background-size: 545px;
+                height: 130%;
+            }
+            .listaCompraBySupermarket {
+                width: 649px;
+                margin-left: -188px;
+    height: 165px;
+            }
+            .productsBySupermarket{
+                width: 52%;
+    margin-left: 407px;
+            }
+            .parteIzquierdaBySupermarket {
+                font-size: 16px;
+    width: 178px;
+    margin-left: -128px;
+    margin-right: 15px;
+            }
+            .parteDerechaBySupermarket {
+                font-size: 16px;
+                width: 52%;
+            }
+            .products-by-supermarket-title {
+                padding-left: 117px;
+                margin-top: -92px;
+            }
+            .selected-title {
+                font-size: 12px;
+            }
+            .supermarket {
+                font-size: 29px;
+                h3{
+                    margin-bottom: 5px; 
+            }
+                }
+            
+            .productsBySupermarket input {
+              width: 18%;
+                font-size: 14px;
+            }
+            .iconBySupermarket {
+                font-size: 18px;
+                margin-top: -51px;
+            }
+            .total-by-supermarket{
+                font-size: x-large;
+            }
+            .supermarketBySupermarket{
+                font-size: 29px;
+
+            }
+            .listaMiListaCompra {
+                margin-left: 107px;
+        width: 67%;
+            }
+            .miListaCompra{
+                background-position: center;
+                height: 1276px;
+            }
+            .buscador-wrapper-MiListaCompra {
+                margin-left: 8%;
+            }
+            .buscadorMiListaCompra{
+                padding-bottom: 95px;
+            input{
+                width: 82%;
+            }
+}
+.productsMiListaCompra{
+    width: 116%;
+    margin-left: 0px;
+
+}
+.parteIzquierdaMiListaCompra{
+    font-size: 24px;
+}
+.total-cantidad-miListaCompra{
+    margin-right: 56px;
+    font-size: larger;
+}
+}
+@media (max-width:1120px){
+      
+        
+        
+               .buscador-wrapper input{
+                width: 49%;
+               }
+                         .products{
+                          
+                             margin-left: 344px;
+                     
+                         }
+                         .productsList{
+                            margin-right: 233px;
+                         }
+                         .listaCompraHacerCompra {
+                            margin-left: 80px;
+                        }
+                        .productsHacerCompra {
+                            width: 93%;
+                        }
+                        .parteBaja{
+                            font-size: x-large;
+                            justify-content: space-around;
+                            
+                        }
+                        .total-cantidad{
+                            margin-right: 0px;
+                            font-size: xxx-large;
+                        }
+                        .total{
+                            margin-left: 42px;
+                        }
+                        .añadir-productos {
+                            margin-left: 39px;
+                        }
+                        .compra-by-supermarket {
+                            width: 96%;
+                            height: 100%;
+                            margin-bottom: 80px;
+                        }
+                        .listaCompraBySupermarket{
+                            width: 652px;
+                        }
+                        .listaMiListaCompra {
+                            margin-left: 88px;
+                            width: 73%;
+                        }
+}
+@media (max-width:1100px){
+      
+        
+        
+               
+                .products{
+                 
+                    margin-left: 337px;
+            
+                }
+                .productsList {
+                    margin-right: 225px;
+                }
+                .productsHacerCompra {
+                    width: 100%;
+                }
+                .listaCompraHacerCompra {
+                    margin-left: 49px;
+                }
+                .total-cantidad{
+
+                
+                margin-right: 0px;
+                }
+            }
+
+@media (max-width:1060px){
+      
+        
+    .productsList {
+        margin-right: 204px;
+    }
+               
+        .products{
+         
+            margin-left: 308px;
+    
+        }
+        .listaMiListaCompra {
+            width: 77%;
+        }
+        
+}
+@media (max-width:1050px){
+      
+        
+        
+               
+    .products{
+     
+        margin-left: 308px;
+
+    }
+    .añadir-productos {
+        margin-left: -49px;
+    }
+}
+@media (max-width:1030px){
+      .content{
+        font-size: x-large;
+      }
+    .productsList {
+        margin-right: 181px
+    }
+               
+    .products{
+     
+        margin-left: 295px;
+
+    }
+    .buscador-wrapper input {
+        width: 57%;
+}
+.parteIzquierdaHacerCompra {
+    font-size: 22px;
+}
+.parteDerechaHacerCompra {
+    font-size: 23px;
+}
+.parteBaja {
+    font-size: larger;
+}
+.total-cantidad{
+    font-size: xx-large;
+    margin-right: 156px;
+}
+.añadir-productos a{
+    font-size: 35px;
+}
+.compra-by-supermarket{
+    background-size: 478px;
+    height: 135%;
+}
+.products-by-supermarket-title {
+    padding-left: 99px;
+    margin-top: -106px;
+    padding-bottom: 5px;
+}
+.supermarket {
+    font-size: 25px;
+}
+.listaCompraBySupermarket {
+    width: 618px;
+    margin-left: -213px;
+    height: 137px;
+}
+.parteIzquierdaBySupermarket {
+    font-size: 13px;
+    width: 149px;
+    margin-left: -149px;
+}
+.total-by-supermarket{
+    height: 50%;
+
+}
+.supermarketBySupermarket{
+    font-size: 25px;
+}
+.listaMiListaCompra{
+    width: 77%;
+}
+.comprarMiListaCompra{
+    font-size: larger;
+
+}
+}
+@media (max-width:1000px){
+      
+    .productsList {
+        margin-right: 174px;
+    }
+  
+               
+    .products{
+     
+        margin-left: 282px;
+
+    }
+    
+    .buscadorMiListaCompra {
+        padding-bottom: 111px;
+    }
+    .buscadorMiListaCompra input {
+        width: 87%;
+        margin-top: 0px;
+    font-size: smaller;
+    }
+    .añadir-productos {
+        margin-left: 208px;
+    }
+    .listaCompraBySupermarket{
+        margin-left: -213px;
+    }
+    .miListaCompra{
+        background-size: 130%;
+    background-repeat: no-repeat;
+
+    }
+    .añadir-producto{
+        margin-left: 64px;
+    }
+    .añadirProductoButton{
+        margin-top: -11px;
+    }
+    .total-cantidad {
+        margin-right: 44px;
+    }
+    .comprarMiListaCompra {
+        margin-left: -280px;
+        margin-top: 11px;
+}
+.listaMiListaCompra {
+    margin-left: 105px;
+    width: 80%;
+}
+.total-cantidad-miListaCompra {
+    margin-top: 14px;
+}
+}
+@media (max-width:970px){
+   
+    .añadirProductoButton {
+        margin-top: 13px;
+    }
+    .productsList {
+        margin-right: 159px;
+    } 
+}
+@media (max-width:950px){
+      
+
+  
+               
+    .products{
+     
+        margin-left: 261px;
+
+    }
+    .añadir-productos {
+        margin-left: 25px;
+    }
+    .comprar {
+        margin-left: -62px;
+    }
+    .parteIzquierdaHacerCompra{
+        margin-right: 9px;
+
+    }
+    .parteBaja {
+        font-size: x-large;
+    }
+    .total-cantidad{
+        margin-right: 171px;
+    }
+    .listaCompraBySupermarket {
+        width: 614px;
+        margin-left: -211px;
+        height: 149px;
+    }
+    .compra-by-supermarket {
+        background-size: 426px;
+        height: 116%;
+    }
+    .products-by-supermarket-title {
+        padding-left: 86px;
+        margin-top: -115px;
+        padding-bottom: 0px;
+    }
+    .supermarket {
+        font-size: 21px;
+    }
+    .listaCompraBySupermarket {
+        width: 589px;
+        margin-left: -224px;
+        height: 140px;
+    }
+    .parteIzquierdaBySupermarket {
+        font-size: 13px;
+        width: 127px;
+        margin-left: -169px;
+    }
+    .parteDerechaBySupermarket{
+        align-items: center;
+    }
+    .iconHacerCompra {
+        margin-top: -40px;
+    }
+    .iconBySupermarket {
+        font-size: 16px;
+    margin-top: -41px;
+    }
+    .supermarketBySupermarket {
+        font-size: 20px;
+    }
+    .total-cantidad-miListaCompra{
+        margin-top: 5px;
+    }
+    .titleMiListaCompra{
+        height: 120px;
+        font-size: larger;
+    }
+    .buscadorMiListaCompra {
+        padding-bottom: 87px;
+    }
+    .buscadorMiListaCompra input{
+        margin-top: 29px;
+    }
+    .iconMiListaCompra{
+        margin-top: -45px;
+    font-size: 20px;
+    }
+    .listaMiListaCompra{
+        max-height: 63%;
+        h2{
+            margin-block-end: auto;
+        }
+    }
+    .comprarMiListaCompra{
+        font-size: larger;
+    }
+    .añadirProductoButton {
+        margin-top: 11px;
+    }
+}
+@media (max-width:920px){
+    .products {
+        margin-left: 245px;
+    }
+    .productsList {
+        margin-right: 134px;
+    }
+  
+    .añadirProductoButton {
+        margin-top: 32px;
+    }
+    .titleMiListaCompra h2{
+        margin-bottom: -20px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 48px;
+    }
+}
+@media (max-width:900px){
+      
+
+  
+               
+    .products{
+     
+        margin-left: 234px;
+
+    }
+  
+    .añadirProductoButton {
+        margin-top: 45px;
+    }
+    .titleMiListaCompra h2{
+        margin-bottom: -36px;
+
+    }
+    .total-cantidad-miListaCompra {
+        margin-top: 13px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 64px;
+    }
+}
+@media (max-width:890px){
+      
+
+  
+               
+    .productsList {
+        margin-right: 123px;
+        height: 654px;
+    }
+    .products{
+        align-items: center;
+    margin-bottom: 10px;
+}
+    
+    .parteIzquierda {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .products input {
+        font-size: 17px;
+        width: 52%;
+    }
+    .btn {
+        font-size: 18px;
+    }
+    .icon{
+        margin-left: 3px;
+    margin-top: -37px;
+    }
+    .comprar{
+        font-size: 30px;
+    }
+    .añadirProductoButton {
+        margin-top: 51px;
+    }
+}
+@media (max-width:870px){
+      
+    .products {
+        margin-left: 226px;
+    }
+        .añadirProductoButton {
+            margin-top: 64px;
+        }
+        .titleMiListaCompra h2 {
+            margin-bottom: -67px;
+        }
+        .buscadorMiListaCompra input {
+            margin-top: 79px;
+        }
+
+}
+@media (max-width:850px){
+    .productsHacerCompra {
+        width: 100%;
+    }
+      .productsList{
+        height: 605px;
+      }
+    .products {
+        width: 507px;
+    }
+    .añadirProductoButton {
+        margin-top: 75px;
+    }
+    .titleMiListaCompra {
+        height: 73px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 78px;
+    }
+    .listaMiListaCompra {
+        max-height: 59%;
+    }
+}
+@media(max-width:830px){
+    .products input{
+        width: 66%;
+    }
+    .añadirProductoButton {
+        margin-top: 86px;
+    }
+}
+@media (max-width:825px){
+
+    .products {
+        width: 470px;
+    }
+    .productsHacerCompra {
+        width: 97%;
+        align-items: center;
+
+    }
+    .parteIzquierdaHacerCompra {
+        font-size: 25px;
+        width: 224%;
+    }
+    .numberHacerCompra {
+        font-size: 17px;
+        width: 37px;
+    }
+    .parteDerechaHacerCompra{
+        display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    }
+    .cantidadPrecioProducto{
+        margin-bottom: 5px;
+    }
+    .iconHacerCompra {
+        margin-top: -47px;
+        margin-left: 14px;
+    }
+    .parteBaja {
+        font-size: large;
+        justify-content: space-around;
+    margin-left: -67px;
+
+    }
+    .total-cantidad {
+        margin-right: 134px;
+    }
+    .añadir-productos a {
+        font-size: 31px;
+    }
+    .compra-by-supermarket-wrapper{
+        display: flex;
+    flex-direction: column;
+    }
+    .compra-by-supermarket {
+        background-size: cover;
+        height: 696px;
+
+    }
+    .selected-title {
+        font-size: 19px;
+    }
+    .supermarket {
+        font-size: 23px;
+    }
+    .listaCompraBySupermarket {
+        width: 798px;
+        margin-left: -153px;
+        height: 222px;
+    }
+    .products-by-supermarket-title {
+        padding-left: 158px;
+        margin-top: -52px;
+        margin-bottom: 21px;
+    }
+    .parteIzquierdaBySupermarket {
+        font-size: 20px;
+        width: 317px;
+        margin-left: -71px;
+        margin-right: 43px;
+
+    }
+    .parteDerechaBySupermarket{
+        font-size: 22px;
+    }
+    .supermarketBySupermarket {
+        font-size: 38px;
+    }
+    .productsBySupermarket input{
+        width: 22%;
+    font-size: 20px;
+    }
+    .total-by-supermarket {
+        font-size: xx-large;
+    }
+    .añadirProductoButton {
+        margin-top: 35px;
+        width: 250px;
+    font-size: smaller;
+    height: 56px;
+    }
+    .miListaCompra{
+        height: 1132px;
+    }
+    .añadirProductoButton{
+        margin-top: 20px;
+    }
+    .titleMiListaCompra h2{
+        margin-bottom: 2px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 20px;
+    }
+    .parteDerechaMiListaCompra{
+        width: 29%;
+
+    }
+}
+@media (max-width:820px){
+
+    .parteBaja {
+  
+        margin-left: 50px;
+    }
+    .listaCompraBySupermarket {
+     
+        width: 825px;
+    }
+    .nav-link-wrapper {
+        margin-top: 151px;
+    }
+    .productsList{
+        margin-right: 113px;
+    }
+}
+@media (max-width:800px){
+        .añadirProductoButton {
+            margin-top: 39px;
+        }
+}
+@media (max-width:790px){
+.listaCompra{
+    padding-top: 110px;
+    height: 662px;
+}
+.productsList {
+    height: 557px;
+}
+    .products {
+        margin-left: 204px;
+        width: 470px;
+    }
+    .comprar {
+        font-size: 27px;
+    }
+    .listaCompraBySupermarket {
+        width: 814px;
+        margin-left: -164px;
+        height: 198px;
+    }
+    .parteIzquierdaBySupermarket{
+        margin-right: 11px;
+    }
+    .añadirProductoButton {
+        margin-top: 9px;
+    }
+    .miListaCompra {
+        height: 1069px;
+    }
+    .buscadorMiListaCompra input {
+        width: 97%;
+        margin-top: 2px;
+    }
+    .buscadorMiListaCompra {
+        padding-bottom: 54px;
+    }
+    .parteIzquierdaMiListaCompra {
+        font-size: 21px;
+    }
+    .parteDerechaMiListaCompra{
+        font-size: 21px;
+    }
+    .productsMiListaCompra input{
+        font-size: 18px;
+    }
+    .total-cantidad-miListaCompra{
+        font-size: xx-large;
+
+    }
+    .comprarMiListaCompra {
+        font-size: xx-large;
+        margin-left: -231px;
+    }
+}
+@media (max-width:770px){
+    .añadirProductoButton {
+        margin-top: 19px;
+    }
+    .productsList {
+        margin-right: 108px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 22px;
+      
+    }
+    .listaCompraBySupermarket {
+      
+        width: 796px;
+    }
+    .añadir-productos {
+        margin-left: -85px;
+        margin-top: 7px;
+    }
+   .productsHacerCompra{
+    margin-bottom: 10px;
+   }
+   .parteBaja{
+    margin-left: 18px
+   }
+   .añadir-productos {
+    margin-top: 9px;
+   }
+   .compartir{
+    font-size: 40px;
+   }
+   .iconCompartir{
+    font-size: smaller;
+   }
+}
+@media (max-width:760px){
+        .añadirProductoButton {
+            margin-top: 27px;
+        }
+}
+@media (max-width:750px){
+    .productsList {
+        margin-right: 99px;
+        height: 527px;
+    }
+        .products {
+            margin-left: 194px;
+        width: 462px;
+        }
+        .productsBySupermarket {
+            width: 46%;
+            margin-left: 419px;
+        }
+        .products-by-supermarket-title {
+            margin-top: -115px;
+    padding-left: 204px;
+            margin-bottom: 7px;
+        }
+    .parteIzquierdaHacerCompra{
+        width: 187%;
+    margin-right: 53px;
+    font-size: 21px;
+    }
+    .parteDerechaHacerCompra{
+        font-size: 21px;
+    }
+    .supermarket {
+        font-size: 20px;
+    }
+    .supermarketBySupermarket {
+        font-size: 28px;
+    }
+    .selected-title {
+        font-size: 14px;
+    }
+    .listaCompraBySupermarket {
+        width: 687px;
+        margin-left: -132px;
+    height: 179px;
+    }
+    .parteIzquierdaBySupermarket{
+        width: 198px;
+    font-size: 15px;
+    }
+    .parteDerechaBySupermarket {
+        font-size: 18px;
+        width: 66%;
+    }
+    .compra-by-supermarket {
+        background-size: contain;
+        height: 548px;
+        background-position: center;
+    }
+    .productsBySupermarket input {
+        width: 19%;
+        font-size: 16px;
+    }
+    .total-by-supermarket {
+        font-size: x-large;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 45px;
+    }
+    .miListaCompra {
+        height: 1079px;
+    }
+    .parteIzquierdaMiListaCompra{
+        width: 40%;
+    }
+    .añadirProductoButton {
+        margin-top: 38px;
+    }
+    .productsHacerCompra {
+
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:735px){
+       
+    .añadirProductoButton {
+        margin-top: 47px;
+    }
+    .añadir-productos {
+        margin-left: 80px;
+    }
+    .listaCompraBySupermarket {
+        margin-left: -139px;
+    }
+    .parteBaja {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:732px){
+    .products {
+        margin-left: 181px;
+        width: 455px;
+    }
+    .añadir-productos {
+        margin-left: -73px;
+    }
+    .listaCompraBySupermarket{
+        width: 682px;
+    }
+    .añadirProductoButton {
+        margin-top: 54px;
+    }
+}
+@media (max-width:725px){
+    .products {
+        margin-left: 183px;
+        width: 446px;
+    }
+    .añadirProductoButton {
+        margin-top: 54px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 57px;
+    }
+    .listaCompraBySupermarket {
+        
+        margin-left: -148px;
+        
+    }
+}
+@media (max-width:710px){
+       
+            .products {
+                width: 436px;
+    margin-left: 177px;
+            }
+            .productsBySupermarket{
+                margin-left: 409px;
+}
+            
+            .products-by-supermarket-title{
+                padding-left: 172px;
+            }
+            .listaCompraBySupermarket {
+                width: 678px;
+            }
+            .parteIzquierda{
+                width: 51%;
+            }
+            .comprar {
+                font-size: 24px;
+            }
+            .buscadorMiListaCompra input{
+                margin-top: 60px;
+}
+.añadirProductoButton {
+    margin-top: 62px;
+}
+            
+}
+@media (max-width:700px){
+    .content-wrapper {
+        font-size: x-large;
+    }
+    .listaCompra {
+        padding-top: 87px;
+        height: 534px;
+    }
+    .productsList {
+        margin-right: 123px;
+        height: 437px;
+    }
+    .products {
+        width: 403px;
+        margin-left: 190px;
+    }
+    
+    .parteIzquierda{
+        width: 66%;
+margin-right: 16px;
+    }
+    .parteDerecha {
+        width: 33%;
+
+    }
+    .comprar {
+        font-size: 24px;
+        margin-left: -24px;
+    }
+    .productsMiListaCompra {
+        margin-left: 13px;
+    }
+    .buscadorMiListaCompra input {
+    margin-top: 43px;
+}
+.parteIzquierdaMiListaCompra{
+    width: 42%;
+    margin-left: -30px;
+}.miListaCompra {
+    height: 999px;
+}
+.añadirProductoButton {
+    margin-top: 29px;
+}
+}
+@media(max-width:690px){
+    .añadir-productos {
+        margin-left: -77px;
+    }
+    .listaCompraBySupermarket {
+        width: 673px;
+    }
+    .añadirProductoButton {
+        margin-top: 36px;
+    }
+}
+@media (max-width:680px){
+    .productsList {
+      
+        margin-right: 114px;
+    }
+    .products {
+        
+        margin-left: 182px;
+    }
+    .total-cantidad {
+        margin-right: 0px;
+    }
+    .añadir-productos {
+        margin-left: -12px;
+    }
+    .añadir-productos a {
+        font-size: 26px;
+    }
+    .listaCompraBySupermarket {
+        margin-left: -155px;
+        width: 675px;
+        height: 160px;
+    }
+    .productsMiListaCompra {
+        width: 112%;
+        margin-left: 16px;
+    }
+    .añadirProductoButton {
+        margin-top: 41px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 46px;
+    }
+
+}
+@media (max-width:670px){
+
+    .products {
+        
+        margin-left: 173px;
+    }
+    .products-by-supermarket-title {
+        padding-left: 155px;
+    }
+    .listaCompraBySupermarket {
+        width: 672px;
+        margin-left: -164px;
+        height: 179px;
+    }
+    .añadirProductoButton {
+        margin-top: 52px;
+        width: 228px;
+        height: 46px;
+}
+}
+@media (max-width:660px){
+    .productsList {
+        margin-right: 104px;
+    }
+    .products {
+        
+        margin-left: 171px;
+    }
+    .añadirProductoButton {
+        margin-top: 59px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 56px;
+    }
+    .listaMiListaCompra {
+     
+        width: 77%;
+    }
+}
+@media (max-width:650px){
+    .añadirProductoButton {
+        margin-top: 19px;
+    }
+    .comprarMiListaCompra {
+        margin-left: -204px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 10px;
+    }
+    .parteIzquierdaMiListaCompra{
+        margin-right: 32px;
+    }
+    .miListaCompra {
+        height: 906px;
+    }
+}
+@media (max-width:640px){
+    .productsList {
+        margin-right: 94px;
+    }
+    .products {
+        
+        margin-left: 161px;
+    }
+    .listaCompraBySupermarket {
+     
+        width: 664px;
+    }
+    .miListaCompra {
+        height: 871px;
+    }
+    .parteDerechaMiListaCompra {
+        width: 35%;
+    }
+    .listaMiListaCompra{
+        width: 75%;
+    }
+    .comprarMiListaCompra{
+        margin-left: -190px;
+    }
+    .titleMiListaCompra {
+        margin-left: 34px;
+    }
+    .añadirProductoButton {
+        margin-top: 6px;
+    }
+}
+@media (max-width:630px){
+
+    .productsList {
+        margin-right: 83px;
+    }
+        .products {
+            margin-left: 155px;
+            width: 401px;
+
+        }
+        .añadir-productos a {
+            font-size: 23px;
+        }
+        .products-by-supermarket-title {
+            padding-left: 141px;
+        }
+        .listaCompraBySupermarket {
+            width: 678px;
+            margin-left: -184px;
+            height: 176px;
+        }
+        .productsBySupermarket input {
+            width: 17%;
+            font-size: 14px;
+        }
+        .parteDerechaBySupermarket {
+            font-size: 17px;
+        }
+        .añadirProductoButton{
+            width: 233px;
+            margin-top: 14px;
+    height: 45px;
+        }
+        .buscadorMiListaCompra input {
+            margin-top: 11px;
+        }
+}
+@media(max-width:615px){
+    .products {
+        margin-left: 145px;
+        width: 381px;
+    }
+    .miListaCompra {
+        height: 847px;
+    }
+    .añadirProductoButton{
+        width: 219px;
+    font-size: smaller;
+    height: 44px;
+    margin-top: 12px
+    }
+}
+@media (max-width:600px){
+    .container-home {
+        background-position-y: 99px;
+        background-size: 167px;
+     
+    }
+    .titulo-principal {
+        font-size: 39px;
+    }
+    .nav-link-wrapper {
+        font-size: x-large;
+    }
+    .buscador-wrapper input {
+        width: 66%;
+        font-size: large;
+    }
+    
+    .products{
+        margin-left: 149px;
+    }
+    .productsHacerCompra {
+        
+        width: 100%;
+    }
+    .listaCompraBySupermarket {
+        margin-left: -197px;
+        
+    }
+    .miListaCompra {
+        height: 836px;
+    }
+    .añadirProductoButton{
+        width: 204px;
+    font-size: x-large;
+    height: 43px;
+    margin-top: 16px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 7px;
+    }
+    .parteIzquierdaMiListaCompra {
+        font-size: 18px;
+    }
+    .parteDerechaMiListaCompra {
+        font-size: 18px;
+    }
+    .productsMiListaCompra input {
+        font-size: 15px;
+    }
+    .iconMiListaCompra {
+        margin-top: -40px;
+        font-size: 17px;
+    }
+    .total-cantidad-miListaCompra {
+        font-size: x-large;
+    }
+    .comprarMiListaCompra {
+        font-size: larger;
+    }
+}
+@media (max-width:585px){
+    .buscador-wrapper input {
+        font-size: 16px;
+    }
+    .listaCompra {
+        padding-top: 71px;
+        height: 444px;
+    }
+    .productsList {
+        margin-right: 104px;
+        height: 369px;
+    }
+        .products {
+            margin-left: 158px;
+           width: 345px;
+}
+.products input {
+    font-size: 13px;
+   
+        width: 41%;
+    
+}
+.listaCompraBySupermarket {
+
+    width: 671px;
+}
+.parteIzquierda {
+    font-size: 13px;
+  
+}
+.parteDerecha {
+width: 46%;
+}
+.btn {
+    font-size: 14px;
+}
+.supermarketBySupermarket {
+    font-size: 24px;
+    margin-top: 44px;
+}
+
+.añadirProductoButton{
+    margin-top: 24px;
+
+}
+.comprar {
+   
+    margin-left: 19px;
+}
+.iconBySupermarket {
+    font-size: 13px;
+    margin-top: -27px;
+}
+  
+}
+@media (max-width:580px){
+   
+
+.añadirProductoButton{
+    margin-top: 24px;
+
+}
+.buscadorMiListaCompra input {
+    margin-top: 21px;
+}
+  
+}
+@media (max-width:570px){
+    .productsList {
+    
+        margin-right: 96px;
+    }
+        .products {
+            margin-left: 146px;
+       
+        }
+        .listaCompraBySupermarket {
+            width: 666px;
+            height: 161px;
+        }
+        .miListaCompra {
+            height: 784px;
+        }
+        .añadirProductoButton{
+            margin-top: 7px;
+
+        }
+        .buscadorMiListaCompra input {
+            margin-top: 5px;
+        }
+}
+@media (max-width:560px){
+  
+    .añadirProductoButton {
+        margin-top: 12px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 12px;
+    }
+    .parteBaja {
+ 
+        margin-left: 0px;
+    }
+    .listaCompraBySupermarket {
+      
+        width: 655px;
+    }
+    
+}
+@media (max-width:550px){
+    .productsList {
+        margin-right: 86px;
+    }
+    .productsBySupermarket {
+        margin-left: 395px;
+    }
+    .listaCompraBySupermarket {
+       
+        width: 644px;
+    }
+    .añadir-productos {
+        margin-left: 19px;
+    }
+    .añadirProductoButton {
+        margin-top: 18px;
+    }
+    .comprarMiListaCompra {
+        margin-left: -160px;
+    }
+}
+@media (max-width:560px){
+    .añadirProductoButton {
+        margin-top: 23px;
+    }
+    .comprarMiListaCompra {
+        margin-left: -161px;
+    }
+}
+@media (max-width:550px){
+    .añadirProductoButton {
+        margin-top: 31px;
+    }
+    
+}
+@media (max-width:535px){
+  .title{
+    height: 138px; 
+  }
+  .nav-link-wrapper {
+    font-size: large;
+}
+  .productsList {
+    margin-right: 79px;
+}
+    .products {
+        margin-left: 136px;
+width: 326px;
+    }
+    .listaCompraHacerCompra {
+        margin-left: 60px;
+    }
+    .productsHacerCompra{
+        width: 103%;
+        align-items: baseline;
+    }
+    .parteIzquierdaHacerCompra{
+        font-size: 18px;
+        width: 645px;
+    }
+    .parteDerechaHacerCompra{
+    
+    font-size: 20px;
+    }
+    .numberHacerCompra {
+        font-size: 14px;
+        width: 34px;
+    }
+    .supermarket {
+        font-size: 16px;
+    }
+    .listaCompraBySupermarket {
+        width: 638px;
+        height: 149px;
+       
+    }
+    .products-by-supermarket-title {
+        padding-left: 122px;
+    }
+    .compra-by-supermarket{
+        margin-bottom: -76px;
+    }
+    .supermarketBySupermarket {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: 6px;
+        font-size: large;
+
+    }
+    .titleMiListaCompra {
+        margin-left: 34px;
+    }
+    .miListaCompra {
+        height: 739px;
+    }
+    .añadirProductoButton {
+        font-size: 23px;
+        height: 35px;
+        margin-top: 12px;
+        width: 203px;
+    }
+    .comprarMiListaCompra {
+        font-size: x-large;
+        margin-left: -151px;
+    }
+    .parteIzquierdaMiListaCompra {
+        font-size: 17px;
+        margin-left: 4px;
+        width: 70%;
+    }
+    .productsMiListaCompra {
+        width: 102%;
+        margin-left: 24px;
+        margin-bottom: 15px;
+    }
+    .parteDerechaMiListaCompra{
+        width: 39%;
+
+    }
+    .iconMiListaCompra {
+        margin-top: -35px;
+    }
+    
+}
+@media (max-width:500px){
+   
+    .añadirProductoButton{
+        margin-top: 31px;
+    }
+   
+    .title-wrapper h2{
+        font-size: x-large;
+    }
+    .buscador-wrapper{
+        width: 89%;
+    }
+    .buscador-wrapper input{
+        width: 75%;
+        font-size: medium;
+    }
+    a h2{
+        padding-top: 35px;
+    font-size: 30px;
+    }
+    #text-field-container{
+        font-size: medium;
+        margin-bottom: -17px;
+        width: fit-content;
+    }
+    .listaCompra {
+     
+        width: -webkit-fill-available;
+    }
+    .productsList {
+        margin-right: 69px;
+    }
+    .products {
+        margin-left: 120px;
+    }
+    .iconBySupermarket {
+  
+        margin-top: -35px;
+    }
+    .numberHacerCompra {
+        font-size: 16px;
+        width: 32px;
+    }
+        .productsHacerCompra {
+          
+            width: 102%;
+            margin-bottom: 5px;
+        }
+        .products-by-supermarket-title {
+            padding-left: 106px;
+        }
+        .listaCompraBySupermarket {
+           
+            margin-left: -214px;
+            width: 624px;
+        }
+        .productsBySupermarket{
+            width: 41%;
+        }
+        .listaMiListaCompra {
+            width: 73%;
+        }
+        .productsMiListaCompra {
+       
+            margin-left: 19px;
+           
+        }
+        .buscadorMiListaCompra input {
+            margin-top: 25px;
+        }
+            .buscadorMiListaCompra {
+            padding-bottom: 37px;
+            margin-top: 11px;
+        }
+        .miListaCompra{
+            height: 535px;
+        }
+}
+@media (max-width:425px){
+
+    .titulo-principal{
+        font-size: 34px;
+    }
+    .container-home {
+        background-position-y: 101px;
+    }
+    a h2 {
+        font-size: 27px;
+    }
+    .productsList {
+        margin-right: 59px;
+    }
+    .buscador-wrapper{
+        width: 70%;
+        margin-left: 69px;
+    }
+        .title-wrapper h2 {
+        font-size: x-large;
+        margin-top: 35px;
+    }
+    .buscador-wrapper input {
+        font-size: small;
+        width: 85%;
+        margin-bottom: 13px;
+    }
+    .products {
+        margin-left: 90px;
+        width: 300px;
+    }
+    .listaCompra{
+        padding-top: 62px;
+    }
+        .icon {
+
+        margin-top: -24px;
+    }
+    .comprar {
+        margin-left: -6px;
+        font-size: 20px;
+    }
+    .productsList {
+        height: 300px;
+    }
+    .parteIzquierdaHacerCompra {
+        font-size: 12px;
+    }
+    .parteDerechaHacerCompra {
+        font-size: 15px;
+    }
+    .numberHacerCompra {
+        font-size: 12px;
+        width: 21px;
+    }
+    .supermarket {
+        font-size: 13px;
+    }
+    .parteBaja{
+        font-size: small;
+        margin-left: 26px;
+    }
+    .total-title {
+        margin-right: 7px;
+    }
+    .total-cantidad {
+        font-size: x-large;
+    }
+    .compartir {
+        font-size: 25px;
+    }
+    .iconCompartir {
+        margin-top: -45px;
+    }
+    .listaCompraHacerCompra {
+        margin-left: 29px;
+    }
+    .btn{
+        height: 25px;
+        font-size: 14px;
+    }
+    .iconHacerCompra {
+   
+        margin-top: -33px;
+    }
+    .añadir-productos a {
+        font-size: 19px;
+    }
+    .compra-by-supermarket {
+        background-position: top;
+    }
+    .products-by-supermarket-title {
+        margin-bottom: -6px;
+        margin-top: -170px;
+    }
+    .products-by-supermarket-title {
+        padding-left: 91px;
+    }
+    .selected-title {
+        font-size: 11px;
+    }
+    .supermarketBySupermarket {
+        font-size: 19px;
+        margin-top: 58px;
+    }
+    .listaCompraBySupermarket {
+        margin-left: -230px;
+        width: 576px;
+        height: 128px;
+    }
+    .parteIzquierdaBySupermarket {
+        font-size: 11px;
+        width: 130px;
+    }
+    .parteDerechaBySupermarket {
+        font-size: 12px;
+    }
+    .productsBySupermarket input {
+        font-size: 12px;
+        width: 13%;
+    }
+    .content-wrapper {
+        font-size: large;
+    }
+    .titleMiListaCompra {
+        margin-left: 0px;
+        height: 106px;
+    }
+        .añadir-producto {
+        margin-left: 33px;
+        margin-top: -19px;
+    }
+    .miListaCompra{
+        background-size: 124%;
+        height: 550px;
+    }
+        .añadirProductoButton {
+        margin-top: 35px;
+        font-size: 19px;
+        height: 29px;
+        width: 168px;
+    }
+    .buscadorMiListaCompra {
+        padding-bottom: 23px;
+    }
+    .listaMiListaCompra {
+        width: 71%;
+        margin-left: 77px;
+        max-height: 61%;
+    }
+    .parteIzquierdaMiListaCompra {
+        font-size: 13px;
+        width: 106%;
+        margin-right: 10px;
+    }
+    .parteDerechaMiListaCompra{
+        width: 62%;
+    }
+    .productsMiListaCompra input {
+        font-size: 12px;
+    }
+    
+    .iconMiListaCompra {
+      
+        font-size: 14px;
+        margin-top: -33px;
+        margin-left: 9px;
+    }
+    .buscadorMiListaCompra input {
+        margin-top: -8px;
+        font-size: smaller;
+    }
+    .total-cantidad-miListaCompra{
+        margin-right: 26px;
+    }
+    .comprarMiListaCompra{
+        margin-left: -91px;
+    }
+    .iconCompartir{
+        font-size: x-large;
+    }
+}
+
+@media(max-width:410px){
+    .products {
+        margin-left: 86px;
+        width: 292px;
+    }
+    .listaCompraBySupermarket {
+      
+        width: 567px;
+    }
+    .products-by-supermarket-title {
+      
+        padding-left: 78px;
+    }
+    .añadirProductoButton {
+        margin-top: 44px;
+    }
+        .compra-by-supermarket{
+            height: 440px;
+    
+        }
+    
+    .iconBySupermarket {
+        margin-top: -27px;
+    }
+    .iconMiListaCompra{
+        margin-top: -24px
+    }
+}
+@media(max-width:400px){
+    .title-wrapper h2 {
+        font-size: larger;
+    }
+    .productsList {
+        margin-right: 55px;
+    }
+    .products {
+        margin-left: 82px;
+        width: 292px;
+    }
+    .parteIzquierda {
+        font-size: 11px;
+    }
+    .buscadorMiListaCompra {
+        margin-top: 30px;
+    }
+    .listaCompraBySupermarket {
+        height: 116px;
+        margin-left: -239px;
+        width: 568px;
+    }
+    .products-by-supermarket-title {
+      
+        padding-left: 76px;
+    }
+    .compra-by-supermarket {
+      
+        height: 431px;
+    }
+    .añadirProductoButton{
+        margin-top: 47px;
+    }
+    .buscadorMiListaCompra {
+        padding-bottom: 12px;
+    }
+    .añadirProductoButton {
+        
+        margin-top: 49px;
+       
+    }
+}
+@media(max-width:375px){
+    .buscador-wrapper {
+        margin-left: 63px;
+    }
+    .productsList {
+        margin-right: 51px;
+        height: 259px;
+    }
+    .products {
+        margin-left: 77px;
+        width: 273px;
+    }
+    .parteIzquierda {
+        font-size: 10px;
+    }
+    .comprar {
+        margin-left: 5px;
+        font-size: 17px;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .iconHacerCompra {
+        margin-top: -30px;
+    }
+    .parteBaja {
+        font-size: x-small;
+        margin-left: 32px;
+    
+    }
+    .total{
+        margin-right: 21px;
+    }
+    .total-cantidad {
+        font-size: large;
+    }
+    .añadir-productos {
+        margin-left: -7px;
+        margin-top: 2px;
+    }
+    .añadir-productos a {
+        font-size: 17px;
+    }
+    .listaCompraBySupermarket {
+        margin-left: 54px;
+        width: 252px;
+    }
+    .products-by-supermarket-title {
+        padding-left: 85px;
+    }
+    .supermarketBySupermarket {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    .selected-title {
+        font-size: 9px;
+        margin-right: 15px;
+    }
+    .compra-by-supermarket {
+  
+        height: 407px;
+    }
+    .productsBySupermarket {
+        width: 292%;
+        margin-left: -163px;
+    }
+    .parteIzquierdaBySupermarket {
+        font-size: 11px;
+        width: 112px;
+    }
+    .parteDerechaBySupermarket {
+     
+        width: 17%;
+    }
+    .iconBySupermarket {
+        font-size: 11px;
+        margin-top: -26px;
+    }
+        .miListaCompra {
+        background-size: 124%;
+        height: 506px;
+    }
+    .titleMiListaCompra {
+        height: 70px;
+    }
+        .listaMiListaCompra {
+        width: 72%;
+        margin-left: 65px;
+        max-height: 54%;
+        }
+        .buscadorMiListaCompra input{
+            margin-bottom: 23px;
+            margin-top: 4px;
+        }
+        .buscadorMiListaCompra {
+        padding-bottom: 20px;
+        padding-inline: 27px;
+    }
+    .iconMiListaCompra {
+        margin-top: -24px;
+    }
+    .total-cantidad-miListaCompra {
+        font-size: larger;
+    }
+    .comprarMiListaCompra {
+        font-size: larger;
+    }
+    .añadirProductoButton{
+        margin-top: 41px;
+    }
+}
+@media(max-width:365px){
+    .products {
+        margin-left: 70px;
+    }
+    .parteIzquierda {
+        margin-right: 6px;
+    }
+    .listaCompraBySupermarket {
+        margin-left: 58px;
+        width: 240px;
+    }
+    .iconBySupermarket{
+        margin-top: -24px;
+        margin-left: 6px;
+    }
+    .products-by-supermarket-title {
+        padding-left: 76px;
+    }
+    .total-by-supermarket {
+        font-size: large;
+    }
+    .compra-by-supermarket {
+        height: 352px;
+    }
+    .añadirProductoButton {
+        margin-top: 47px;
+    }
+    .buscadorMiListaCompra {
+        padding-bottom: 6px;
+    }
+    .buscadorMiListaCompra input {
+        margin-bottom: 34px;
+        margin-top: -8px;
+    }
+    .añadir-productos {
+        margin-top: 8px;
+    }
+    
+}
+@media (max-width:320px){
+    .container-home{
+        margin-top: 88px;
+        background-position-y: 72px;
+    }
+    .titulo-principal {
+        font-size: 27px;
+    }
+   a h2{
+    padding-left: 10px;
+    font-size: 22px;
+   }
+   
+   .buscador-wrapper{
+    margin-left: 51px;
+}
+.listaCompra {
+   
+    padding-top: 46px;
+}
+.productsList {
+    margin-right: 44px;
+    height: 237px;
+}
+.añadir-productos {
+    margin-left: 0px;
+}
+.añadir-productos a {
+    font-size: 12px;
+}
+.products {
+    margin-left: 57px;
+    width: 221px;
+}
+.parteIzquierda {
+    margin-right: 5px;
+    width: 63%;
+}
+.products input {
+    font-size: 10px;
+    width: 32%;
+}
+.parteDerecha {
+        width: 34%;
+    }
+.btn {
+    font-size: 11px;
+}
+.icon {
+    margin-top: -20px;
+}
+.listaCompra ::-webkit-scrollbar {
+    width: 3px;
+}
+
+.title {
+    height: 105px;
+}
+.productsHacerCompra {
+    margin-bottom: 5px;
+    width: 97%;
+}
+.parteDerechaHacerCompra {
+    font-size: 13px;
+    width: 37%;
+}
+.listaCompraHacerCompra{
+    margin-left: 18px;
+}
+.supermarket {
+    font-size: 11px;
+}
+.iconHacerCompra {
+
+    margin-top: -29px;
+}
+.parteBaja {
+    margin-left: 30px;
+    align-items: baseline;
+}
+.total-cantidad {
+ 
+    width: max-content;
+}
+.compartir {
+    font-size: 18px;
+}
+.iconCompartir{
+    margin-top: -25px;
+}
+.products-by-supermarket-title {
+    padding-left: 60px;
+    margin-bottom: -7px;
+    margin-top: -184px;
+}
+.selected-title {
+
+    margin-right: 10px;
+}
+.listaCompraBySupermarket {
+    margin-left: 58px;
+    width: 204px;
+    height: 111px;
+}
+.productsBySupermarket {
+    margin-left: 85px;
+    width: 108%;
+    justify-content: flex-start;
+}
+.parteIzquierdaBySupermarket {
+
+    width: 46%;
+    margin-right: 5px;
+    font-size: 9px;
+}
+.parteDerechaBySupermarket {
+    width: 39%;
+}
+.iconBySupermarket{
+    margin-top: -24px;
+        margin-left: 6px;
+}
+.total-by-supermarket {
+        font-size: large;
+    }
+.btn{
+    width: 15px;
+}
+.productsBySupermarket input {
+
+    width: 16%;
+}
+.titleMiListaCompra {
+        font-size: large;
+}
+.miListaCompra {
+        height: 425px;
+    }
+    .buscadorMiListaCompra{
+        margin-top: 14px;
+        input{
+            margin-bottom: 16px;
+            margin-top: -9px;
+        }
+    }
+    .listaMiListaCompra {
+        width: 73%;
+        margin-left: 51px;
+        max-height: 63%;
+    }
+    .parteIzquierdaMiListaCompra {
+        font-size: 11px;
+      
+        width: 118%;
+    }
+    .productsMiListaCompra{
+        width: 97%;
+    }
+    .total-cantidad-miListaCompra {
+        font-size: large;
+    }
+        .comprarMiListaCompra {
+        font-size: large;
+        margin-left: -68px;
+    }
+    .añadirProductoButton {
+        font-size: 11px;
+        height: 20px;
+        margin-top: 37px;
+        width: 122px;
+    }
+}
+@media (max-width:300px){
+    .products {
+        margin-left: 52px;
+        width: 211px;
+    }
+    .productsList {
+        height: 206px;
+        margin-right: 41px;
+    }
+    .listaCompra {
+        height: 274px;
+    }
+    .productsHacerCompra {
+      
+        width: 95%;
+    }
+    .content {
+        font-size: large;
+    }
+    .parteBaja {
+       
+        margin-left: 26px;
+    }
+    .añadir-productos a {
+        font-size: 11px;
+    }
+    .selected-title {
+        font-size: 7px;
+    }
+    .listaCompraBySupermarket {
+        height: 78px;
+        margin-left: 54px;
+        width: 193px;
+    }
+    .compra-by-supermarket {
+        height: 341px;
+    }
+    .compra-by-supermarket ::-webkit-scrollbar {
+        
+        width: 3px;
+    }
+    .parteDerechaBySupermarket {
+        width: 37%;
+        font-size: 10px;
+    }
+    .parteBaja {
+        font-size: x-small;
+    }
+    .total-cantidad {
+        font-size: large;
+    }
+    .total-title {
+        margin-right: 9px;
+    }
+    .añadirProductoButton{
+        margin-top: 49px;
+    }
+    .buscadorMiListaCompra input {
+        margin-bottom: 25px;
+        margin-top: 4px;
+    }
+    .listaMiListaCompra {
+       
+            margin-left: 51px;
+            max-height: 58%;
+            width: 73%;
+        
+    }
+    .iconMiListaCompra {
+        margin-top: -20px;
+        font-size: 12px;
+        margin-left: 4px;
+    }
+    
+}
+    */

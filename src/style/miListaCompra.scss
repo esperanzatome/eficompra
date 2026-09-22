@@ -1,0 +1,129 @@
+.buscadorMiListaCompra{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    padding-bottom: 93px;
+    width: -webkit-fill-available;
+    padding-inline: 46px;
+    @include input-element();
+
+}
+.buscador-wrapper-MiListaCompra{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+
+}
+.buscadorMiListaCompra input{
+    border-bottom: 1px solid black;
+ 
+}
+.añadirWrapper{
+    width: 89%;
+}
+.añadir-producto{
+    @include añadir-producto();
+    @include base-btn();
+    display: flex;
+    height: unset;
+    width: auto;
+    margin-left: 0;
+    justify-content: center
+    
+}
+.añadirProductoButton{
+    width: 334px;
+    font-size: larger;
+    height: 63px;
+    font-family: "Indie Flower", sans-serif;
+}
+
+.productsMiListaCompra{
+    @include products();
+    width: 108%;
+    column-gap: 2px;
+    margin-left: 49px;
+ 
+ 
+}
+.productsMiListaCompra input{
+    width: 21%;
+    font-size: 28px;
+    border-color: black;
+}
+
+.miListaCompra{
+    @include listaCompra();
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    background-position:unset;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 1282px;
+
+    ::-webkit-scrollbar{
+        width: 6px;
+        height: 1000px;
+        }
+        ::-webkit-scrollbar-track-piece {
+        background-color:#ede652;
+        }
+        ::-webkit-scrollbar-thumb  {
+        background-color: #54a878;
+        }
+}
+.listaMiListaCompra{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden scroll;
+    width: 63%;
+    height: fit-content;
+    max-height: 71%;
+    
+}
+.parteIzquierdaMiListaCompra{
+    @include parteIzquierda();
+    width: 43%;
+    font-size: 29px;
+    margin-left: 0px;
+    display: list-item;
+    margin-right: 46px;
+    margin-bottom: 0px;
+   
+ 
+}
+.parteDerechaMiListaCompra{
+    @include parteDerecha();
+    justify-content: space-evenly;
+    font-size: 29px;
+    width: 26%;
+   
+}
+.iconMiListaCompra{
+    @include icon();
+    margin-top: -50px;
+    font-size: 25px;
+    margin-left: 2px;
+}
+
+.titleMiListaCompra{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 154px;   
+      
+} 
+.total-cantidad-miListaCompra{
+    display: flex;
+    justify-content: right;
+    margin-right: 61px;
+    font-size: xxx-large;
+    text-decoration-line: underline;
+
+}
+.comprarMiListaCompra{
+    margin-left: -343px;
+    margin-top: 20px;
+}

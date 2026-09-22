@@ -1,0 +1,109 @@
+
+.content-wrapper-listaCompartir{
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    font-size: -webkit-xxx-large;
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
+    padding: 1%;
+}
+    
+.listaCompraCompartir{
+    
+    border: groove;
+    margin-top: 1%;
+    height: fit-content;
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    padding-top: 1%;
+    margin-bottom: 5%;
+    background: #d9dee3;
+
+}
+
+.img-wrapper{
+    display: contents;
+   
+}
+img{
+
+    width: 11%;
+   
+    padding-bottom: 1%;
+    height: min-content;
+
+
+}
+
+.title-wrapper-listaCompartir{
+align-items: center;
+   height: 141px;
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #562E74
+
+}
+.titleListaCompartir{
+        width: 50%;
+      
+    display: flex
+;
+    justify-content: center;
+}
+.subtitle-wrapper{
+    display: flex
+;
+    justify-content: center;
+    font-size: smaller;
+}
+.subtitle{
+    font-size: x-large;
+}
+   
+    .listaCompartir{
+        width: -webkit-fill-available;
+        padding-top: 2%;
+
+    }
+    .title{
+        font-weight: bolder;
+    }
+    .listaCompraProducts-listaCompartir{
+        border-top: groove;
+        padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    }
+    .estadoComprado{
+        padding-left: 6%;
+    }
+    .optionsBar-listaCompartir{
+        padding-top: 9%;
+        display: flex;
+    justify-content: space-around;
+    button{
+    
+       width: 20%
+    
+    }
+    }
+ 
+    .product{
+        padding: 2%;
+        display: list-item;
+    }
+    .cabecero{
+        display: flex;
+    justify-content: space-between;
+    }
+    .fecha{
+            padding-right: 6%;
+    }

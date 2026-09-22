@@ -1,0 +1,70 @@
+
+.formulariosContentRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+   backdrop-filter: blur(2.5px);
+}
+.form{
+    width: 677px;
+    height: 540px;
+     input{
+    @include base-texto();
+    display: flex;
+    border: none;
+    border-bottom: solid #551a8b;
+    margin-inline: 18px;
+    width: -webkit-fill-available;
+   font-size: x-large;
+    font-family: unset;
+    -webkit-text-fill-color: black;
+
+
+    
+
+    } 
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #c5bcc5 inset; 
+}
+ #verContraseña{
+        margin-top: 3%
+    }
+
+.emailInput{
+    margin-bottom: 2%;
+}
+.contraseña{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    
+}
+.contraseñaCheckBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkBoxTitle{
+    margin-left: -22%;
+}
+.registroBtn{
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+    button{
+        background: #c5bcc5;
+    border: groove;
+    padding-inline: 1%;
+    border-width: medium;
+    border-color: #6a6bcf;
+   font-family: 'Indie Flower';
+   margin-right: 4%
+    }
+}
+.exit{
+    margin-left: 4%;
+    width: 100%;
+    margin-top: -5%;
+}

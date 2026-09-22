@@ -1,0 +1,845 @@
+.content-wrapper{
+ 
+    font-size: -webkit-xxx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+backdrop-filter: blur(2.5px);
+padding-top:3%;
+min-height: 100vh;
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    .title{
+        @include base-texto();
+        background-color: #dcd6dc;
+    }
+    /*
+h2{
+    margin-bottom: 0%;
+}
+*/
+}
+.optionsBar{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    a{
+    @include base-texto();
+    border-color:#6a6bcf;
+        color: #3f3f7b;
+    }
+}
+    .content{
+ 
+    font-size: large;
+    width: -webkit-fill-available;
+padding-top: 0%;
+padding-bottom: 2%;
+margin-top: -4%;
+    padding-inline: 1%;
+   
+
+}
+ 
+.buscadorProductos{
+    padding-block: 2%;
+    input{
+    @include base-texto();
+    display: flex;
+    border: none;
+    border-bottom: solid #551a8b;
+    margin-inline: 18px;
+    width: -webkit-fill-available;
+   font-size: x-large;
+    font-family: unset;
+    -webkit-text-fill-color: black;
+
+
+    
+}
+}
+.productosFrecuentes{
+  
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding-bottom: 2%;
+    row-gap: 5%;
+    width: 100%;
+    justify-items: center;
+    height: 100%;
+    .productoFrecuente{
+    @include base-texto();
+
+    border: groove;
+    padding-inline: 1%;
+    border-width: thick;
+    background: #dcd6dc;
+    font-family: unset;
+    font-size: smaller;
+    height: 56px;
+    padding-inline: 6%;
+    width: 92px;
+    text-transform: capitalize;
+row-gap: 5%;
+justify-items: center;
+
+}
+    
+}
+
+
+.categories{
+
+display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    row-gap: 1%;
+    width: 100%
+
+;
+    height: 100%;
+}
+.abecedario{
+  display: flex;
+    padding-inline: 1%;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+    font-size: x-large;
+    padding-bottom: 1%;
+
+.letra{
+         @include base-texto();
+         font-size: smaller;
+     }
+}
+}
+
+
+
+
+ .productosPorLetra{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+row-gap:1%;
+width: -webkit-fill-available;
+    justify-items: center;
+    margin-inline: 21%;
+   overflow-y: scroll;
+   
+margin-bottom: 2%;
+ box-shadow: 1px 0px 170px 20px rgb(0, 0, 0);
+
+ transition: box-shadow 0.2s ease-in-out, transform 0.2s ease;
+ padding-top: 1%;
+    border-radius: 1%;
+
+ }
+.productosPorLetra::-webkit-scrollbar{
+height: 10%;
+}
+.productosPorLetra::-webkit-scrollbar-thumb{
+    background: #bac1cc;
+    border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+ .productosPorLetra::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px;
+ }
+ .productosPorLetra::-webkit-scrollbar-thumb:hover{
+    background:#919099;
+      border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+
+.productosPorLetra:active{
+    
+box-shadow:0px 0px 10px 30px rgba(0,0,0,0.2);
+
+z-index: 10;
+}
+.pocosProductosPorLetra{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    padding-inline: 20%;
+}
+.palabra{
+   @include base-texto();
+
+    border: groove;
+    padding-inline: 1%;
+    border-width: thick;
+    background: #dcd6dc;
+    font-family: unset;
+    font-size: small;
+    height: 66px;
+    padding-inline: 2%;
+    width: 146px;
+    text-transform: capitalize;
+row-gap: 5%;
+justify-items: center;
+}
+
+
+
+.categoryTitle{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    background-size: 4%;
+    background-repeat: no-repeat;
+        font-size: xx-large;
+    display: flex;
+  
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: #201e20;
+    background-size: 8%;
+    background-position-x: 5%;
+    height: 80px;
+    background-position-y: 49%;
+  
+.categoryName{
+     padding-left: 45px;
+}
+ .exit{
+    
+   background-image: url('../exit.png');
+   width: 10%;
+   margin-left: 0%;
+    margin-top: 0%;
+   
+  background-repeat:no-repeat;
+    background-position-y: 72%;
+    background-position-x: right;
+    background-size: 50%;
+    margin-inline-end: 2%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+   button{
+    border: none;
+    background-color: transparent;
+   width: 54%;
+    height: 67%;
+   }
+}
+
+}
+
+.category{
+     @include base-texto();
+width: 91px;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: x-small;
+    padding-inline:2%;
+   background-size: 68%;
+    background-repeat: no-repeat;
+    background-color: #e8e0e0;
+    background-position-x: center;
+    background-position-y: 24%;
+text-align: center;
+    line-height: 100%;
+    
+}
+#aceiteyaliños{
+    
+       background-image: url('../iconosCategories/002-aceite-de-oliva.png');
+     
+}
+#aperitivos{
+    background-image: url('../iconosCategories/005-aperitivos.png');
+}
+#bebe{
+   background-image: url('../iconosCategories/006-cambio-de-bebe.png');
+   background-position-y: center;
+}
+#bebidas{
+   background-image: url('../iconosCategories/007-refresco.png');
+}
+#carne{
+    background-image: url('../iconosCategories/009-carne-cruda.png');
+    background-position-y: center;
+}
+#charcuteria{
+   background-image: url('../iconosCategories/011-embutidos.png');
+   background-position-y: center;
+}
+#cocinados{
+    background-image: url('../iconosCategories/012-comidas-pre-preparadas.png');
+    background-position-y: center;
+    
+}
+#conservasyahumados{
+  background-image: url('../iconosCategories/013-alimentos-enlatados.png');
+}
+
+#cuidado_personal{
+  background-image: url('../iconosCategories/001-crema.png');
+}
+#desayuno{
+    background-image: url('../iconosCategories/002-desayuno.png');
+}
+#diet{
+    background-image: url('../iconosCategories/003-dieta-equilibrada.png');
+}
+#dulces{
+   background-image: url('../iconosCategories/004-alimentos-dulces.png');
+   background-position-y: center;
+}
+#fruta{
+   background-image: url('../iconosCategories/004-fruta.png');
+}
+#harinamasasyrebozados{
+    background-image: url('../iconosCategories/005-harina.png');
+}
+#infusiones{
+     background-image: url('../iconosCategories/009-te.png');
+}
+#lácteos{
+    background-image: url('../iconosCategories/010-productos-lacteos.png');
+}
+#mascotas{
+   background-image: url('../iconosCategories/012-alimentos-para-mascotas.png');
+   background-position-y: center;
+}
+#pan{
+     background-image: url('../iconosCategories/013-pan-de-molde.png');
+}
+#pasta{
+   background-image: url('../iconosCategories/014-spaguetti.png');
+}
+#pescado{
+     background-image: url('../iconosCategories/015-pez.png');
+}
+#postres{
+   background-image: url('../iconosCategories/016-postre.png');
+}
+#salyespecias{
+     background-image: url('../iconosCategories/018-especias.png');
+}
+#salsas{
+    background-image: url('../iconosCategories/019-salsas.png');
+}
+#verduras{
+     background-image: url('../iconosCategories/vegetales.png');
+}
+
+#hogar{
+    background-image: url('../iconosCategories/007-limpieza.png');
+}
+#huevos{
+    background-image: url('../iconosCategories/008-huevos.png');
+    background-position-y: center;
+}
+#quesos{
+    background-image: url('../iconosCategories/017-tabla-de-quesos.png');
+}
+#cereales{
+     background-image: url('../iconosCategories/010-cereales.png');
+}
+#helados{
+   background-image: url('../iconosCategories/006-helado.png');
+}
+#sushi{
+    background-image: url('../iconosCategories/020-sushi.png');
+}
+
+#legumbresyarroz{
+ background-image: url('../iconosCategories/011-arroz.png');
+}
+
+#gulasysurimi{
+   background-image: url('../iconosCategories/gulas.png');
+}
+#ensaladas{
+ background-image: url('../iconosCategories/003-verdura.png');
+}
+#caldospurésysopas{
+  background-image: url('../iconosCategories/008-caldo.png');
+}
+
+#titleCataceiteyaliños{
+   background-image: url('../iconosCategories/002-aceite-de-oliva.png');
+   background-color:rgb(193 159 74)
+}
+#palabrasCataceiteyaliños{
+  
+   background-color: rgb(208 189 129)
+}
+
+#titleCataperitivos{
+    background-image: url('../iconosCategories/005-aperitivos.png');
+    background-color: #ce9874c2;;
+}
+#palabrasCataperitivos{
+    background-color:  rgb(228 193 172 / 75%)
+}
+#titleCatbebe{
+   background-image: url('../iconosCategories/006-cambio-de-bebe.png');
+   background-position-y: 78%;
+    background-position-x: 6%;
+    background-color: #b4dcf0;
+}
+#palabrasCatbebe{
+     background-color: #d3e4ed;
+
+}
+#titleCatbebidas{
+   background-image: url('../iconosCategories/007-refresco.png');
+   background-color: #97bae6;
+   padding-bottom: 1%;
+}
+#palabrasCatbebidas{
+    background-color: #bdcfe6d4;;
+}
+#titleCatcarne{
+    background-image: url('../iconosCategories/009-carne-cruda.png');
+    background-color: #d84b3bd9;
+}
+#palabrasCatcarne{
+    background-color: #dcb1aa;
+}
+#titleCatcharcuteria{
+   background-image: url('../iconosCategories/011-embutidos.png');
+   background-color: #ebb1c2;
+}
+#palabrasCatcharcuteria{
+    background-color: #efd4dc;
+}
+#titleCatcocinados{
+    background-image: url('../iconosCategories/012-comidas-pre-preparadas.png');
+    background-color: #fba666;
+    background-position-x: 6%;
+    background-position-y: 78%;
+}
+#palabrasCatcocinados{
+    background-color: #f6d9c2
+}
+#titleCatconservasyahumados{
+  background-image: url('../iconosCategories/013-alimentos-enlatados.png');
+  background-color: #b1b1b1;
+}
+#palabrasCatconservasyahumados{
+    background-color: #c7c7c7b3;
+}
+
+#titleCatcuidado_personal{
+  background-image: url('../iconosCategories/001-crema.png');
+  padding-bottom: 0%;
+    background-color: #b8d6f6;
+}
+#palabrasCatcuidado_personal{
+    background-color: #d1dbe6c2;
+}
+#titleCatdesayuno{
+    background-image: url('../iconosCategories/002-desayuno.png');
+    background-color: #c9936e;
+}
+#palabrasCatdesayuno{
+    background-color: #c39779ab;
+}
+#titleCatdiet{
+    background-image: url('../iconosCategories/003-dieta-equilibrada.png');
+    background-color: #c9ced1;
+}
+#palabrasCatdiet{
+    background-color: #dbedf9bf;
+}
+#titleCatdulces{
+   background-image: url('../iconosCategories/004-alimentos-dulces.png');
+   background-color: #cb5f66;
+}
+#palabrasCatdulces{
+    background-color: #de9a9fa6;
+}
+#titleCatfruta{
+   background-image: url('../iconosCategories/004-fruta.png');
+   background-color: #85ab4a;
+}
+#palabrasCatfruta{
+    background-color: #d1e3b4c9;
+}
+#titleCatharinamasasyrebozados{
+    background-image: url('../iconosCategories/005-harina.png');
+    background-color: #e3be93;
+}
+#palabrasCatharinamasasyrebozados{
+    background-color: rgb(238 215 188 / 89%);
+}
+#titleCatinfusiones{
+     background-image: url('../iconosCategories/009-te.png');
+     background-color: #fdcf88;
+}
+#palabrasCatInfusiones{
+    background-color: #f6dbb2c4;
+}
+#titleCatlácteos{
+    background-image: url('../iconosCategories/010-productos-lacteos.png');
+    background-color: #e0e8eb;
+
+}
+#palabrasCatlácteos{
+    background-color: #f6f6f6e0;
+}
+#titleCatmascotas{
+   background-image: url('../iconosCategories/012-alimentos-para-mascotas.png');
+   background-color: #fbce75;
+
+}
+#palabrasCatmascotas{
+    background-color: #f5dfb4bd;
+}
+#titleCatpan{
+     background-image: url('../iconosCategories/013-pan-de-molde.png');
+     background-color: #e9bd9d;
+}
+#palabrasCatpan{
+    background-color: #e4d2c4bd;
+}
+#titleCatpasta{
+   background-image: url('../iconosCategories/014-spaguetti.png');
+   background-color: #ffd697;
+}
+#palabrasCatpasta{
+    background-color: #f8e8cfc2;
+}
+#titleCatpescado{
+     background-image: url('../iconosCategories/015-pez.png');
+     background-color: #7ac2d3;
+}
+#palabrasCatpescado{
+    background-color: #b8e1ebb3;
+}
+#titleCatpostres{
+   background-image: url('../iconosCategories/016-postre.png');
+   background-color: #ffa58e;
+}
+#palabrasCatpostres{
+    background-color: #f0cdc4ba;
+}
+#titleCatsalyespecias{
+     background-image: url('../iconosCategories/018-especias.png');
+    background-color: #fbddda;
+}
+#palabrasCatsalyespecias{
+    background-color: #e9e0dfc7;
+}
+#titleCatsalsas{
+    background-image: url('../iconosCategories/019-salsas.png');
+    background-color: #ffa6a5;
+}
+#palabrasCatsalsas{
+    background-color: #f1cecdc9
+}
+#titleCatverduras{
+     background-image: url('../iconosCategories/vegetales.png');
+     background-color: #8db846
+}
+#palabrasCatverduras{
+    background-color: #c7e496d1;
+}
+
+#titleCathogar{
+    background-image: url('../iconosCategories/007-limpieza.png');
+    background-color: #738fa4;
+     padding-bottom: 0%;
+}
+#palabrasCathogar{
+    background-color: #aebac3ad;
+
+}
+#titleCathuevos{
+    background-image: url('../iconosCategories/008-huevos.png');
+   background-color: #ebc99d;
+   background-position-y: 74%;
+}
+#palabrasCathuevos{
+    background-color: #f0e5d7e3;
+}
+#titleCatquesos{
+    background-image: url('../iconosCategories/017-tabla-de-quesos.png');
+    background-color: #eebe45;
+}
+#palabrasCatquesos{
+    background-color: #ebdaafbf;
+}
+#titleCatcereales{
+     background-image: url('../iconosCategories/010-cereales.png');
+     background-color: #dfcb74;
+}
+#palabrasCatcereales{
+    background-color: #f1e7bc;
+}
+#titleCathelados{
+   background-image: url('../iconosCategories/006-helado.png');
+   background-color: #acb1eb;
+}
+#palabrasCatHelados{
+    background-color: #cfd2f3b8;
+}
+#titleCatsushi{
+    background-image: url('../iconosCategories/020-sushi.png');
+    background-color: #f9dfa2;
+}
+#palabrasCatsushi{
+    background-color: #f0e7d2de;
+}
+
+#titleCatlegumbresyarroz{
+ background-image: url('../iconosCategories/011-arroz.png');
+ background-color: #d9baa1;
+}
+#palabrasCatlegumbresyarroz{
+    background-color: #e3d5c9cf;
+}
+#titleCatgulasysurimi{
+   background-image: url('../iconosCategories/gulas.png');
+   background-color: #e8e0e8;
+}
+#palabrasCatgulasysurimi{
+    background-color: #e9e8e9c9;
+}
+#titleCatensaladas{
+ background-image: url('../iconosCategories/003-verdura.png');
+ background-color: #a8c86b;
+}
+#palabrasCatensaladas{
+    background-color: #d7eeab;
+
+}
+#titleCatcaldospurésysopas{
+  background-image: url('../iconosCategories/008-caldo.png');
+  background-color: #c8a436d6;
+}
+#palabrasCatcaldospurésysopas{
+   background-color: #ecd28bdb;
+}
+.categoryName{
+ width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+     height: inherit;
+     font-weight: 600
+    
+}
+.categoryPalabras{
+   display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 2%;
+    width: -webkit-fill-available;
+    justify-items: center;
+    overflow-y: scroll;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 1%;
+    column-gap: 1%;
+    padding-bottom: 1%;
+}
+.productosPorCategory{
+  
+    border: groove;
+   
+    border-width: thick;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+   
+    margin-inline: 16%;
+
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: contain;
+     margin-bottom: 1%;
+    margin-top: -2%;
+   max-height: 482px;
+  
+
+}
+.categoryPalabras::-webkit-scrollbar{
+height: 10%;
+}
+.categoryPalabras::-webkit-scrollbar-thumb{
+    background: #dcd6dc;
+    border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+ .categoryPalabras::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px;
+ }
+ .categoryPalabras::-webkit-scrollbar-thumb:hover{
+    background:#9a9a9a;
+      border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+ .categoryProducts{
+        display: none;
+    }
+
+.contentWhithListTodos{
+    display: flex;
+    font-size: large;
+    justify-content: space-around;
+    padding: 2%;
+    margin-top: -5%;
+   
+
+    .buscadorProductos{
+        width: -webkit-fill-available;
+    }
+   .columnaCentral{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    align-items: center;
+    margin-inline-start: 4%;
+   }
+   .category{
+ width: 65px;
+    height: 73px;
+    font-size: xx-small;
+    background-size: 68%;
+   }
+   .listaActiva{
+    background-image: url("../cuaderno.png");
+    background-size: 206%;
+    background-position-y: 18%;
+    background-position-x: 51%;
+    padding-top: 8%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+
+   input:focus{
+   border: solid #9a9a9a;
+    
+   }
+   input:-webkit-autofill{
+    -webkit-box-shadow:none ;
+   
+   }
+     input{
+    background: transparent;
+    font-size: x-large;
+    margin-inline: 0%;
+    -webkit-box-shadow: none;
+    margin-bottom: -2%;
+    border: none;
+    width: 100%;
+    font-family: 'Indie Flower';
+    font-weight: 600
+}
+  
+input:-internal-autofill-selected {
+    appearance: none;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: none !important;
+    transition: background-color 5000s ease-in-out 0s;
+    overflow:hidden !important;
+}
+   
+   }
+   .listaCompra{
+  
+   
+    justify-self: center;
+margin-top:-7%;
+  font-size: smaller;
+  width: 252px;
+}
+
+.listaCompraProducts{
+  height: 269px;
+    padding-inline-start: 8%;
+    margin-top:5%;
+    padding-left:10%;
+    overflow-y: scroll;
+}
+
+.listaCompraProducts::-webkit-scrollbar{
+width:5px
+}
+.listaCompraProducts::-webkit-scrollbar-thumb{
+    background: #9a9a9a91;
+    border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+ .listaCompraProducts::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px;
+ }
+ .listaCompraProducts::-webkit-scrollbar-thumb:hover{
+    background:#9a9a9a;
+      border-radius: 10px;
+   border: 2px solid transparent;
+    background-clip: content-box;
+ }
+.productSelected{
+    display: flex;
+    justify-content: space-between;
+padding-bottom: 1%;
+}
+.productSelectedName{
+   width: 162%;
+   word-break: break-all;
+}
+.listaCompraTitle{
+    padding: 5px;
+    border-bottom: groove;
+    display: flex;
+    justify-content: center;
+}
+.columnaTitle{
+    justify-self: center;
+    font-size:larger;
+    padding-top: 3%;
+    width: fit-content;
+}
+.opcionesGuardarLista{
+   padding-top: 4%;
+}
+   
+
+.columnaListaActiva{
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    align-items: center;
+    width: 100%;
+}
+.borrarBtn{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    button{
+    background-image: url("../borrar.png");
+background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    display: flex;
+    height:20px;
+    background-size: contain;
+    width: 20px;
+    padding: 0%;
+    }
+}
+}
