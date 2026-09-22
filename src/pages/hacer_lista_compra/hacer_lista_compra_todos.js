@@ -596,12 +596,12 @@ this.setState({
 
   componentDidMount(){
    window.addEventListener("beforeunload", this.handleBeforeUnload);
- this.state.socket("connect",()=>{
-   this.setState({conectado:true})
- })
-    this.state.socket("disconnect",()=>{
-      this.setState({conectado:false})
-    })
+this.state.socket.on("connect",()=>{
+  this.setState({conectado: true })
+})
+    this.state.socket.on("disconnect",()=>{
+  this.setState({conectado: false })
+})
      this.getProductsList()
        
   }
