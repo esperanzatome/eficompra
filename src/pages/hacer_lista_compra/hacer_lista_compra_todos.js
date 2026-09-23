@@ -608,9 +608,9 @@ this.setState({
   
 
 
-  componentDidUpdate(){
+  componentDidUpdate(prevProps, prevState){
  
-  if(this.state.options.length===0){
+  if(prevState.data.length===0&&this.state.data.length>0){
 
   this.getOptions()
   this.getOptionsByLetter()
