@@ -613,12 +613,18 @@ this.setState({
   if(prevState.data.length===0&&this.state.data.length>0){
 
   this.getOptions()
-  this.getOptionsByLetter()
+  
   this.getOptionsByCategory()
 
   }
 
+ if(prevState.options.length===0&&this.state.data.length>0){
 
+
+  this.getOptionsByLetter()
+  
+
+  }
   
 
   
