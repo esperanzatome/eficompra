@@ -624,6 +624,7 @@ this.setState({
  
 
 let listaActiva=this.state.listaActiva
+    let abc;
 let content =
  <div className="content">
     
@@ -723,7 +724,14 @@ let content =
 
 
      
-   
+  if(this.state.opcionesPorLetra.length>0){
+    abc=this.state.opcionesPorLetra.map(grupo=>{
+       <div className="letra" onMouseOver={this.handleOnMouseOver} id={grupo.letra}>
+                  {grupo.letra}
+                  
+                  </div>
+    })
+  } 
   
 if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0&&this.state.palabrasOnMouseOver[0].length>5){
   
@@ -900,13 +908,7 @@ return(
   <div className="abecedario">
 
             
-            {this.state.opcionesPorLetra.map(i=>{
-              return(
-  <div className="letra" onMouseOver={this.handleOnMouseOver} id={i.letra}>
-                  {i.letra}
-                  
-                  </div>
-            )})}
+  {abc}
               
                 
             
