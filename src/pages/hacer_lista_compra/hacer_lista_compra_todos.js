@@ -105,7 +105,7 @@ export default class MisListasDeLaCompra extends Component {
           
           
             })
-          
+          console.log(this.state.data)
           })
         
         }
@@ -122,7 +122,7 @@ export default class MisListasDeLaCompra extends Component {
       this.setState({
       options: this.state.options
       })
-      }    
+ console.log(this.state.options)     }    
         
   getOptionsByLetter(){
       if(this.state.isLoading===true&&this.state.options.length>0){
@@ -728,12 +728,7 @@ let content =
   {listaActiva}
 </div>
    </div>
-if(this.state.isLoading){
-return(
-  <div className="loading-screen">
-    Espera...
-  </div>
-)}
+
 
 return(
  <div className="hacer-lista-compra-productos-wrapper">
