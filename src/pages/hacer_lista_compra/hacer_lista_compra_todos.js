@@ -105,7 +105,7 @@ export default class MisListasDeLaCompra extends Component {
           
           
             })
-          console.log(this.state.data)
+     
           })
         
         }
@@ -122,7 +122,7 @@ export default class MisListasDeLaCompra extends Component {
       this.setState({
       options: this.state.options
       })
- console.log(this.state.options)     }    
+   }    
         
   getOptionsByLetter(){
       if(this.state.isLoading===true&&this.state.options.length>0){
@@ -730,50 +730,7 @@ let content =
    </div>
 
 
-return(
- <div className="hacer-lista-compra-productos-wrapper">
-      <div className="content-wrapper">
-     
-        <div className="title-wrapper">
-        <div className="title">
-             {this.state.pageTitle}
-        </div>
-   
-              
-        </div>
-   {this.state.optionsBar}
-        <div className="abcUser">
-         
-         
-  
- </div>
- 
-  {content}
-  <div className="abecedario">
 
-            
-            {this.state.opcionesPorLetra.map(i=>{
-              return(
-  <div className="letra" onMouseOver={this.handleOnMouseOver} id={i.letra}>
-                  {i.letra}
-                  
-                  </div>
-            )})}
-              
-                
-            
-            
-                
-                  
-                  
-                  
-                  
-              
-            
-            </div>
-       </div> 
-      </div>
-)  
      
    
   
@@ -930,7 +887,50 @@ if(listaActiva!=""){
 </div>
    </div>
 }
+return(
+ <div className="hacer-lista-compra-productos-wrapper">
+      <div className="content-wrapper">
+     
+        <div className="title-wrapper">
+        <div className="title">
+             {this.state.pageTitle}
+        </div>
+   
+              
+        </div>
+   {this.state.optionsBar}
+        <div className="abcUser">
+         
+         
+  
+ </div>
+ 
+  {content}
+  <div className="abecedario">
 
+            
+            {this.state.opcionesPorLetra.map(i=>{
+              return(
+  <div className="letra" onMouseOver={this.handleOnMouseOver} id={i.letra}>
+                  {i.letra}
+                  
+                  </div>
+            )})}
+              
+                
+            
+            
+                
+                  
+                  
+                  
+                  
+              
+            
+            </div>
+       </div> 
+      </div>
+)  
 }
 }
 
