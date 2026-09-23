@@ -65,6 +65,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesButton: "",
         notificacionesAceptadas:false,
         privileges:true,
+          abcGrupo:"",
         //socket : io("https://eficompraserver.onrender.com")
   
       
@@ -139,6 +140,8 @@ export default class MisListasDeLaCompra extends Component {
         this.setState({
           opcionesPorLetra: nuevasLetras
         })
+       
+      
       }
   }
       
@@ -625,7 +628,7 @@ this.setState({
  
 
 let listaActiva=this.state.listaActiva
-    let abc;
+    let abc
 let content =
  <div className="content">
     
@@ -731,12 +734,11 @@ if(this.state.opcionesPorLetra.length>0){
                   
                   </div>
     })
-}else{
-  abc=  <div className="letra" >
+}
                 
                   
-                  </div>
-}
+                 
+
 
      
 
