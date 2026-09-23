@@ -125,7 +125,7 @@ export default class MisListasDeLaCompra extends Component {
    }    
         
   getOptionsByLetter(){
-      if(this.state.isLoading===true&&this.state.options.length>0){
+      if(this.state.options.length>0){
       this.state.abecedario.map(letra=>{
     
       this.state.opcionesPorLetra.push({letra:letra,
