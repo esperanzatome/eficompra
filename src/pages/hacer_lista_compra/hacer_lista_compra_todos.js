@@ -126,36 +126,21 @@ export default class MisListasDeLaCompra extends Component {
         
   getOptionsByLetter(){
       if(this.state.options.length>0){
-      this.state.abecedario.map(letra=>{
-    
-      this.state.opcionesPorLetra.push({letra:letra,
-        palabras:[]
-      }
+      const nuevasLetras = this.state.abecedario.map(letra=>{
+    const palabrasFiltradas = this.state.options.filter(i=>
+      i.toLowerCase().startsWith(letra.toLowerCase())
       )
-      return(this.state.opcionesPorLetra)
-      })
-        
-          this.state.opcionesPorLetra.map(grupo=>{
-      
-      this.state.options.map(i=>{
-        
-        if(i.toLowerCase().startsWith( grupo.letra.toLowerCase())===true&&grupo.palabras.includes(i.toLowerCase())===false){
-          grupo.palabras.push(i)
+        return{
+          letra: letra,
+          palabras: palabrasFiltradas
         }
       })
-      return(this.state.opcionesPorLetra)
-          })
-          
-        
-      this.setState({
-        isLoading:false,
-        opcionesPorLetra: this.state.opcionesPorLetra
-      })
-  
+        this.setState({
+          opcionesPorLetra: nuevasLetras
+        })
       }
-  
-
-      }
+  }
+     
 
      getOptionsByCategory(){
     
