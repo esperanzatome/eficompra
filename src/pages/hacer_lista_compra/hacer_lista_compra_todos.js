@@ -574,7 +574,7 @@ this.setState({
   
 
   }
-  if(prevState.options.length===0&&this.state.options.length>0){
+  if(prevState.options.length !== this.state.options.length && this.state.options.length > 0){
     this.getOptionsByLetter()
   }
  }
