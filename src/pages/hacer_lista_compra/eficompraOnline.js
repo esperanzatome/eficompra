@@ -544,10 +544,10 @@ this.setState({
   this.getOptions()
   
   this.getOptionsByCategory()
- this.getOptionsByLetter()
+
   }
 
-
+ this.getOptionsByLetter()
 
  
   
