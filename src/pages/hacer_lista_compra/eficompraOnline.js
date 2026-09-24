@@ -665,7 +665,7 @@ let content =
 </div>
    </div>
 
-if(this.state.options.length>0){
+if(this.state.opcionesPorLetra.length>0){
   const grupoLetra=""
 opcionesPorLetra.map(grupo=>{
       
