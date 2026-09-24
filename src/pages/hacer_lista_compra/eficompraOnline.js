@@ -666,16 +666,17 @@ let content =
 </div>
    </div>
 
-if(this.state.opcionesPorLetra.length>0){
-  
-     this.state.opcionesPorLetra.map(grupo=>{
+if(this.state.options.length>0){
+  const grupoLetra=""
+opcionesPorLetra.map(grupo=>{
       
-     abc=<div className="letra" onMouseOver={this.handleOnMouseOver} id={grupo.letra}>
-                  {grupo.letra}
+   return  grupoLetra=grupo.letra
+    })
+    abc= <div className="letra" onMouseOver={this.handleOnMouseOver} id={grupoLetra}>
+                  {grupoLetra}
                   
                   </div>
-    })
-}
+ }                 
                 
                   
                  
