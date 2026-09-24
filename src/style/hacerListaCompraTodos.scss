@@ -95,7 +95,7 @@ justify-items: center;
 .categories{
 
 display: inline-grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     justify-items: center;
     row-gap: 1%;
     width: 100%
@@ -106,7 +106,7 @@ display: inline-grid;
 .abecedario{
   display: flex;
     padding-inline: 1%;
-    width: -webkit-fill-available;
+    width: 87%;
     justify-content: space-around;
     font-size: x-large;
     padding-bottom: 1%;
