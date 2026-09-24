@@ -566,18 +566,16 @@ this.setState({
   }
 */
  componentDidUpdate(prevProps, prevState){
- 
+
   if(prevState.data.length===0&&this.state.data.length>0){
 
   this.getOptions()
   
   this.getOptionsByCategory()
-  console.log(this.state.options)
-this.setState({
-  options:this.state.options
-})
+ 
+
   }
-  if(prevState.options.length===0 && this.state.options.length > 0){
+  if(prevState.options.length===0 && this.state.options.length > 0&& this.state.opcionesPorLetra.length===0){
     this.getOptionsByLetter()
   }
  }
