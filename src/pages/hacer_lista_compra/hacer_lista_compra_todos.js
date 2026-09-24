@@ -125,6 +125,7 @@ export default class MisListasDeLaCompra extends Component {
       }    
         
   getOptionsByLetter(){
+    console.log(this.state.options)
       if(this.state.options.length>0){
       this.state.abecedario.map(letra=>{
     
@@ -571,12 +572,12 @@ this.setState({
   this.getOptions()
   
   this.getOptionsByCategory()
-  
-
-  }
-  if(prevState.options.length !== this.state.options.length && this.state.options.length > 0){
+  console.log(this.state.options)
+if(prevState.options.length !== this.state.options.length && this.state.options.length > 0){
     this.getOptionsByLetter()
   }
+  }
+  
  }
   render(){
   
