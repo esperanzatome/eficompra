@@ -573,11 +573,11 @@ this.setState({
   
   this.getOptionsByCategory()
   console.log(this.state.options)
-if(prevState.options.length !== this.state.options.length && this.state.options.length > 0){
+
+  }
+  if(prevState.options.length===0 && this.state.options.length > 0){
     this.getOptionsByLetter()
   }
-  }
-  
  }
   render(){
   
@@ -846,7 +846,7 @@ if(listaActiva!=""){
 </div>
    </div>
 }
-
+console.log(this.state.options, this.state.opcionesPorLetra)
 if(this.state.opcionesPorLetra.length>0){
   abc=<div className="abecedario">
 
