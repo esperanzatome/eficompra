@@ -65,7 +65,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesButton: "",
         notificacionesAceptadas:false,
         privileges:true,
-        //socket : io("https://eficompraserver.onrender.com")
+
   
       
       
@@ -82,11 +82,11 @@ export default class MisListasDeLaCompra extends Component {
       this.handleOnClick=this.handleOnClick.bind(this);
       this.handleOnClickExit=this.handleOnClickExit.bind(this);
       this.handleDelete=this.handleDelete.bind(this);
-      //this.handleBtnGuardar=this.handleBtnGuardar.bind(this);
+
       this.handleBtnGuardarConNombre=this.handleBtnGuardarConNombre.bind(this)
       this.handleListaTitle=this.handleListaTitle.bind(this);
       
-      // this.changeState=this.changeState.bind(this)
+  
       
  this.handleBeforeUnload = this.handleBeforeUnload.bind(this);
       
@@ -125,7 +125,7 @@ export default class MisListasDeLaCompra extends Component {
       }    
         
   getOptionsByLetter(){
-    console.log(this.state.options)
+  
       if(this.state.options.length>0){
       this.state.abecedario.map(letra=>{
     
@@ -548,23 +548,7 @@ this.setState({
  
   
 
-/*
-  componentDidUpdate(){
- 
-  if(this.state.options.length===0){
 
-  this.getOptions()
-  this.getOptionsByLetter()
-  this.getOptionsByCategory()
-
-  }
-
-
-  
-
-  
-  }
-*/
  componentDidUpdate(prevProps, prevState){
 
   if(prevState.data.length===0&&this.state.data.length>0){
@@ -845,7 +829,7 @@ if(listaActiva!=""){
 </div>
    </div>
 }
-console.log(this.state.options, this.state.opcionesPorLetra)
+
 if(this.state.opcionesPorLetra.length>0){
   abc=<div className="abecedario">
 
