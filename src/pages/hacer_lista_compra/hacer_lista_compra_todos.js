@@ -573,7 +573,9 @@ this.setState({
   
   this.getOptionsByCategory()
   console.log(this.state.options)
-
+this.setState({
+  options:this.state.options
+})
   }
   if(prevState.options.length===0 && this.state.options.length > 0){
     this.getOptionsByLetter()
