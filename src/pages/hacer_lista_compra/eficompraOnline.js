@@ -126,6 +126,7 @@ export default class MisListasDeLaCompra extends Component {
    }    
         
   getOptionsByLetter(){
+    console.log("Estoy aqui")
       if(this.state.options.length>0){
       const nuevasLetras = this.state.abecedario.map(letra=>{
     const palabrasFiltradas = this.state.options.filter(i=>
@@ -544,11 +545,13 @@ this.setState({
   this.getOptions()
   
   this.getOptionsByCategory()
-
+  console.log("Estoy aqui")
   }
 
 if(prevState.options.length===0&&this.state.options.length>0&&prevState.opcionesPorCategoria.length===0&&this.state.opcionesPorCategoria.length>0){
-   this.getOptionsByLetter()
+    console.log("Estoy aqui") 
+  this.getOptionsByLetter()
+    console.log("Estoy aqui")
   }
  
   
@@ -563,7 +566,7 @@ if(prevState.options.length===0&&this.state.options.length>0&&prevState.opciones
 
   render(){
   
-  
+    console.log("Estoy aqui")
   
  
 
