@@ -11,12 +11,12 @@ import ListaCompraCompartir from './pages/listaCompraCompartir';
 import Home from './pages/home';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faSignOutAlt, faShareNodes } from "@fortawesome/free-solid-svg-icons";
-
+import React, { useEffect } from 'react';
 library.add(faTrash, faSignOutAlt, faShareNodes);
 
 
 function App() {
-React.useEffect(()=>{
+useEffect(()=>{
 const forzarHorizontal = async()=>{
   try{
     if(document.documentElement.requestFullscreen){
