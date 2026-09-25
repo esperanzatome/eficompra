@@ -46,7 +46,7 @@ export default class Registro extends Component {
       if(event!=undefined&&this.state.email!=""&&this.state.email===this.state.emailConfirm&&this.state.password!=""&&this.state.password===this.state.passwordConfirm){
        
         axios
-        .post("http://localhost:10000/registro",{
+        .post("https://eficompraserver.onrender.com/registro",{
           id: null,
           email:this.state.email,
           password:this.state.password,
