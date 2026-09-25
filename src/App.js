@@ -31,6 +31,7 @@ const forzarHorizontal = async()=>{
 }
 window.addEventListener("click", forzarHorizontal);
 return()=>window.removeEventListener("click", forzarHorizontal);
+}
 },[]);
   return (
     <div className="container">
