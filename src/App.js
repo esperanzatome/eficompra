@@ -29,7 +29,7 @@ const forzarHorizontal = async()=>{
   console.log("El navegador obliga a hacer click primero:",error);
   }
 }
-window.addEventListener("click", forzarHorizontal);
+window.addEventListener("click", forzarHorizontal);{
 return()=>window.removeEventListener("click", forzarHorizontal);
 }
 },[]);
