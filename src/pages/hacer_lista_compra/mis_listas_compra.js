@@ -70,7 +70,10 @@ export default class MisListasDeLaCompra extends Component {
       
       
     }
-this.socket= io("https://eficompraserver.onrender.com")
+this.socket= io("https://eficompraserver.onrender.com",{
+  transports: ['websocket'], 
+  upgrade: false
+});
       this.getProductsList=this.getProductsList.bind(this);
       this.getOptions=this.getOptions.bind(this);
       this.getOptionsByLetter=this.getOptionsByLetter.bind(this);
