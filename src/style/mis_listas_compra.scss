@@ -1275,7 +1275,7 @@ font-size: small;
      div{
       
        font-size: medium;
-        height: 231px;
+   
 
    width: 98%;
       .listaCompraCompartida{
@@ -1434,11 +1434,11 @@ height: 10%;
     height: 907px;
     padding-top: 2%;
     .listasGuardadas{
-        width: 105%;
+        padding-left: 3%;
         .listaCompraCompartida{
     height: 89%;
     border: groove;
-    width: 100%;
+   width: 96%;
         .columnaIzda{
             width: 100%;
             margin-bottom: 0%;
@@ -1583,11 +1583,11 @@ height: 10%;
     height: fit-content;
    
     .productosFrecuentes{
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     height: auto;
     }
     .categories{
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
    margin-top: 3%;
    
     }
