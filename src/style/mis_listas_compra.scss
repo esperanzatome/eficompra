@@ -1431,7 +1431,7 @@ height: 10%;
 
  
   .listasInactivasWrapper{
-    height: 907px;
+    height: 1050px;
     padding-top: 2%;
     .listasGuardadas{
         width: 100%;
@@ -1747,6 +1747,10 @@ div{
     .opcionesGuardarLista{
         width: 100%;
         font-size: x-small;
+        padding-bottom: 1%;
+        button{
+        font-size: x-small;
+       }
         .borrarListaButton{
             width: fit-content
         }
