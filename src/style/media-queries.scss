@@ -50,9 +50,11 @@ background-position-y: 42%;
     }
     .contentWhithListasYActiva{
         height: 900px;
+        padding-bottom: 0%;
         .listasInactivasWrapper{
             padding-left: 1%;
             width: 23%;
+            height: auto;
             .columnaTitle{
                 font-size:larger;
             }
@@ -168,7 +170,11 @@ background-position-y: 42%;
             }
         }
         .listaActiva{
-            width: 26%
+            width: 26%;
+            height: auto;
+            .columnaListaActiva div .listaCompraProducts{
+                height: 441px;
+            }
         }
     }
     }
