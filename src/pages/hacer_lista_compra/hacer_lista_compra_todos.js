@@ -31,13 +31,6 @@ export default class MisListasDeLaCompra extends Component {
         placeholderBuscador:"Añade un producto",
         pageTitle:"Mis listas de la Compra",
         listaCompraTitle:["Mi lista de la compra"],
-        optionsBar:
-       
-              
-                <div className="optionsBar">
-                  <Link to="../registro">Registro</Link>
-                  <Link to="../login">Login</Link>
-                </div>,
         email:"",
         password:"",
         miListaCompraId:"",
@@ -865,7 +858,10 @@ return(
    
               
         </div>
-   {this.state.optionsBar}
+  <div className="optionsBar">
+                  <Link to="../registro">Registro</Link>
+                  <Link to="../login">Login</Link>
+                </div>
         <div className="abcUser">
          
          
