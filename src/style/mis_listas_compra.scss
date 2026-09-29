@@ -1426,7 +1426,7 @@ height: 10%;
     display: flex;
     font-size: large;
     justify-content: space-around;
-   
+   padding-bottom: 2%;
    
 
  
@@ -1535,7 +1535,7 @@ height: 10%;
         margin-bottom: 1%;
     }
     .listaCompra{
-        width: 100%;
+   
     border: groove;
     height: fit-content;
    
@@ -1589,17 +1589,18 @@ height: 10%;
     }
     .categories{
         grid-template-columns: repeat(5, 1fr);
-   margin-top: 3%;
+   margin-top: 5%;
    
     }
 }
 .listaActiva {
   background-image: url("../cuaderno.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 315%;
+    background-position-y: 5%;
+    background-position-x: 51%;
     margin-top: -4%;
     background-repeat: no-repeat;
-    height: 829px;
+    height: 1104px;
     width: 20%;
     font-size: medium;
   
