@@ -1609,7 +1609,7 @@ height: 10%;
     flex-direction: column;
     height: -webkit-fill-available;
     align-items: center;
-    padding-top: 56%;
+    padding-top: 65%;
    
 
    .listaCompra{
@@ -1627,7 +1627,7 @@ height: 10%;
   
      input{
     background: transparent;
-    font-size: x-large;
+        font-size: large;
     margin-inline: 0%;
     -webkit-box-shadow: none;
     margin-bottom: -2%;
@@ -1687,8 +1687,8 @@ padding-bottom: 1%;
 
 .columnaTitle{
     justify-self: center;
-    font-size:larger;
-    padding-top: 3%;
+    font-size: medium;
+    padding-top: 6%;
     width: fit-content;
 }
 .opcionesGuardarLista{
@@ -1728,7 +1728,7 @@ div{
     }
     .listaCompraProducts{
         width: 97%;
-        height: 418px;
+        height: 344px;
     }
     .listaCompraTitle{
         width: 100%;
@@ -1741,11 +1741,12 @@ div{
         width: fit-content;
     }
     .borrarBtn{
-        width: 36%;
+        width: 40%;
     justify-content: right;
     }
     .opcionesGuardarLista{
         width: 100%;
+        font-size: x-small;
         .borrarListaButton{
             width: fit-content
         }
