@@ -10,37 +10,42 @@
 
 .formulariosContentLogin input[type="text"],
 .formulariosContentLogin input[type="password"] {
-    font-size: 16px !important; /* Evita zoom automático */
+    font-size: 16px !important;
     height: 48px;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
 
-
-    touch-action: manipulation;       
-    -webkit-user-select: text;         
-    user-select: text;
-    
-  
-    -webkit-tap-highlight-color: transparent; 
+    touch-action: manipulation;
+    -webkit-user-select: text !important;
+    user-select: text !important;
 }
 
 .formulariosContentLogin {
+    
+    background-color: rgba(30, 30, 30, 0.85) !important; 
+  
     backdrop-filter: blur(2.5px);
-     justify-content: flex-start; 
+    -webkit-backdrop-filter: blur(2.5px);
+    
     font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    
+    display: block; 
+    width: 100%;
     min-height: 100vh;
-    padding: 40px 20px; 
-    
-
-    position: relative;
+    height: auto;
     overflow-y: auto; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    padding: 20px;
+
+ 
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+
+
+
 
 
    .form{
