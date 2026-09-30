@@ -6,47 +6,12 @@
     margin-top: 5%;
 }
 
-.formulariosContentLogin {
-    /* Fondo semi-transparente elegante que funciona siempre, incluso si falla la GPU */
-    background-color: rgba(255, 255, 255, 0.6) !important; 
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* Crucial para iPhone */
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Mantiene el login arriba cuando sale el teclado */
-    align-items: center;
-    
-    min-height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 40px 20px;
-    overflow-y: auto; /* Permite arrastrar la pantalla si el teclado ocupa espacio */
-}
 
-/* Contenedor del formulario */
-.formulariosContentLogin .form {
-    width: 100%;
-    max-width: 360px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-/* ESTILO DEFINITIVO PARA LOS INPUTS */
-.formulariosContentLogin input[type="text"],
-.formulariosContentLogin input[type="password"],
-.formulariosContentLogin input[type="email"] {
-    font-size: 16px !important; /* Bloquea el zoom del teclado móvil */
-    height: 46px;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #fff;
-    color: #333;
-}
+
+
+
+
 
 
 .formulariosContentLogin input[type="text"],
@@ -125,5 +90,5 @@
     padding: 6%;
     }
 }
-}
-}  
+
+  
