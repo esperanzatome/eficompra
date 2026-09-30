@@ -242,7 +242,7 @@ this.setState({
               ref={this.emailInput}
               
          spellCheck="false"
-              inputMode="email"
+            
               autoCapitalize="none"
               autoCorrect="off"
               autoComplete="off"
