@@ -7,16 +7,18 @@
 }
 .formulariosContentLogin {
     backdrop-filter: blur(2.5px);
+     justify-content: flex-start; 
     font-size: x-large;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     padding: 1%;
     min-height: 100vh;
     padding-top: 1%;
     
 
+    position: relative;
     overflow-y: auto; 
     box-sizing: border-box; 
 }
@@ -28,6 +30,7 @@
     font-size: 16px !important; 
     padding: 12px;             
     box-sizing: border-box;
+      height: 44px;
 }
 
 
