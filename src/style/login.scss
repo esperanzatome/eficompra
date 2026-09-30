@@ -119,3 +119,35 @@ padding-top:1%;
 }
 }
 }  
+/* ======================================================== */
+/*   SOLUCIÓN DETECTORA DE HORIZONTAL (MEDIA QUERY)         */
+/* ======================================================== */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  
+  .formulariosContentLogin {
+    justify-content: flex-start !important; /* Manda el login arriba del todo inmediatamente */
+    padding-top: 10px !important;
+    overflow-y: scroll !important; /* Fuerza el scroll con el dedo */
+  }
+
+  .formulariosContentLogin .form {
+    margin-top: 5px !important;
+    gap: 8px !important; /* Reduce los espacios al mínimo */
+  }
+
+  /* Hacemos los títulos más pequeños para ganar espacio de pantalla */
+  .loginTitle h1 {
+    font-size: 20px !important;
+    margin: 0 !important;
+  }
+  
+  .inputTitle {
+    font-size: 14px !important;
+  }
+
+  /* Los inputs se pegan para que el teclado no los tape */
+  .formulariosContentLogin input {
+    font-size: 16px !important;
+    height: 38px !important; /* Más delgados en horizontal */
+  }
+}
