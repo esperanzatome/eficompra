@@ -28,11 +28,17 @@ padding-top:1%;
     border: none;
     border-bottom: solid #551a8b;
     margin-inline: 18px;
-    width: -webkit-fill-available;
-   font-size: x-large;
+ 
+ 
     font-family: unset;
     -webkit-text-fill-color: black;
-
+ width: 80vw;         
+      max-width: 300px;    
+      font-size: 16px !important; 
+      
+      font-family: unset;
+      -webkit-text-fill-color: black;
+      box-sizing: border-box; 
 
     
 
@@ -40,7 +46,8 @@ padding-top:1%;
    .contraseña{
     .contraseñaInput{
     input{
-width: 232%;
+ width: 80vw;      
+          max-width: 300px; 
     }
     
    }
