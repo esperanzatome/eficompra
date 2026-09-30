@@ -6,76 +6,92 @@
     margin-top: 5%;
 }
 
+.formulariosContentLogin {
+    /* Fondo semi-transparente elegante que funciona siempre, incluso si falla la GPU */
+    background-color: rgba(255, 255, 255, 0.6) !important; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Crucial para iPhone */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantiene el login arriba cuando sale el teclado */
+    align-items: center;
+    
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    overflow-y: auto; /* Permite arrastrar la pantalla si el teclado ocupa espacio */
+}
+
+/* Contenedor del formulario */
+.formulariosContentLogin .form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ESTILO DEFINITIVO PARA LOS INPUTS */
+.formulariosContentLogin input[type="text"],
+.formulariosContentLogin input[type="password"],
+.formulariosContentLogin input[type="email"] {
+    font-size: 16px !important; /* Bloquea el zoom del teclado móvil */
+    height: 46px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+}
 
 
 .formulariosContentLogin input[type="text"],
-.formulariosContentLogin input[type="password"] {
-    font-size: 16px !important;
-    height: 48px;
+.formulariosContentLogin input[type="password"],
+.formulariosContentLogin input[type="email"] {
+    font-size: 16px !important; /* Bloquea el zoom del teclado móvil */
+    height: 46px;
     width: 100%;
+    padding: 10px;
     box-sizing: border-box;
-
-    touch-action: manipulation;
-    -webkit-user-select: text !important;
-    user-select: text !important;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
 }
 
 .formulariosContentLogin {
     
-    background-color: rgba(30, 30, 30, 0.85) !important; 
-  
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
+       background-color: rgba(255, 255, 255, 0.6) !important; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     
-    font-size: x-large;
-    display: block; 
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    
     min-height: 100vh;
-    height: auto;
-    overflow-y: auto; 
+    width: 100%;
     box-sizing: border-box;
-    padding: 20px;
-
- 
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    perspective: 1000px;
-
-
+    padding: 40px 20px;
+    overflow-y: auto; 
 
 
 
 
    .form{
-    height: fit-content;
-    
-    padding-bottom: 2%;
-        input{
-    @include base-texto();
+    width: 100%;
+    max-width: 360px;
     display: flex;
-    border: none;
-    border-bottom: solid #551a8b;
-    margin-inline: 18px;
-    width: -webkit-fill-available;
-   font-size: x-large;
-    font-family: unset;
-    -webkit-text-fill-color: black;
-
-
-    
-
-    } 
-   .contraseña{
-    .contraseñaInput{
-    input{
-width: 232%;
+    flex-direction: column;
+    gap: 20px;
+ 
     }
-    
-   }
-   }
-
+}
 
 .loginTitle{
     padding-bottom: 1%;
