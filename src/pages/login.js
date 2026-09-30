@@ -287,7 +287,7 @@ this.setState({
               <Link to="../registro">Registrar</Link>
             </div>
             <div className="exit">
-              <Link to="../hacer_lista_compra"></Link>
+              <Link to="../hacer_lista_compra"Salir></Link>
             </div>
           </div>
 
