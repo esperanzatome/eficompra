@@ -235,8 +235,8 @@ this.setState({
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
-          disableFullscreenUI={true}
-              type="text"
+        
+              type="url"
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
@@ -245,7 +245,7 @@ this.setState({
               inputMode="email"
               autoCapitalize="none"
               autoCorrect="off"
-              autoComplete="username"
+              autoComplete="off"
               style={{ fontSize: '16px' }} 
             />
           </div>
