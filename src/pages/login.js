@@ -240,7 +240,7 @@ this.setState({
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
-              onChange={this.handleChange}
+              
          spellCheck="false"
               inputMode="email"
               autoCapitalize="none"
