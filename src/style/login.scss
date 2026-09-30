@@ -5,18 +5,31 @@
     align-items: center;
     margin-top: 5%;
 }
-
-.formulariosContentLogin{
+.formulariosContentLogin {
     backdrop-filter: blur(2.5px);
     font-size: x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     padding: 1%;
     min-height: 100vh;
+    padding-top: 1%;
+    
 
-padding-top:1%;
+    overflow-y: auto; 
+    box-sizing: border-box; 
+}
+
+
+.formulariosContentLogin input[type="email"],
+.formulariosContentLogin input[type="password"],
+.formulariosContentLogin input[type="text"] {
+    font-size: 16px !important; 
+    padding: 12px;             
+    box-sizing: border-box;
+}
+
 
    .form{
     height: fit-content;
