@@ -235,6 +235,7 @@ this.setState({
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
+          disableFullscreenUI={true}
               type="text"
               name="email"
               placeholder="Your email"
