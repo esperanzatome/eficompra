@@ -8,14 +8,23 @@
 
 
 
-
-.formulariosContentLogin input[type="password"],
-.formulariosContentLogin input[type="text"] {
-    font-size: 16px !important; 
-    padding: 12px;             
+.formulariosContentLogin input[type="text"],
+.formulariosContentLogin input[type="password"] {
+    font-size: 16px !important; /* Evita zoom automático */
+    height: 48px;
+    width: 100%;
     box-sizing: border-box;
-      height: 44px;
+    padding: 10px;
+
+
+    touch-action: manipulation;       
+    -webkit-user-select: text;         
+    user-select: text;
+    
+  
+    -webkit-tap-highlight-color: transparent; 
 }
+
 .formulariosContentLogin {
     backdrop-filter: blur(2.5px);
      justify-content: flex-start; 
