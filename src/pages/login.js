@@ -236,7 +236,7 @@ this.setState({
             <div className="inputTitle">Email</div>
             <input
         
-              type="url"
+              type="password"
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
