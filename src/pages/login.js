@@ -302,7 +302,7 @@ this.setState({
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
-              type="email"
+              type="text"
               name="email"
               placeholder="Your email"
               value={this.state.email}
