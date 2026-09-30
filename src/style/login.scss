@@ -1,3 +1,34 @@
+/* ======================================================== */
+/*  RESET DE ENTORNO SEGURO PARA MÓVILES (APLICA A TODO)    */
+/* ======================================================== */
+
+/* 1. Asegura que el cuerpo de la app no colapse con el teclado */
+html, body, #root {
+    min-height: 100vh;
+    height: auto !important; 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Suaviza el scroll nativo en iOS */
+}
+
+/* 2. Regla de oro universal para CUALQUIER input de texto de tu proyecto */
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+.formulariosContentLogin .form input {
+    /* Cancela el zoom automático destructivo del navegador móvil */
+    font-size: 16px !important; 
+    
+    /* Desactiva la lupa táctil molesta del sistema operativo que rompe el layout */
+    touch-action: manipulation;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    
+    /* Evita parpadeos de color azul/transparente al pulsar rápido */
+    -webkit-tap-highlight-color: transparent;
+    
+    /* Asegura que los anchos respondan al contenedor y no colapsen a 0px */
+    box-sizing: border-box; 
+}
 
 .buttons{
     display:flex;
