@@ -38,7 +38,7 @@ export default class Login extends Component {
      handleEmailInput(event){
 
 this.setState({
-   inputTypeEmail:"text"
+   inputTypeEmail:"email"
 })
      }
      
@@ -246,11 +246,9 @@ this.setState({
               placeholder="Your email"
               ref={this.emailInput}
               onChange={this.handleChange}
-         spellCheck="false"
+     
              onTouchStart={this.handleEmailInput}
-              autoCapitalize="none"
-              autoCorrect="off"
-              autoComplete="username"
+            
               style={{ fontSize: '16px' }} 
             />
           </div>
