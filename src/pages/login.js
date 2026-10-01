@@ -239,7 +239,10 @@ this.setState({
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
-              onChange={this.handleChange}
+             autoCapitalize="none"
+                autoCorrect="off"
+                autoComplete="current-password"
+                style={{ fontSize: '16px' }} 
             />
           </div>
               
