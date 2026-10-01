@@ -217,15 +217,16 @@ this.setState({
   inputType:"text"
 
 })
-}else(
-  this.setState({
-    inputType:"password"
-  })
-)else if(event.target.checked===false&&this.state.email !== ""){
+}else if(event.target.checked===false&&this.state.email !== ""){
   this.setState({
     inputType:"text"
   })
 }
+else(
+  this.setState({
+    inputType:"password"
+  })
+)
   }
         render() {
     return (
