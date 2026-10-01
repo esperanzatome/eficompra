@@ -217,7 +217,7 @@ this.setState({
   inputType:"text"
 
 })
-}else if(event.target.checked===false&&this.state.email !== ""){
+}else if(event.target.checked===false&&this.emailInput !== ""){
   this.setState({
     inputType:"text"
   })
