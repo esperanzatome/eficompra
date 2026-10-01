@@ -221,7 +221,11 @@ this.setState({
   this.setState({
     inputType:"password"
   })
-)
+)else if(event.target.checked===false&&this.state.email !== ""){
+  this.setState({
+    inputType:"text"
+  })
+}
   }
         render() {
     return (
@@ -235,13 +239,12 @@ this.setState({
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
-              type="text"
+              type="password"
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
              autoCapitalize="none"
                 autoCorrect="off"
-                autoComplete="current-password"
                 style={{ fontSize: '16px' }} 
             />
           </div>
