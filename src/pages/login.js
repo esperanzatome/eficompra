@@ -240,12 +240,6 @@ this.setState({
               placeholder="Your email"
               ref={this.emailInput}
               onChange={this.handleChange}
-         spellCheck="false"
-              inputMode="email"
-              autoCapitalize="none"
-              autoCorrect="off"
-              autoComplete="username"
-              style={{ fontSize: '16px' }} 
             />
           </div>
               
