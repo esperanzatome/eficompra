@@ -13,7 +13,8 @@ export default class Login extends Component {
     super()
     this.state = {
         email: "",
- 
+  usernameMode: "none",
+      emailMode: "none",
         password: "",
       
         inputType: "password"
@@ -34,7 +35,16 @@ export default class Login extends Component {
       });
     }
    
-     
+      handleFocus = (inputName, type) => {
+ 
+    setTimeout(() => {
+      this.setState({ [inputName]: type });
+    }, 60); 
+  };
+
+  handleBlur = (inputName) => {
+    this.setState({ [inputName]: "none" });
+  };
      
        
     
@@ -240,17 +250,21 @@ this.setState({
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
-        
-              type="email"
+         type="email"
+      
+          inputMode={this.state.emailMode}
+          onFocus={() => this.handleFocus("emailMode", "email")}
+          onBlur={() => this.handleBlur("emailMode")}
+          autoCorrect="on"
+          spellCheck="true"
+              
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
               
-         spellCheck="false"
+         
             
-              autoCapitalize="none"
-              autoCorrect="off"
-              autoComplete="off"
+              
               style={{ fontSize: '16px' }} 
             />
           </div>
