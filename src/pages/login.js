@@ -217,12 +217,7 @@ this.setState({
   inputType:"text"
 
 })
-}else if(event.target.checked===false&&this.emailInput !== ""){
-  this.setState({
-    inputType:"text"
-  })
-}
-else(
+}else(
   this.setState({
     inputType:"password"
   })
@@ -240,7 +235,7 @@ else(
           <div className="emailInput">
             <div className="inputTitle">Email</div>
             <input
-              type="password"
+              type={this.state.inputType}
               name="email"
               placeholder="Your email"
               ref={this.emailInput}
