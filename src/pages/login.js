@@ -223,6 +223,11 @@ this.setState({
   })
 )
   }
+  componentDidMount() {
+    if (navigator.virtualKeyboard) {
+      navigator.virtualKeyboard.overlaysContent = true;
+    }
+  }
         render() {
     return (
       <div className="formulariosContentLogin">
