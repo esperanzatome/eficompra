@@ -38,7 +38,7 @@ export default class Login extends Component {
      handleEmailInput(event){
 
 this.setState({
-   inputTypeEmail:"email"
+   inputTypeEmail:"text"
 })
      }
      
