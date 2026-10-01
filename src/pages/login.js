@@ -19,8 +19,33 @@ export default class Login extends Component {
     this.handleOnClick = this.handleOnClick.bind(this);
     this.handleVerContraseña = this.handleVerContraseña.bind(this);
     this.handleDivInput = this.handleDivInput.bind(this);
+    this.ajustarViewport = this.ajustarViewport.bind(this);
 
     this.emailInput = React.createRef();
+  }
+
+  componentDidMount() {
+    // Escuchamos el cambio de tamaño real provocado por el teclado móvil
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", this.ajustarViewport);
+      window.visualViewport.addEventListener("scroll", this.ajustarViewport);
+    }
+  }
+
+  componentWillUnmount() {
+    if (window.visualViewport) {
+      window.visualViewport.removeEventListener("resize", this.ajustarViewport);
+      window.visualViewport.removeEventListener("scroll", this.ajustarViewport);
+    }
+  }
+
+  ajustarViewport() {
+    // Forzamos al contenedor a medir exactamente el espacio visible que deja el teclado
+    const contenedor = document.querySelector(".formulariosContentLogin");
+    if (contenedor && window.visualViewport) {
+      contenedor.style.height = `${window.visualViewport.height}px`;
+      window.scrollTo(0, 0);
+    }
   }
 
   handleChange(event) {
@@ -41,23 +66,22 @@ export default class Login extends Component {
     
     if (event != undefined && emailInputValue != "" && this.state.password != "") {
       axios
-        .post("https://eficompraserver.onrender.com/login", {
+        .post("https://onrender.com", {
           email: emailInputValue,
           password: this.state.password
         })
         .then(response => {
-          if (Object.values(response.data)[0].length === 0) {
+          if (Object.values(response.data).length === 0) {
             window.alert("E-mail o contraseña incorrectos");
           } else {
-            localStorage.setItem("id", `${Object.values(response.data)[0][0].id}`);
-            localStorage.setItem("alias", `${Object.values(response.data)[0][0].alias}`);
+            localStorage.setItem("id", `${Object.values(response.data).id}`);
+            localStorage.setItem("alias", `${Object.values(response.data).alias}`);
             
             if (localStorage.getItem("listaCompartida") != "") {
-              axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida", {
+              axios.post("https://onrender.com", {
                 listasdelacompra: localStorage.getItem("listaCompartida")
               })
               .then(response => {
-                console.log(response.data);
                 let usuarios = [];
                 let comprado = "";
                 let listaName = "";
@@ -72,7 +96,7 @@ export default class Login extends Component {
                   });
 
                   if (usuarios.includes(localStorage.getItem("alias")) === false) {
-                    axios.post("https://eficompraserver.onrender.com/usuario", {
+                    axios.post("https://onrender.com", {
                       userId: localStorage.getItem("id"),
                       alias: localStorage.getItem("alias"),
                       listasdelacompra: localStorage.getItem("listaCompartida"),
@@ -80,24 +104,15 @@ export default class Login extends Component {
                       listaName: listaName
                     })
                     .then(response => {
-                      console.log("usuario-lista creado");
                       usuariosIds.map(i => {
-                        axios.post("https://eficompraserver.onrender.com/revocarPrivilegios", {
-                          id: i
-                        }).then(response => {
-                          console.log(response);
-                        });
+                        axios.post("https://onrender.com", { id: i });
                       });
                       localStorage.setItem("listaCompartida", "");
                       window.location.href = "/mis_listas_compra";
                     });
                   } else {
                     usuariosIds.map(i => {
-                      axios.post("https://eficompraserver.onrender.com/revocarPrivilegios", {
-                        id: i
-                      }).then(response => {
-                        console.log(response);
-                      });
+                      axios.post("https://onrender.com", { id: i });
                     });
                     localStorage.setItem("listaCompartida", "");
                     window.location.href = "/mis_listas_compra";
@@ -107,28 +122,26 @@ export default class Login extends Component {
             }
             
             if (localStorage.getItem("products") != "") {
-              axios.post("https://eficompraserver.onrender.com/misListasDeLaCompra", {
+              axios.post("https://onrender.com", {
                 listaId: null,
                 userId: localStorage.getItem("id")
               })
               .then(response => {
-                console.log("lista creada");
-                axios.get("https://eficompraserver.onrender.com/misListasDeLaCompra")
+                axios.get("https://onrender.com")
                 .then(response => {
-                  listaId = Object.values(response.data[0]);
-                  axios.post("https://eficompraserver.onrender.com/usuario", {
+                  listaId = Object.values(response.data);
+                  axios.post("https://onrender.com", {
                     userId: localStorage.getItem("id"),
                     alias: localStorage.getItem("alias"),
-                    listasdelacompra: Object.values(response.data[0]),
+                    listasdelacompra: Object.values(response.data),
                     comprado: [false],
                     listaName: localStorage.getItem("listaTitle")
                   })
                   .then(response => {
-                    console.log("usuario-lista creado");
                     let products = localStorage.getItem("products");
                     products = products.split(",");
                     products.map(i => {
-                      axios.post("https://eficompraserver.onrender.com/miListaCompra", {
+                      axios.post("https://onrender.com", {
                         listaId: listaId,
                         product: i
                       })
@@ -150,13 +163,9 @@ export default class Login extends Component {
 
   handleVerContraseña(event) {
     if (event.target.checked === true) {
-      this.setState({
-        inputType: "text"
-      });
+      this.setState({ inputType: "text" });
     } else {
-      this.setState({
-        inputType: "password"
-      });
+      this.setState({ inputType: "password" });
     }
   }
 
@@ -178,17 +187,6 @@ export default class Login extends Component {
               autoCorrect="on"
               data-placeholder="Your email"
               className="div-input-horizontal"
-              style={{
-                border: "1px solid #ccc",
-                padding: "10px",
-                minWidth: "250px",
-                backgroundColor: "#fff",
-                color: "#000",
-                display: "inline-block",
-                fontSize: '16px',
-                outline: 'none',
-                borderRadius: '4px'
-              }}
             ></div>
           </div>
 
@@ -235,3 +233,4 @@ export default class Login extends Component {
     );
   }
 }
+
