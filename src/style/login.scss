@@ -1,153 +1,84 @@
-/* ======================================================== */
-/*  RESET DE ENTORNO SEGURO PARA MÓVILES (APLICA A TODO)    */
-/* ======================================================== */
+/* Estilos base para el div simulador de input */
+.div-input-horizontal {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 250px;
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
+}
 
-/* 1. Asegura que el cuerpo de la app no colapse con el teclado */
-html, body, #root {
+/* Efecto Placeholder para el div */
+.div-input-horizontal:empty::before {
+  content: attr(data-placeholder);
+  color: #888;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.div-input-horizontal:focus::before {
+  content: "";
+}
+
+/* ==========================================
+   SOLUCIÓN DEFINITIVA PARA MÓVIL HORIZONTAL
+   ========================================== */
+@media (orientation: landscape) and (max-height: 450px) {
+  /* Evita que todo el contenedor se estruje */
+  .formulariosContentLogin {
+    padding: 10px !important;
+    height: auto !important;
     min-height: 100vh;
-    height: auto !important; 
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch; /* Suaviza el scroll nativo en iOS */
-}
-
-/* 2. Regla de oro universal para CUALQUIER input de texto de tu proyecto */
-input[type="text"], 
-input[type="email"], 
-input[type="password"],
-.formulariosContentLogin .form input {
-    /* Cancela el zoom automático destructivo del navegador móvil */
-    font-size: 16px !important; 
-    
-    /* Desactiva la lupa táctil molesta del sistema operativo que rompe el layout */
-    touch-action: manipulation;
-    -webkit-user-select: text !important;
-    user-select: text !important;
-    
-    /* Evita parpadeos de color azul/transparente al pulsar rápido */
-    -webkit-tap-highlight-color: transparent;
-    
-    /* Asegura que los anchos respondan al contenedor y no colapsen a 0px */
-    box-sizing: border-box; 
-}
-
-.buttons{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.formulariosContentLogin{
-    backdrop-filter: blur(2.5px);
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    padding: 1%;
-    min-height: 100vh;
-
-padding-top:1%;
-
-   .form{
-
-    
-    padding-bottom: 2%;
-        input{
-    @include base-texto();
-    display: flex;
-    border: none;
-    border-bottom: solid #551a8b;
-    margin-inline: 18px;
- 
- 
-    font-family: unset;
-    -webkit-text-fill-color: black;
- width: 80vw;         
-      max-width: 300px;    
-      font-size: 16px !important; 
-      
-      font-family: unset;
-      -webkit-text-fill-color: black;
-      box-sizing: border-box; 
-
-    
-
-    } 
-   .contraseña{
-    .contraseñaInput{
-    input{
- width: 80vw;      
-          max-width: 300px; 
-    }
-    
-   }
-   }
-
-
-.loginTitle{
-    padding-bottom: 1%;
-}
-    
-.exit{
-    width: 5%;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-inline-end: 0%;
-    a{
-        display: flex;
-    width: 35px;
-    height: 35px;
-    }
-}
-    
-.loginBtn{
-    display: flex;
-
-    
-    button{
-        background: #c5bcc5;
-    border: groove;
-    padding-inline: 1%;
-    border-width: medium;
-    border-color: #6a6bcf;
-   font-family: 'Indie Flower';
-   margin-right: 4%;
-   font-size: large;
-    padding: 6%;
-    }
-}
-}
-}  
-/* ======================================================== */
-/*   SOLUCIÓN DETECTORA DE HORIZONTAL (MEDIA QUERY)         */
-/* ======================================================== */
-@media screen and (orientation: landscape) and (max-height: 500px) {
-  
-  .formulariosContentLogin {
-    justify-content: flex-start !important; /* Manda el login arriba del todo inmediatamente */
-    padding-top: 10px !important;
-    overflow-y: scroll !important; /* Fuerza el scroll con el dedo */
+    align-items: center;
   }
 
-  .formulariosContentLogin .form {
-    margin-top: 5px !important;
-    gap: 8px !important; /* Reduce los espacios al mínimo */
-  }
-
-  /* Hacemos los títulos más pequeños para ganar espacio de pantalla */
+  /* Ocultamos el título gigante de Login para ganar espacio vertical */
   .loginTitle h1 {
-    font-size: 20px !important;
+    font-size: 1.2rem !important;
+    margin: 5px 0 !important;
+  }
+
+  /* Ponemos los inputs uno al lado del otro (en fila) en vez de en columna */
+  .form {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center;
+    width: 100% !important;
+    max-width: 600px;
+  }
+
+  .emailInput, .contraseña {
+    flex: 1 1 45% !important; /* Cada input toma la mitad de la pantalla */
     margin: 0 !important;
   }
-  
-  .inputTitle {
-    font-size: 14px !important;
+
+  .div-input-horizontal, 
+  .contraseñaInput input {
+    width: 100% !important;
+    min-width: unset !important;
+    height: 36px !important;
+    padding: 6px 10px !important;
   }
 
-  /* Los inputs se pegan para que el teclado no los tape */
-  .formulariosContentLogin input {
-    font-size: 16px !important;
-    height: 38px !important; /* Más delgados en horizontal */
+  /* Compactamos la sección de los botones */
+  .buttons {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 10px !important;
   }
 }
