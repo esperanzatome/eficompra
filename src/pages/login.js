@@ -246,7 +246,9 @@ this.setState({
               placeholder="Your email"
               ref={this.emailInput}
               onChange={this.handleChange}
-     
+     autoCapitalize="none"
+                autoCorrect="off"
+                autoComplete="current-password"
              onTouchStart={this.handleEmailInput}
             
               style={{ fontSize: '16px' }} 
