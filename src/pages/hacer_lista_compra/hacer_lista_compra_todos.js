@@ -581,7 +581,7 @@ let content =
     <div className="columnaCentral">
       
                 <div className="buscadorProductos">
-                <input type='text'name="buscadorProductos" list="Products" placeholder= {this.state.placeholderBuscador}
+                <input type='search'name="buscadorProductos" list="Products" placeholder= {this.state.placeholderBuscador}
                 onClick={this.handleOnClick} onKeyUp={this.teclaEnter}/>
                 
                 <datalist key='Products' id="Products" className="dataList">
@@ -735,7 +735,7 @@ if(listaActiva!=""){
     <div className="columnaCentral">
       
                 <div className="buscadorProductos">
-                <input type='text'name="buscadorProductos" list="Products" onClick={this.handleOnClick} onKeyUp={this.teclaEnter} placeholder={this.state.placeholderBuscador} />
+                <input type='search'name="buscadorProductos" list="Products" onClick={this.handleOnClick} onKeyUp={this.teclaEnter} placeholder={this.state.placeholderBuscador} />
                 
                 <datalist key='Products' id="Products" className="dataList">
               
