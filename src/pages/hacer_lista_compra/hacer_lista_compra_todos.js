@@ -85,7 +85,7 @@ export default class MisListasDeLaCompra extends Component {
 
   getProductsList() {
     axios
-      .get("https://onrender.com")
+      .get("https://eficompraserver.onrender.com/palabrasLista")
       .then(response => {
         this.setState({ data: response.data });
       });
