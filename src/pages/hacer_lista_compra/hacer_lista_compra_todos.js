@@ -360,7 +360,7 @@ handleListaTitle(event){
 
         this.setState({
         listaCompraTitle:listaName,
-        
+        inputTypeText:"text",
         listaActiva:
          
     <div className="columnaListaActiva">
