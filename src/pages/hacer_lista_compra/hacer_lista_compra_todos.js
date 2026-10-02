@@ -361,11 +361,13 @@ let palabrasPorCategoria=[]
     
 handleListaTitle(event){
 
-let inputType="text"
+let inputType=event.target.type
  let listaName=[event.target.value]
- if(event.target.type==="text"){
-  inputType="password"
+ if(inputType==="text"){
+   inputType="password"
+
  }
+
 
         this.setState({
         listaCompraTitle:listaName,
@@ -387,7 +389,7 @@ let inputType="text"
     
     <div className="listaCompraTitle">
       
-    <input type={inputType}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
+    <input type="text"name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
        onKeyUp={this.teclaEnter} placeholder={listaName[0]}/>
       </div>
     
