@@ -547,11 +547,15 @@ this.setState({
 
     this.getOptionsByLetter()
 this.setState({
-  isLoading:false,
-   inputListaTitle:"password"
+  isLoading:false
+ 
 })
   }
-
+if(this.state.inputListaTitle==="text"){
+  this.setState({
+    inputListaTitle:"password"
+  })
+}
  }
   render(){
   
