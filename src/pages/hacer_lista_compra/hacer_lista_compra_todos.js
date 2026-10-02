@@ -850,7 +850,7 @@ if(this.state.isLoading===true){
              Loading...
         </div>
 }
-pi
+
 return(
  <div className="hacer-lista-compra-productos-wrapper">
       <div className="content-wrapper">
