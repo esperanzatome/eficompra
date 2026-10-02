@@ -367,7 +367,7 @@ handleListaTitle(event){
 
         this.setState({
         listaCompraTitle:listaName,
-  inputListaTitle:"password",
+  inputListaTitle:"text",
         listaActiva:
          
     <div className="columnaListaActiva">
@@ -385,7 +385,7 @@ handleListaTitle(event){
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
+    <input type="password"name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
        onKeyUp={this.teclaEnter} placeholder={listaName[0]}/>
       </div>
     
