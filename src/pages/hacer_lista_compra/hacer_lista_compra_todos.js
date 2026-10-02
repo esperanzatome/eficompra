@@ -389,7 +389,7 @@ let inputType=event.target.type
     
     <div className="listaCompraTitle">
       
-    <input type="text"name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
        onKeyUp={this.teclaEnter} placeholder={listaName[0]}/>
       </div>
     
@@ -547,7 +547,8 @@ this.setState({
 
     this.getOptionsByLetter()
 this.setState({
-  isLoading:false
+  isLoading:false,
+   inputListaTitle:"password"
 })
   }
 
