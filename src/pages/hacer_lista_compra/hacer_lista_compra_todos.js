@@ -271,6 +271,7 @@ export default class MisListasDeLaCompra extends Component {
                 onKeyUp={this.teclaEnter}
                 onFocus={() => this.setState({ inputListaTitle: "text" })}
                 onBlur={() => this.setState({ inputListaTitle: "password" })}
+                autoComplete="new-password" 
               />
             </div>
 
