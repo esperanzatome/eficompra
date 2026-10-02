@@ -385,7 +385,7 @@ handleListaTitle(event){
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
+    <input type="password"name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
        onKeyUp={this.teclaEnter} onTouchStart={this.handleInputListaTitle}/>
       </div>
     
