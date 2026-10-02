@@ -387,7 +387,7 @@ let inputType="text"
     
     <div className="listaCompraTitle">
       
-    <input type={this.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
+    <input type={inputType}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onChange={this.handleListaTitle}
        onKeyUp={this.teclaEnter} placeholder={listaName[0]}/>
       </div>
     
