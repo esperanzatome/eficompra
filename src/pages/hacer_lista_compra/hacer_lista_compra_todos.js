@@ -367,7 +367,7 @@ this.handleInputListaTitle(event)
 
         this.setState({
         listaCompraTitle:listaName,
-  
+  inputListaTitle:"password",
         listaActiva:
          
     <div className="columnaListaActiva">
