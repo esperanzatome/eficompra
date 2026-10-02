@@ -363,11 +363,7 @@ handleListaTitle(event){
 
 let inputType=event.target.type
  let listaName=[event.target.value]
- if(inputType==="text"){
-   inputType="password"
-
- }
-
+ 
 
         this.setState({
         listaCompraTitle:listaName,
