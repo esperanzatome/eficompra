@@ -278,7 +278,7 @@ handleOnClick(event){
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"placeholder={this.state.listaCompraTitle[0]}onChange={this.handleListaTitle}
-       onKeyUp={this.teclaEnter} onTouchStart={this.inputListaTitle}/>
+       onKeyUp={this.teclaEnter} onTouchStart={this.handleInputListaTitle}/>
       </div>
     
     <div className="listaCompraProducts">
@@ -463,7 +463,7 @@ this.setState({
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"placeholder={this.state.listaCompraTitle[0]}onChange={this.handleListaTitle}
-       onKeyUp={this.teclaEnter}onTouchStart={this.inputListaTitle} />
+       onKeyUp={this.teclaEnter}onTouchStart={this.handleInputListaTitle} />
       </div>
     
     <div className="listaCompraProducts">
