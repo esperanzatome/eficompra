@@ -382,7 +382,7 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type="text"name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyUp={this.teclaEnter} />
       </div>
     
