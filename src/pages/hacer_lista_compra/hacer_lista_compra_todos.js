@@ -366,7 +366,7 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName,
-   inputListaTitle:"password",
+  
    
 
  
