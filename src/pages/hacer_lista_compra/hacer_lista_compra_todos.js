@@ -848,7 +848,7 @@ if(this.state.opcionesPorLetra.length>0){
 if(this.state.isLoading===true){
   content= 
    <div className="Loading">
-             Loading...
+         <div className="imgLoading"></div>
         </div>
 }
 
