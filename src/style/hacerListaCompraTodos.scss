@@ -18,11 +18,11 @@
 }
 
 .content-wrapper{
- .imgLoading{
-     background-image: url('../carrito-de-compras.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 25%;
+ .Loading{
+   img{
+     animation: caminar 8s linear infinite;
+    position: relative;
+   }
 }
 
     font-size: -webkit-xxx-large;
