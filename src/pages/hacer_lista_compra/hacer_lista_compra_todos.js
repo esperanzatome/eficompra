@@ -370,11 +370,9 @@ handleListaTitle(event){
    
 
  
-      )
-    }
-    })}
+      
     
-  </div>
+  
   
   })
  }
