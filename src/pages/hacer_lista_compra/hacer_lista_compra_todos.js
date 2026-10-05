@@ -849,7 +849,7 @@ if(this.state.isLoading===true){
   content= 
    <div className="Loading">
          <div className="imgLoading">
-    <img src="carrito-de-compras.png" alt="Carro de compras" class="carritoCompras"/>
+    <img src="carrito-de-compras.png" class="carritoCompras"/>
     </div>
         </div>
 }
