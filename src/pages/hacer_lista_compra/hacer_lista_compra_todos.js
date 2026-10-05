@@ -366,7 +366,60 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName,
-    listaActiva:this.state.listaActiva
+   
+listaActiva:
+         
+    <div className="columnaListaActiva">
+      <div className="columnaTitle"></div>
+     <div className="optionsBarList">
+
+      
+        </div>
+    
+    {this.state.productSelected.map(i=>{
+    if(this.state.productSelected.length>0&&this.state.productSelected.indexOf(i)===0){
+      return(
+        
+        <div className="listaCompra">
+    
+    <div className="listaCompraTitle">
+      
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"value={listaName[0]}onClick={this.handleListaTitle}
+       onKeyUp={this.teclaEnter} placeholder={listaName[0]}/>
+      </div>
+    
+    <div className="listaCompraProducts">
+      {this.state.productSelected.map(i=>{
+        return(
+          <div className="productSelected">
+            <div className="productSelectedName">
+              {i} 
+            </div>
+          <div className="borrarBtn">
+            <button className="borrarBtn"value={i} onClick={this.handleDelete}></button>
+          </div>
+          </div>
+        )
+      })}
+       
+    </div>
+    <div className="opcionesGuardarLista">
+      
+    <div className="guardarBtnConNombre">
+         <button className="guardarBtnConNombre" onClick={this.handleBtnGuardarConNombre}>
+       Guardar
+         </button>
+           </div>
+    </div>
+   </div>
+  
+      )
+    }
+    })}
+    
+  </div>
+  
+  
    
 
  
