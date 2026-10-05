@@ -1,5 +1,11 @@
 .content-wrapper{
- 
+ .loading{
+     background-image: url('../carrito-de-compras.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 25%;
+}
+
     font-size: -webkit-xxx-large;
     display: flex;
     flex-direction: column;
