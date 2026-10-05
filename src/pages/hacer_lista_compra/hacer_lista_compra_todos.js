@@ -848,7 +848,9 @@ if(this.state.opcionesPorLetra.length>0){
 if(this.state.isLoading===true){
   content= 
    <div className="Loading">
-         <div className="imgLoading"></div>
+         <div className="imgLoading">
+    <img src="carrito-de-compras.png" alt="Carro de compras" class="carritoCompras">
+    </div>
         </div>
 }
 
