@@ -496,6 +496,12 @@ this.setState({
  
 })
   }
+   if(prevState.inputListaTitle==="password"&&this.state.inputListaTitle==="text"){
+this.setState({
+  listaActiva:this.state.listaActiva
+})
+  
+  }
  }
   render(){
   
