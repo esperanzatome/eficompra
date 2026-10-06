@@ -309,7 +309,7 @@ handleOnClick(event){
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
-    
+    inputBuscador: "text"
   })
  if(event!=undefined&&this.state.productSelected.includes(event.target.value)===false&&event.target.value!=''){
 
