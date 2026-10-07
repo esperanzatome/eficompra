@@ -301,7 +301,11 @@ handleLetraClickMóvil(event, item) {
   }
 }
 handleOnClick(event){
-
+if(event.target.name==="buscadorProductos"){
+this.setState({
+inputBuscador:"text"
+})
+}
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
