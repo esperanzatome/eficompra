@@ -91,7 +91,7 @@ this.teclaEnter=this.teclaEnter.bind(this)
     }
     handleInputBuscador(event){
 
-if (event && event.target && event.target.name === 'INPUT') {
+if (event && event.target && event.target.type === 'INPUT') {
     this.setState({
       inputBuscador: "text",
     });
