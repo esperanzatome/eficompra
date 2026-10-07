@@ -305,7 +305,7 @@ handleOnClick(event){
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
-    inputListaTitle:"text"
+    
     
     
   })
@@ -321,6 +321,7 @@ handleOnClick(event){
      
     productSelected:this.state.productSelected,
      palabrasOnMouseOver:[],
+      inputListaTitle:"text",
      listaActiva:
  
     <div className="columnaListaActiva">
