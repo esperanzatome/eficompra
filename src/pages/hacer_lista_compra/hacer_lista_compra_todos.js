@@ -97,6 +97,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       
     });
   }
+    } 
       handleInputTitle(event){
 
 if (event && event.target && event.target.tagName === 'INPUT') {
