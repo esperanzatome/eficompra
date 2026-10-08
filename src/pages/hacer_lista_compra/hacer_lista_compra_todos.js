@@ -59,7 +59,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
         inputBuscador: "password",
-        inputListaTitle:"text",
+        inputListaTitle:"password",
          letterOnHover: false,
     palabrasOnMouseOver: [],
     letraActivaId: null 
@@ -326,6 +326,7 @@ inputBuscador:"text",
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
+    inputListaTitle:"text" 
    
     
     
@@ -474,7 +475,7 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type="text"name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchStart={this.handleInputTitle} />
       </div>
     
