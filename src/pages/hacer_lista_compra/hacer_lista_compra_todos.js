@@ -97,6 +97,12 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       
     });
   }
+      if(event.target.className==="palabra"){
+    this.setState({
+      inputBuscador: "password",
+  
+    });
+      }
     } 
       handleInputTitle(event){
 
@@ -106,12 +112,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       
     });
 }
-  if(event.target.className==="palabra"){
-    this.setState({
-      inputBuscador: "password",
   
-    });
-  }
 
      }
       
@@ -455,6 +456,7 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName,
+    inputListaTitle :"text", 
 listaActiva:
    
 
