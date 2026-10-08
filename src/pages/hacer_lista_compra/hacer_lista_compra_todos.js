@@ -448,13 +448,12 @@ let palabrasPorCategoria=[]
     }
     
 handleListaTitle(event){
-console.log((document.getElementById("listaCompraTitle")).value)
+
 
  let listaName=[(document.getElementById("listaCompraTitle")).value]
 
   this.setState({
    listaCompraTitle:listaName,
-inputListaTitle:"text",
 listaActiva:
    
 
