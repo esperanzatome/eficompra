@@ -84,7 +84,7 @@ this.teclaEnter=this.teclaEnter.bind(this)
       this.handleBtnGuardarConNombre=this.handleBtnGuardarConNombre.bind(this)
       this.handleListaTitle=this.handleListaTitle.bind(this);
       this.handleInputBuscador=this.handleInputBuscador.bind(this);
-
+this.handleInputTitle=this.handleInputTitle.bind(this);
       
  this.handleBeforeUnload = this.handleBeforeUnload.bind(this);
       
@@ -94,9 +94,17 @@ this.teclaEnter=this.teclaEnter.bind(this)
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
       inputBuscador: "text",
-      inputListaTitle: "text"
+      
     });
   }
+      handleInputTitle(event){
+
+if (event && event.target && event.target.tagName === 'INPUT') {
+    this.setState({
+      inputListaTitle: "password",
+      
+    });
+}
   if(event.target.className==="palabra"){
     this.setState({
       inputBuscador: "password",
