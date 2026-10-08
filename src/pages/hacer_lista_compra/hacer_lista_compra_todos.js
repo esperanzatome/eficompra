@@ -276,7 +276,7 @@ const tocoFueraAbecedario = this.abecedarioRef.current && !this.abecedarioRef.cu
       letterOnHover: false,
       palabrasOnMouseOver: [],
       letraActivaId: null,
-      inputListaTitle:"password"
+      
     });
   }
 }
