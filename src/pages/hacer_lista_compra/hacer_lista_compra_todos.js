@@ -111,6 +111,10 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       inputListaTitle: "password",
       
     });
+  this.setState({
+      inputListaTitle: "text",
+      
+    });
 }
   
 
