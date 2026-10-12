@@ -455,7 +455,7 @@ handleListaTitle(event){
  let listaName=[(document.getElementById("listaCompraTitle")).value]
 
   this.setState({
-   listaCompraTitle:listaName[0]
+   listaCompraTitle:listaName[0], 
 listaActiva:
    
 
