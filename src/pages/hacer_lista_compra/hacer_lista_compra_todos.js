@@ -327,7 +327,7 @@ inputBuscador:"text",
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
-    inputListaTitle:"text" 
+  
    
     
     
