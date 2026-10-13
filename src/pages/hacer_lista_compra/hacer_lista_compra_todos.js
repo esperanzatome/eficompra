@@ -59,7 +59,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
         inputBuscador: "password",
-        inputListaTitle:"password",
+        inputListaTitle:"text",
       cambioInputListaTitle: false,
          letterOnHover: false,
     palabrasOnMouseOver: [],
@@ -110,7 +110,8 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 if (event && event.target && event.target.tagName === 'INPUT'&& event.target.type==="text") {
     this.setState({
  
-      cambioInputListaTitle: true
+      cambioInputListaTitle: true,
+      inputListaTitle: "password"
     });
   
 }
@@ -323,7 +324,7 @@ handleOnClick(event){
 if(event.target.name==="buscadorProductos"||event.target.className==="productoFrecuente"){
 this.setState({
 inputBuscador:"text",
-inputListaTitle:"text"
+
 })
 }else{
   this.setState({
@@ -464,7 +465,7 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName[0], 
-     inputListaTitle:"password",
+    
 listaActiva:
    
 
