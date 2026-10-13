@@ -116,7 +116,7 @@ if (event && event.target && event.target.tagName === 'INPUT'&& event.target.typ
 }
   
 
-     }
+     
       }
 teclaEnter = (event, accionAceptar) => {
   const esTeclaEnter = 
