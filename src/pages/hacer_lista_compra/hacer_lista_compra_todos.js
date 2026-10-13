@@ -320,8 +320,13 @@ handleLetraClickMóvil(event, item) {
   }
 }
 handleOnClick(event){
-if(event.target.name==="buscadorProductos"||event.target.className==="palabra"){
+if(event.target.name==="buscadorProductos"||event.target.className==="productoFrecuente"){
 this.setState({
+inputBuscador:"text",
+
+})
+}else{
+  this.setState({
 inputBuscador:"password",
 
 })
