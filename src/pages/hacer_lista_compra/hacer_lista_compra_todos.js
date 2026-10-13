@@ -116,7 +116,7 @@ if (event && event.target && event.target.tagName === 'INPUT'&& event.target.typ
    this.setState({
       inputListaTitle: "text",
       
-    });
+    },()=>{console.log("renderizado como text")};
 }
   
 
