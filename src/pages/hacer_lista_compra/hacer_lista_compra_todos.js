@@ -444,7 +444,8 @@ let palabrasPorCategoria=[]
     }
     handleOnClickExit(event){
     this.setState({
-      palabrasPorCategoriaClick:false
+      palabrasPorCategoriaClick:false,
+      inputBuscador:"password"
      
     })
   
