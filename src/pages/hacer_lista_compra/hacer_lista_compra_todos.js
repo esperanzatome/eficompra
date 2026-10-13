@@ -322,7 +322,7 @@ handleLetraClickMóvil(event, item) {
 handleOnClick(event){
 if(event.target.name==="buscadorProductos"||event.target.className==="palabra"){
 this.setState({
-inputBuscador:"text",
+inputBuscador:"password",
 
 })
 }
@@ -435,7 +435,7 @@ let palabrasPorCategoria=[]
         palabrasPorCategoriaClick:true,
     categoryOnClick:categoryOnClick,
     palabrasPorCategoria:palabrasPorCategoria,
-        inputBuscador:"password"
+  
  
     
       
