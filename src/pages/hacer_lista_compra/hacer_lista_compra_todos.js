@@ -60,9 +60,10 @@ export default class MisListasDeLaCompra extends Component {
         privileges:true,
         inputBuscador: "password",
         inputListaTitle:"text",
+      cambioInputListaTitle: false,
          letterOnHover: false,
     palabrasOnMouseOver: [],
-    letraActivaId: null 
+    letraActivaId: null,
   
       
       
@@ -114,9 +115,9 @@ if (event && event.target && event.target.tagName === 'INPUT'&& event.target.typ
   
 }else{
   this.setState({
-  inputListaTitle: "text"
-}, () => {
-  console.log("renderizado como text");
+  inputListaTitle: "text",
+    cambioInputListaTitle: true
+
 });
   
 
@@ -371,7 +372,7 @@ inputBuscador:"text",
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onTouchStart={this.handleInputTitle} onTouchEnd={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
+      onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
       </div>
     
     <div className="listaCompraProducts">
@@ -483,7 +484,7 @@ listaActiva:
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
-       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)} onTouchEnd={this.handleInputTitle} onTouchStart={this.handleInputTitle} />
+       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchStart={this.handleInputTitle} />
       </div>
     
     <div className="listaCompraProducts">
@@ -564,7 +565,7 @@ this.setState({
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)} onTouchEnd={this.handleInputTitle} onTouchStart={this.handleInputTitle}/>
+      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)} onTouchStart={this.handleInputTitle}/>
       </div>
     
     <div className="listaCompraProducts">
@@ -946,7 +947,9 @@ if(this.state.isLoading===true){
 <img src={carritoImg} class="carritoCompras"/>
         </div>
 }
-
+if(this.state.cambioInputListaTitle===true){
+  listaActiva= this.state.listaActiva
+}
 return(
  <div className="hacer-lista-compra-productos-wrapper">
       <div className="content-wrapper">
