@@ -113,11 +113,11 @@ if (event && event.target && event.target.tagName === 'INPUT'&& event.target.typ
     });
   
 }else{
-   this.setState({
-      inputListaTitle: "text",
-      
-    }()=>{console.log("renderizado como text")};
-}
+  this.setState({
+  inputListaTitle: "text"
+}, () => {
+  console.log("renderizado como text");
+});
   
 
      }
