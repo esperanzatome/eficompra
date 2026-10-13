@@ -323,7 +323,7 @@ handleOnClick(event){
 if(event.target.name==="buscadorProductos"||event.target.className==="productoFrecuente"){
 this.setState({
 inputBuscador:"text",
-
+inputListaTitle:"text"
 })
 }else{
   this.setState({
