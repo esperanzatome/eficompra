@@ -435,6 +435,7 @@ let palabrasPorCategoria=[]
         palabrasPorCategoriaClick:true,
     categoryOnClick:categoryOnClick,
     palabrasPorCategoria:palabrasPorCategoria,
+        inputBuscador:"password"
  
     
       
