@@ -110,15 +110,10 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 if (event && event.target && event.target.tagName === 'INPUT'&& event.target.type==="text") {
     this.setState({
       inputListaTitle: "password",
-      
+      cambioInputListaTitle: true
     });
   
-}else{
-  this.setState({
-  inputListaTitle: "text",
-    cambioInputListaTitle: true
-
-});
+}
   
 
      }
