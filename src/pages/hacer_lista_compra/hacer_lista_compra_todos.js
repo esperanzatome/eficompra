@@ -461,10 +461,10 @@ handleListaTitle(event){
 
 
  let listaName=[(document.getElementById("listaCompraTitle")).value]
-let inputType="text"
+
   this.setState({
    listaCompraTitle:listaName[0], 
-    inputListaTitle:"text", 
+     
 listaActiva:
    
 
@@ -485,7 +485,7 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type={inputType} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchStart={this.handleInputTitle} />
       </div>
     
