@@ -625,13 +625,14 @@ this.setState({
    window.addEventListener("beforeunload", this.handleBeforeUnload);
      this.getProductsList() 
     document.addEventListener('touchstart', this.handleTouchOutside);
-       
+       document.addEventListener('mousedown', this.handleTouchOutside);
   }
 
   componentWillUnmount() {
     
     window.removeEventListener("beforeunload", this.handleBeforeUnload);
     document.removeEventListener('touchstart', this.handleTouchOutside);
+    document.removeEventListener('mousedown', this.handleTouchOutside);
   }
   
 
@@ -930,7 +931,7 @@ if(listaActiva!=""){
             key={i.letra}
             id={i.letra}
             onMouseOver={this.handleOnMouseOver} 
-            onMouseLeave={this.handleTouchOutside}
+           
             onClick={(e) => this.handleLetraClickMóvil(e, i)} 
           >
             {i.letra}
