@@ -465,7 +465,7 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName[0], 
-    
+    inputListaTitle:"text",
 listaActiva:
    
 
