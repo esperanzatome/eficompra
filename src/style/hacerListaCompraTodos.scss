@@ -782,8 +782,15 @@ height: 10%;
     width: 100%;
     font-family: 'Indie Flower';
     font-weight: 600;
-       color: transparent !important;
+      .teclado-oculto{
+          -webkit-text-security: disc !important;
+    text-security: disc !important;
+  
+    color: transparent !important;
+    
+
     text-shadow: 0 0 0 #000000 !important;
+      }
 }
   
 input:-internal-autofill-selected {
