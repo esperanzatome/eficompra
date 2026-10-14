@@ -781,7 +781,9 @@ height: 10%;
     border: none;
     width: 100%;
     font-family: 'Indie Flower';
-    font-weight: 600
+    font-weight: 600;
+       color: transparent !important;
+    text-shadow: 0 0 0 #000000 !important;
 }
   
 input:-internal-autofill-selected {
