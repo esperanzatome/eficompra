@@ -1,3 +1,6 @@
+
+@import url('https://cdn.rawgit.com/noppa/text-security/master/dist/text-security.css');
+
 @keyframes caminar {
   0% {
     
@@ -782,15 +785,14 @@ height: 10%;
     width: 100%;
     font-family: 'Indie Flower';
     font-weight: 600;
-   
+    &[type="password"] {
+                font-family: "text-security-none", 'Indie Flower' !important;
+                -webkit-text-security: none !important;
+                text-security: none !important;
+                color: #000000 !important;
+            }
 }
-    input.teclado-oculto,
-       input[type="password"] {
-           -webkit-text-security: none !important;
-           text-security: none !important;
-           color: #000000 !important; 
-           text-shadow: none !important;
-       }
+  
 input:-internal-autofill-selected {
     appearance: none;
     background-image: none !important;
