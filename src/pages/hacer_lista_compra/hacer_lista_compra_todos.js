@@ -59,7 +59,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
         inputBuscador: "password",
-        inputListaTitle:"password",
+        inputListaTitle:"text",
       cambioInputListaTitle: false,
          letterOnHover: false,
     palabrasOnMouseOver: [],
@@ -111,7 +111,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
     
-      inputListaTitle: "text"
+      inputListaTitle: "password"
     });
   
 }
