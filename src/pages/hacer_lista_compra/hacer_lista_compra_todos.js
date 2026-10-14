@@ -124,7 +124,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
 
-      inputListaTitle: "text"
+      inputListaTitle: "password"
     });
   
 }
