@@ -59,7 +59,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
         inputBuscador: "password",
-        inputListaTitle:"text",
+        inputListaTitle:"password",
       cambioInputListaTitle: false,
          letterOnHover: false,
     palabrasOnMouseOver: [],
@@ -111,7 +111,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
     
-      inputListaTitle: "password"
+      inputListaTitle: "text"
     });
   
 }
@@ -336,7 +336,7 @@ inputBuscador:"password",
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
-    inputListaTitle:"password",
+    
     
   
    
@@ -375,9 +375,9 @@ inputBuscador:"password",
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" list="listasNames"id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
      onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
-  <datalist> </datalist>
+  <datalist key='listasNames'>  </datalist>
       </div>
     
     <div className="listaCompraProducts">
@@ -490,9 +490,9 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle" list="listaNames"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}   onTouchStart={this.handleInputTitle} />
-                                     <datalist> </datalist>
+                                     <datalist key='listaNames'> </datalist>
       </div>
     
     <div className="listaCompraProducts">
@@ -572,9 +572,9 @@ this.setState({
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" list="listaNames" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}onTouchStart={this.handleInputTitle}/>
-         <datalist> </datalist>
+         <datalist key='listaNames'> </datalist>
       </div>
     
     <div className="listaCompraProducts">
