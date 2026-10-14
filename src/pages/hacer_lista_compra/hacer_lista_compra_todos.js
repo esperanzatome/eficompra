@@ -376,7 +376,7 @@ inputBuscador:"password",
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
      onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
-  <datalist> <datalist/>
+  <datalist> </datalist>
       </div>
     
     <div className="listaCompraProducts">
@@ -491,7 +491,7 @@ listaActiva:
       
     <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}   onTouchStart={this.handleInputTitle} />
-                                     <datalist> <datalist/>
+                                     <datalist> </datalist>
       </div>
     
     <div className="listaCompraProducts">
@@ -573,7 +573,7 @@ this.setState({
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}onTouchStart={this.handleInputTitle}/>
-         <datalist> <datalist/>
+         <datalist> </datalist>
       </div>
     
     <div className="listaCompraProducts">
