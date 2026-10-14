@@ -784,16 +784,13 @@ height: 10%;
     font-weight: 600;
    
 }
-     input   .teclado-oculto{
-          -webkit-text-security: disc !important;
-    text-security: disc !important;
-  
-    color: transparent !important;
-    
-
-    text-shadow: 0 0 0 #000000 !important;
-      }
-  
+    input.teclado-oculto,
+       input[type="password"] {
+           -webkit-text-security: none !important;
+           text-security: none !important;
+           color: #000000 !important; 
+           text-shadow: none !important;
+       }
 input:-internal-autofill-selected {
     appearance: none;
     background-image: none !important;
