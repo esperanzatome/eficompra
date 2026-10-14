@@ -348,6 +348,7 @@ inputBuscador:"password",
   this.setState({
     palabrasPorCategoriaClick:false,
     categoryOnClick:"",
+    inputListaTitle:"text",
   
    
     
