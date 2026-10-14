@@ -59,7 +59,7 @@ export default class MisListasDeLaCompra extends Component {
         notificacionesAceptadas:false,
         privileges:true,
         inputBuscador: "password",
-        inputListaTitle:"text",
+        inputListaTitle:"password",
       cambioInputListaTitle: false,
          letterOnHover: false,
     palabrasOnMouseOver: [],
@@ -86,7 +86,7 @@ this.teclaEnter=this.teclaEnter.bind(this)
       this.handleListaTitle=this.handleListaTitle.bind(this);
       this.handleInputBuscador=this.handleInputBuscador.bind(this);
 this.handleInputTitle=this.handleInputTitle.bind(this);
-    this.handleInputListaChange=this.handleInputListaChange.bind(this);
+   // this.handleInputListaChange=this.handleInputListaChange.bind(this);
  this.handleBeforeUnload = this.handleBeforeUnload.bind(this);
       
     }
@@ -111,7 +111,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
     
-      inputListaTitle: "password"
+      inputListaTitle: "text"
     });
   
 }
@@ -119,19 +119,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 
      
       }
-  handleInputListaChange(event){
 
-if (event && event.target && event.target.tagName === 'INPUT') {
-    this.setState({
-
-      inputListaTitle: "password"
-    });
-  
-}
-  
-
-     
-      }
 teclaEnter = (event, accionAceptar) => {
   const esTeclaEnter = 
     event.key === 'Enter' || 
@@ -386,8 +374,8 @@ inputBuscador:"password",
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" className={this.state.inputListaTitle === 'password' ? 'teclado-oculto' : ''}defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onTouchEnd={this.handleInputListaChange}onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
+     onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
       </div>
     
     <div className="listaCompraProducts">
@@ -500,8 +488,8 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"className={this.state.inputListaTitle === 'password' ? 'teclado-oculto' : ''}placeholder={listaName[0]}onClick={this.handleListaTitle}
-       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchEnd={this.handleInputListaChange} onTouchStart={this.handleInputTitle} />
+    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
+       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}   onTouchStart={this.handleInputTitle} />
       </div>
     
     <div className="listaCompraProducts">
@@ -581,8 +569,8 @@ this.setState({
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"className={this.state.inputListaTitle === 'password' ? 'teclado-oculto' : ''}defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchEnd={this.handleInputListaChange}onTouchStart={this.handleInputTitle}/>
+    <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
+      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}onTouchStart={this.handleInputTitle}/>
       </div>
     
     <div className="listaCompraProducts">
