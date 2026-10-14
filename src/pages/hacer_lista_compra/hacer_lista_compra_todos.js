@@ -776,9 +776,7 @@ let content =
               
       
     </div>
-<div className="listaActiva">
-  {listaActiva}
-</div>
+
    </div>
 
       if (this.state.letterOnHover === true && this.state.palabrasOnMouseOver.length > 0) {
