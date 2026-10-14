@@ -387,7 +387,7 @@ inputBuscador:"password",
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onChange={this.handleInputListaChange}onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
+      onTouchEnd={this.handleInputListaChange}onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
       </div>
     
     <div className="listaCompraProducts">
@@ -501,7 +501,7 @@ listaActiva:
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle"placeholder={listaName[0]}onClick={this.handleListaTitle}
-       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onChange={this.handleInputListaChange} onTouchStart={this.handleInputTitle} />
+       onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchEnd={this.handleInputListaChange} onTouchStart={this.handleInputTitle} />
       </div>
     
     <div className="listaCompraProducts">
@@ -582,7 +582,7 @@ this.setState({
     <div className="listaCompraTitle">
       
     <input type={this.state.inputListaTitle}name="listaCompraTitle" id="listaCompraTitle"defaultValue={this.state.listaCompraTitle[0]}placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
-      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onChange={this.handleInputListaChange}onTouchStart={this.handleInputTitle}/>
+      onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  onTouchEnd={this.handleInputListaChange}onTouchStart={this.handleInputTitle}/>
       </div>
     
     <div className="listaCompraProducts">
