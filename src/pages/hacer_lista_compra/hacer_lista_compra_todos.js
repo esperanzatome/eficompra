@@ -325,6 +325,7 @@ handleOnClick(event){
 if(event.target.name==="buscadorProductos"||event.target.className==="productoFrecuente"){
 this.setState({
 inputBuscador:"text",
+  inputListaTitle:"text
 
 })
 }else{
@@ -469,7 +470,7 @@ handleListaTitle(event){
 
   this.setState({
    listaCompraTitle:listaName[0], 
-inputListaTitle:"text",
+
 listaActiva:
    
 
