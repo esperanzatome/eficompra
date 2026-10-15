@@ -664,7 +664,7 @@ this.setState({
  
 })
   }
-if(this.state.inputListaTitle==="password"){
+if(this.state.inputListaTitle==="password"&&this.state.listaCompraTitle!==[""]){
   this.setState({
     listaCompraTitle:[""]
   })
