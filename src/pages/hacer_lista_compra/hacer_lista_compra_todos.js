@@ -377,7 +377,7 @@ inputBuscador:"password",
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle}name="listaCompraTitle" list="listasNames"id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
+    <input type="text"name="listaCompraTitle" list="listasNames"id="listaCompraTitle" defaultValue={this.state.listaCompraTitle[0]} placeholder={this.state.listaCompraTitle[0]}onClick={this.handleListaTitle}
      onTouchStart={this.handleInputTitle} onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}  />
   <datalist key='listasNames'> <option></option> </datalist>
       </div>
@@ -492,7 +492,7 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle" list="listaNames"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type="text" name="listaCompraTitle" id="listaCompraTitle" list="listaNames"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}   onTouchStart={this.handleInputTitle} />
                                      <datalist key='listaNames'><option></option> </datalist>
       </div>
@@ -664,11 +664,7 @@ this.setState({
  
 })
   }
-if(this.state.inputListaTitle==="password"&&this.state.listaCompraTitle!===[""]){
-  this.setState({
-    listaCompraTitle:[""]
-  })
-}
+
  }
   render(){
   
