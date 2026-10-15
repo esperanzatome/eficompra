@@ -116,6 +116,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
     });
 
 }
+      }
   handleInputListaChange(event){
     this.setState({
  
