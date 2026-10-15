@@ -110,7 +110,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
-    listaCompraTitle: [document.getElementById("listaCompraTitle")).value],
+    listaCompraTitle: [(document.getElementById("listaCompraTitle")).value],
       inputListaTitle: "password",
      
     });
