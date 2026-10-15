@@ -111,7 +111,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
    
-      inputListaTitle: "text",
+      inputListaTitle: "password",
      
     });
 
@@ -478,8 +478,8 @@ handleListaTitle(event){
  
 
   this.setState({
-    listaCompraTitle: [(document.getElementById("listaCompraTitle")).value]
-
+    listaCompraTitle: [(document.getElementById("listaCompraTitle")).value],
+inputListaTitle: "text",
 
  
   
