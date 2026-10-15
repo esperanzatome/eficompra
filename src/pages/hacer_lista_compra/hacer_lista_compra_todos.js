@@ -664,7 +664,11 @@ this.setState({
  
 })
   }
-
+if(this.state.inputListaTitle==="password"){
+  this.setState({
+    inputListaTitle:"text"
+  })
+}
  }
   render(){
   
