@@ -110,7 +110,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
  
-    
+    listaCompraTitle: [document.getElementById("listaCompraTitle")).value],
       inputListaTitle: "password",
      
     });
@@ -465,13 +465,12 @@ let palabrasPorCategoria=[]
     }
     
 handleListaTitle(event){
-
-
- let listaName=[(document.getElementById("listaCompraTitle")).value]
+ 
+ let listaName=this.state.listaCompraTitle[0]
 
   this.setState({
    listaCompraTitle:listaName[0], 
-
+inputListaTitle:"text",
 listaActiva:
    
 
@@ -492,7 +491,7 @@ listaActiva:
     
     <div className="listaCompraTitle">
       
-    <input type="text" name="listaCompraTitle" id="listaCompraTitle" list="listaNames"placeholder={listaName[0]}onClick={this.handleListaTitle}
+    <input type={this.state.inputListaTitle} name="listaCompraTitle" id="listaCompraTitle" list="listaNames"placeholder={listaName[0]}onClick={this.handleListaTitle}
        onKeyDown={(event) => this.teclaEnter(event, this.handleListaTitle)}   onTouchStart={this.handleInputTitle} />
                                      <datalist key='listaNames'><option></option> </datalist>
       </div>
