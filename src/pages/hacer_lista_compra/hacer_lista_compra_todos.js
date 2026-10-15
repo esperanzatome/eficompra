@@ -114,7 +114,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       inputListaTitle: "password",
       listaCompraTitle:[""]
     });
-  
+  return
 }
   
 
