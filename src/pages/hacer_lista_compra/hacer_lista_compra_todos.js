@@ -112,7 +112,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
  
     
       inputListaTitle: "password",
-      listaCompraTitle:[""]
+     
     });
   return
 }
@@ -666,7 +666,7 @@ this.setState({
   }
 if(this.state.inputListaTitle==="password"){
   this.setState({
-    inputListaTitle:"text"
+    listaCompraTitle:[""]
   })
 }
  }
