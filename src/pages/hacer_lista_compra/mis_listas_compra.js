@@ -3092,15 +3092,14 @@ if(this.state.productSelected.length>0&&this.state.listaActivaGuardada===true){
 
   
 
-if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0){
+if(this.state.letterOnHover===true && this.state.palabrasOnMouseOver && this.state.palabrasOnMouseOver.length>0){
   
     content= 
       <div className="productosPorLetra" onMouseLeave={this.handleOnMouseLeave}>
-        {this.state.palabrasOnMouseOver[0].map(i=>{
-    
+        {this.state.palabrasOnMouseOver.map((producto, index)=>{
           return(
-            <button className="palabra" value={i} onClick={this.handleOnClick}>
-              {i}
+            <button key={index} className="palabra" value={producto} onClick={this.handleOnClick}>
+              {producto}
             </button>
           )
         })}
@@ -3108,7 +3107,7 @@ if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0){
 
     listaActiva=""
 
-  }
+}
 
         
         if(this.state.palabrasPorCategoriaClick===true){
