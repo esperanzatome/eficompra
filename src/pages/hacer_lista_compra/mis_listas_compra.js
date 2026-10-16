@@ -1799,8 +1799,7 @@ export default class MisListasDeLaCompra extends Component {
                 })
               
             
-        }else{
-                  if(this.state.listaActivaGuardada===false){
+        }else if(this.state.listaActivaGuardada===false){
                     if(window.confirm("La lista activa no está guardada.¿Quieres continuar sin guardar?")===true){
 
 
