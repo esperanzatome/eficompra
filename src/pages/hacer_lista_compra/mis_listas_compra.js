@@ -1011,12 +1011,12 @@ this.state.usersIdCompartidos.map(i=>{
 })
 return(
     this.setState({
-              listaCompraTitle:listaName,
+              listaCompraTitle:listaName
 
         })
           )
       }
-              }
+              
     }  
 
   
