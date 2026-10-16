@@ -1139,7 +1139,7 @@ if(this.state.productSelected.length>0){
 
 
 
-*/
+
   
   }
    
