@@ -1945,376 +1945,70 @@ this.setState({
 this.getContent() 
 }
   
-handleAbrirLista(event){
+handleAbrirLista(event) {
 
-  if(this.state.listaActiva===""||this.state.productSelected.length===0){
-          
-      let comprado=false
-      let usersAliasCompartidos=this.state.usersAliasCompartidos
-      let usersIdCompartidos=this.state.usersIdCompartidos
-      let compartida=this.state.compartida
-      let indx=event.target.value
-      let listasInactivas=this.state.listasInactivas
-
-
-
-      listasInactivas[indx].products.map(i=>{
-                this.state.productSelected.push(i)
-              return(this.state.productSelected)
-              })
-              let listaId= listasInactivas[indx].listaId
-          
-      
-          
-              this.setState({
-              
-                miListaCompraId:listaId,
-                listaActivaGuardada: true
-              })
-        
-              this.state.listaCompraTitle.shift()    
-      
-        this.state.listaCompraTitle.push(listasInactivas[indx].listaName)
-
-        this.state.comprado.shift()
-        this.state.comprado.push(listasInactivas[indx].comprado)
-      this.state.comprado.map(i=>{
-          if(i===0||i===false){
-          
-            comprado=false
-          }else(
-            
-            comprado=true
-          )     
-      })
-
-      usersAliasCompartidos=listasInactivas[indx].usersAliasCompartidos
-      usersIdCompartidos=listasInactivas[indx].usersIdCompartidos
-      listasInactivas.splice(indx,1)
-
-      if(usersAliasCompartidos.length>0){
-          compartida=true
-          }else{
-          compartida=false
+  if (this.state.listaActiva !== "" && this.state.productSelected.length > 0) {
+    if (this.state.listaActivaGuardada === false) {
+      if (!window.confirm("La lista activa no está guardada. ¿Quieres continuar sin guardar?")) {
+        return; 
       }
+    } else {
+      this.handleBtnGuardarConNombre();
+    }
+  }
 
-          this.setState({
-              comprado:[comprado],
-              listaCompraTitle:this.state.listaCompraTitle,
-              productSelected:this.state.productSelected,
-              listasInactivas:listasInactivas,
-              listaActivaGuardada:true,
-              usersAliasCompartidos:usersAliasCompartidos,
-              usersIdCompartidos:usersIdCompartidos,
-              compartida:compartida,
-          })
-          
-          if(listasInactivas.length===0){
-          this.setState({
-            listasInactivasContent:""
-          })
+  const indx = Number(event.target.value);
+  const listasInactivasCopia = [...this.state.listasInactivas];
+  const listaSeleccionada = listasInactivasCopia[indx];
 
-          }else{
-            this.setState({
-            
-              listasInactivasContent: 
-                <div className="listasInactivasWrapper">
-                                <div className="columnaTitle"> Listas guardadas</div>
-                  <div className="listasGuardadas">
-                      
-                          
-                      { listasInactivas.map(i=>{
-                                  let compradoInactivo=i.comprado
-                                      const fechaISO = i.fecha;
-                                      const fecha = new Date(fechaISO);
+  if (!listaSeleccionada) return;
 
-                                      const opcionesFechaHora = { 
-                                        year: 'numeric', 
-                                        month: '2-digit', 
-                                        day: '2-digit', 
-                                        hour: '2-digit', 
-                                        minute: '2-digit', 
-                                        hour12: false 
-                                    };
-                                    const fechaHoraFormateada = fecha.toLocaleString('es-ES', opcionesFechaHora);
-                                    if(compradoInactivo===0||compradoInactivo===false){
-                                      compradoInactivo=false
-                                    }else{
-                                      compradoInactivo=true
-                                    }
-                                  if(i.compartida===false){
-                                
-                                    return(
-                                              <div>
-                                              Comprado
-                                            
-                                              <input type="checkbox" id="compradoCheckGuardado"checked={compradoInactivo} disabled></input>
-                                              <div className="listaCompra" >
-                                              
-                                              <div className="listaCompraTitle">
-                                          
-                                            {i.listaName}
-                                                
-                                                </div>
-                                              <div className="listaCompraFecha">
+  let listaQuePasaAInactiva = null;
+  if (this.state.listaActivaGuardada && this.state.miListaCompraId !== "") {
+    listaQuePasaAInactiva = {
+      comprado: this.state.comprado[0],
+      products: [...this.state.productSelected],
+      listaName: this.state.listaCompraTitle[0],
+      fecha: new Date().toISOString(),
+      listaId: this.state.miListaCompraId,
+      compartida: this.state.compartida,
+      userAlias: localStorage.getItem("id"),
+      usersAliasCompartidos: [...this.state.usersAliasCompartidos],
+      usersIdCompartidos: [...this.state.usersIdCompartidos]
+    };
+  }
 
 
+  const nuevosProductos = [...listaSeleccionada.products];
+  const nuevoListaId = listaSeleccionada.listaId;
+  const nuevoTitle = [listaSeleccionada.listaName];
+  const nuevoCompradoVal = (listaSeleccionada.comprado === 1 || listaSeleccionada.comprado === true || listaSeleccionada.comprado === "1");
 
-                                                {fechaHoraFormateada}
-                                              </div>
-                                              <div className="optionsBarList">
-                                                  <button className="AbrirLista" onClick={this.handleAbrirLista} value={listasInactivas.indexOf(i)} >Abrir Lista</button>
-                                                  <button className="CompartirLista" onClick={this.handleCompartirLista}value={i.listaId}>Compartir Lista</button>
-                                                  <button className="BorrarLista"onClick={this.handleBorrarListaInactiva}value={i.listaId}>Borrar Lista</button>
-                                                </div>
-                                              <div className="listaCompraProducts">
-                                            
-                                              
-                                        
-                                        
-                                    {i.products.map(product=>{
-                                    return(
-                                    <div className="productSelected">
-                                    <div className="productSelectedName">
-                                    {product} 
-                                    </div>
-                                    
-                                    
-                                    
-                                    </div>
-                                    )
-                                    })}
-                                                  
-                                                
-                                          
-                                            
-                                            
-                                              </div>
-                                            </div>
-                                              </div>)
-                                  }else{
-                                    return(
-                                              <div>
-                                              Comprado
-                                            
-                                              <input type="checkbox" id="compradoCheckGuardado"checked={compradoInactivo} disabled></input>
-                                              <div className="listaCompraCompartida" >
-                                                <div className="columnaIzda">
-                                                <div className="listaCompraTitle">
-                                          
-                                            {i.listaName}
-                                                
-                                                </div>
-                                              <div className="listaCompraFecha">
+  const nuevosUsersAlias = listaSeleccionada.usersAliasCompartidos || [];
+  const nuevosUsersId = listaSeleccionada.usersIdCompartidos || [];
+  const nuevaCompartida = nuevosUsersAlias.length > 0;
 
 
-
-                                                {fechaHoraFormateada}
-                                              </div>
-                                              </div>
-                                            <div className="columnaDerecha">
-                                            <div className="compartida">
-                                            <div className="compartidaTitle">Compartida</div>
-                                            <div className="compartidaUsers">
-                                            {i.usersAliasCompartidos.map(i=>{
-                                              return(
-                                                <div>{i}</div>
-                                              )
-                                            })}
-                                            </div>
-
-                                            </div>
-                                            </div>
-                                              <div className="optionsBarList">
-                                                  <button className="AbrirLista" onClick={this.handleAbrirLista} value={this.state.listasInactivas.sort((a, b) => new Date(b.fecha) - new Date(a.fecha)).indexOf(i)} >Abrir Lista</button>
-                                                  <button className="CompartirLista" onClick={this.handleCompartirLista}value={i.listaId}>Compartir Lista</button>
-                                                  <button className="BorrarLista"onClick={this.handleBorrarListaInactiva}value={i.listaId}>Borrar Lista</button>
-                                                </div>
-                                              <div className="listaCompraProducts">
-                                            
-                                              
-                                        
-                                        
-                                    {i.products.map(product=>{
-                                    return(
-                                    <div className="productSelected">
-                                    <div className="productSelectedName">
-                                    {product} 
-                                    </div>
-                                    
-                                    
-                                    
-                                    </div>
-                                )
-                                })}
-                                              
-                                            
-                                      
-                                        
-                                        
-                                          </div>
-                                        </div>
-                                          </div>)
-                              }
-
-                                          
-                              })}
-                              </div>
-                              
-                </div>
-            })
-          
-        
-  }else{
-            if(this.state.listaActivaGuardada===false){
-              if(window.confirm("La lista activa no está guardada.¿Quieres continuar sin guardar?")===true){
+  listasInactivasCopia.splice(indx, 1);
+  if (listaQuePasaAInactiva) {
+    listasInactivasCopia.unshift(listaQuePasaAInactiva);
+  }
 
 
-                  let comprado=false
-                  let usersAliasCompartidos=this.state.usersAliasCompartidos
-                  let usersIdCompartidos=this.state.usersIdCompartidos
-                  let compartida=this.state.compartida
-                  let indx=event.target.value
-                  let productSelected=[]
-                  let compradoInactivo=false
-                  let listasInactivas=this.state.listasInactivas
-                  let listaName=[]
-
-
-                  listasInactivas[indx].products.map(i=>{
-                            productSelected.push(i)
-                          return(productSelected)
-                  })
-                          let listaId= listasInactivas[indx].listaId
-                      
-                
-                
-                    this.setState({
-                    
-                      miListaCompraId: listaId,
-                      listaActivaGuardada: true
-                    })
-                  
-              
-                    listaName=[this.state.listasInactivas[indx].listaName]
-                    this.state.comprado.shift()
-                    this.state.comprado.push(this.state.listasInactivas[indx].comprado)
-                    this.state.comprado.map(i=>{
-                        if(i===0||i===false){
-                        
-                          comprado=false
-                        }else(
-                          
-                          comprado=true
-                        )     
-                    })
-                  usersAliasCompartidos=this.state.listasInactivas[indx].usersAliasCompartidos
-                  usersIdCompartidos=this.state.listasInactivas[indx].usersIdCompartidos
-                  compartida=this.state.listasInactivas[indx].compartida
-                  listasInactivas.splice(indx,1)
-                    
-                      this.setState({
-                          comprado:[comprado],
-                        listaCompraTitle:listaName,
-                        productSelected:productSelected,
-                        listasInactivas:listasInactivas,
-                        listaActivaGuardada:true,
-                        usersAliasCompartidos:usersAliasCompartidos,
-                        usersIdCompartidos:usersIdCompartidos,
-                        compartida:compartida,
-
-                      })
-                      
-                      
-              }else{
-                  this.handleBtnGuardarConNombre()
-              }
-            }else{
-              
-              
-                          let comprado=false
-                    let compradoInactivo=false
-                    let productSelected=[]
-                    let usersAliasCompartidos=this.state.usersAliasCompartidos
-                    let usersIdCompartidos=this.state.usersIdCompartidos
-                    let compartida=this.state.compartida
-                    let indx=event.target.value
-                    let listaName=[]
-                    let listaActivada={
-                      comprado:this.state.comprado[0],
-                                    products:this.state.productSelected,
-                                  listaName:this.state.listaCompraTitle[0],
-                                    fecha:new Date().toISOString(),
-                          listaId:this.state.miListaCompraId,
-                          compartida:compartida,
-                          userAlias:localStorage.getItem("id"),
-                          usersAliasCompartidos:usersAliasCompartidos,
-                          usersIdCompartidos:usersIdCompartidos
-                    }
-                    let listasInactivas =this.state.listasInactivas
-
-
-
-                          listasInactivas[indx].products.map(i=>{
-                                    productSelected.push(i)
-                                  return(productSelected)
-                          })
-                                  let listaId= listasInactivas[indx].listaId
-                              
-                              
-                              
-                                  this.setState({
-                                  
-                                    miListaCompraId:listaId,
-                                    listaActivaGuardada: true
-                                
-                                  })
-                            
-                              
-                          listaName=[listasInactivas[indx].listaName]
-                            this.state.comprado.shift()
-                            this.state.comprado.push(listasInactivas[indx].comprado)
-                          this.state.comprado.map(i=>{
-                              if(i===0||i===false){
-                              
-                                comprado=false
-                              }else(
-                                
-                                comprado=true
-                              )     
-                          })
-                          usersIdCompartidos=listasInactivas[indx].usersIdCompartidos
-                          usersAliasCompartidos=listasInactivas[indx].usersAliasCompartidos
-                            if(usersAliasCompartidos.length>0){
-                              compartida=true
-                              }else{
-                              compartida=false
-                            }
-
-                          listasInactivas.splice(indx,1)
-                          listasInactivas.unshift(listaActivada)
-
-                            this.setState({
-                                  comprado:[comprado],
-                                  listaCompraTitle:listaName,
-                                  productSelected:productSelected,
-                                  listasInactivas:listasInactivas,
-                                  listaActivaGuardada:true,
-                                  usersAliasCompartidos:usersAliasCompartidos,
-                                  usersIdCompartidos:usersIdCompartidos,
-                                  compartida:compartida,
-
-                        })
-                  
-              
-                
-              
-            }   
-                    
-  }       
-                  
-  }     
-          
+  this.setState({
+    miListaCompraId: nuevoListaId,
+    productSelected: nuevosProductos,
+    listaCompraTitle: nuevoTitle,
+    comprado: [nuevoCompradoVal],
+    listasInactivas: listasInactivasCopia,
+    listaActivaGuardada: true,
+    usersAliasCompartidos: nuevosUsersAlias,
+    usersIdCompartidos: nuevosUsersId,
+    compartida: nuevaCompartida
+  }, () => {
+  
+    this.getContent();
+  });
 }
 
 
