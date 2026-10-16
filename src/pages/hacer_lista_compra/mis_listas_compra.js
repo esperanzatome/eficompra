@@ -1788,7 +1788,7 @@ export default class MisListasDeLaCompra extends Component {
                                             
                                               </div>
                                             </div>
-                                              </div>)
+                                              </div>
                                   }
 
                                               
