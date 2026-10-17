@@ -1605,7 +1605,8 @@ export default class MisListasDeLaCompra extends Component {
                       this.setState({
                       
                         miListaCompraId:listaId,
-                        listaActivaGuardada: true
+                        listaActivaGuardada: true,
+                        inputListaTitle:"text"
                       })
                 
                       this.state.listaCompraTitle.shift()    
