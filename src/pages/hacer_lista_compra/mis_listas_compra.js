@@ -3378,7 +3378,7 @@ export default class MisListasDeLaCompra extends Component {
                     </div>
                       </div>
             }
- if(listasInactivasContent===""&&&&this.state.productSelected.length>0&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
+ if(listasInactivasContent===""&&this.state.productSelected.length>0&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
                      content=
                                               <div className="contentWhithList">
                         
