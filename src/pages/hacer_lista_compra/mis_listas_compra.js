@@ -3040,22 +3040,19 @@ export default class MisListasDeLaCompra extends Component {
           
             
 
-            if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0){
-              return(
-                content= 
-                  <div className="productosPorLetra" onMouseLeave={this.handleOnMouseLeave}>
-                    {this.state.palabrasOnMouseOver[0].map(i=>{
-                
-                      return(
-                        <button className="palabra" value={i} onClick={this.handleOnClick}>
-                          {i}
-                        </button>
-                      )
-                    })}
-                  </div>
+           if(this.state.letterOnHover===true&&this.state.palabrasOnMouseOver.length>0){
+  content = 
+    <div className="productosPorLetra" onMouseLeave={this.handleOnMouseLeave}>
+      {this.state.palabrasOnMouseOver.map(i=>{
+        return(
+          <button key={i} className="palabra" value={i} onClick={this.handleOnClick}>
+            {i}
+          </button>
+        )
+      })}
+    </div>
+}
 
-              )
-            }    
             if(this.state.palabrasPorCategoriaClick===true){
               content=
                 <div className="productosPorCategory"id={`palabrasCat${this.state.categoryOnClick.replaceAll(" ","")}`} >
