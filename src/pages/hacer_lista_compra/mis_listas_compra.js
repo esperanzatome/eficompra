@@ -927,6 +927,7 @@ export default class MisListasDeLaCompra extends Component {
 
       
             }
+    event.target.value=""
   }
       
     handleOnClickCategory(event){
