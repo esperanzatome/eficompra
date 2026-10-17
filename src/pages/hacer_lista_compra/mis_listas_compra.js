@@ -3472,7 +3472,9 @@ export default class MisListasDeLaCompra extends Component {
                           
                         </div>
                  
+                     <div className="listaActiva">
                       {listaActiva}
+                    </div>
                   
 
                       </div>
