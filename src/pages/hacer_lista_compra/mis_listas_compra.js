@@ -3378,6 +3378,105 @@ export default class MisListasDeLaCompra extends Component {
                     </div>
                       </div>
             }
+ if(listasInactivasContent===""&&this.state.listaActiva===""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
+                     content=
+                                              <div className="contentWhithList">
+                        
+                                  
+                      
+                        <div className="columnaCentral">
+                          
+                                    <div className="buscadorProductos">
+                                    <input type={this.state.inputBuscador}name="buscadorProductos" list="Products" onClick={this.handleOnClick} 
+                              onKeyDown={(event) => this.teclaEnter(event, this.handleOnClick)}  
+                              placeholder={this.state.placeholderBuscador} onTouchStart={this.handleInputBuscador}/>
+                                    
+                                    <datalist key='Products' id="Products" className="dataList">
+                                  
+                                  
+                                  { this.state.options.map(i=>{
+                                    
+                                  
+                                      return (
+                                  
+                                  
+                                  <option key={this.state.options.indexOf(i)} value={i}>{i}</option>
+                                  
+                                      )})}
+                                      
+                                      
+                                  </datalist>
+                                      </div>
+                                  
+                                  
+                                  
+                                  <div className="productosFrecuentes">
+                                  
+                                  {this.state.productosFrecuentes.map(i=>{
+                                if(i.name!=undefined){
+                                  return(
+                                    <button className="productoFrecuente" value={i.name} onClick={this.handleOnClick}>
+                                    {i.name}
+                                    </button>
+                                    
+                                    )
+                                }
+                                    
+                                    })}
+                                  </div>
+                                  <div className="categories">
+                                  
+                                  
+                                        
+                                { 
+                                  this.state.opcionesPorCategoria.sort((a,b)=>a[0].category.localeCompare(b[0].category)).map(cat=>{
+                              
+                                  
+                                    if(cat[0]!=undefined&&cat[0].category==="cuidado_personal"){
+
+                    return(
+                                    <div className="category" id={cat[0].category} onClick={this.handleOnClickCategory} >
+                                    <div className="categoryName" >
+                                    cuidado personal
+                                    </div>
+                                    
+                                  
+                                  </div>
+                    )
+                    }
+                                  if(cat[0]!=undefined&&cat[0].category!="cuidado_personal"){
+                                
+                                let catId=(cat[0].category).replaceAll(" ","")
+                              
+                                  return(
+                                    <div className="category" id={catId}onClick={this.handleOnClickCategory} >
+                                    <div className="categoryName" >
+                                    {cat[0].category}
+                                    </div>
+                                    
+                                  
+                                  </div>
+                                  )
+                                  }
+                                  
+
+                                  
+                                  
+                                  })
+                                  
+                                  }
+                                
+                                
+                                  </div>
+                                  
+                          
+                        </div>
+                    <div className="listaActiva">
+                      {listaActiva}
+                    </div>
+
+                      </div>
+            }
             return(
                     
                             <div className="content-wrapper">
