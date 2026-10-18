@@ -1028,7 +1028,11 @@ export default class MisListasDeLaCompra extends Component {
                     })
                 
               }  
-
+ this.setState({
+                                    listaCompraTitle:listaName,
+                                    inputListaTitle: "text"
+                    
+                          })
       }
       
     changeState(event){
