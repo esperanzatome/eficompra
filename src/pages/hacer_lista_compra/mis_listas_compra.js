@@ -762,7 +762,7 @@ export default class MisListasDeLaCompra extends Component {
               this.setState({
           
             
-                inputListaTitle: "text",
+                inputListaTitle: "password",
               
               });
 
@@ -1021,6 +1021,7 @@ export default class MisListasDeLaCompra extends Component {
                       return(
                           this.setState({
                                     listaCompraTitle:listaName,
+                            inputListaTitle: "text"
                     
                           })
                       )
