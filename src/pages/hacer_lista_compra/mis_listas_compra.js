@@ -1588,40 +1588,8 @@ handleLetraClickMóvil(event, item) {
             listaCompraTitle:["Mi lista de la compra"],
             comprado:[false],
             listasInactivas:[],
-            /*
-            listaActiva:
-            <div>
-                <div className="columnaListaActiva">
-              <div className="columnaTitle"> Lista de la compra activa</div>
-            <div className="optionsBarList">
-        
-              <button className="BorrarLista"onClick={this.handleBorrarLista}>Borrar Lista</button>
-            </div>
+          inputBuscador:"password",
             
-          
-            
-                <div>
-                Comprado
-                <input type="checkbox" id="compradoCheck" checked={false} onChange={this.changeState}></input>
-            <div className="listaCompra">
-            
-            <div className="listaCompraTitle">
-              
-            <input type='text'name="listaCompraTitle" autocomplete="off"id="listaCompraTitle"placeholder={"Mi lista de la compra"}onChange={this.handleListaTitle}
-              onKeyUp={this.teclaEnter}/>
-              </div>
-            
-            <div className="listaCompraProducts">
-              
-            </div>
-          
-          </div>
-          </div>
-          
-            
-          </div>
-              </div>
-              */
         })
         this.getContent() 
     }
