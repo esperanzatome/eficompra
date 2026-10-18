@@ -1085,6 +1085,19 @@ export default class MisListasDeLaCompra extends Component {
     
     
     }
+ handleTouchOutside(event) {
+const tocoFueraAbecedario = this.abecedarioRef.current && !this.abecedarioRef.current.contains(event.target);
+  const tocoFueraPalabras = !event.target.closest('.productosPorLetra') && !event.target.closest('.pocosProductosPorLetra');
+
+  if (tocoFueraAbecedario && tocoFueraPalabras) {
+    this.setState({
+      letterOnHover: false,
+      palabrasOnMouseOver: [],
+      letraActivaId: null,
+      
+    });
+  }
+}
     handleDelete(event){ 
         this.setState({
           indxProductoABorrar:[]
