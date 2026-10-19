@@ -56,7 +56,7 @@ teclaEnter = (event, accionAceptar) => {
 
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
-      inputBuscador: "text",
+      inputTypeEmail: "text",
       
     });
   }
@@ -65,7 +65,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
 
 if (event && event.target && event.target.tagName === 'INPUT') {
     this.setState({
-      inputBuscador: "text",
+      inputAlias: "text",
       
     });
   }
