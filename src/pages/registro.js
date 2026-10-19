@@ -60,6 +60,7 @@ if (event && event.target && event.target.tagName === 'INPUT') {
       
     });
   }
+     }
     handleInputAlias(event){
 
 if (event && event.target && event.target.tagName === 'INPUT') {
