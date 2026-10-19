@@ -22,8 +22,8 @@ export default class Registro extends Component {
         inputType: "password",
         alias:"",
         listaCompraTitle:[],
-        inputTypeEmail:password,
-        inputAlias:password
+        inputTypeEmail:"password",
+        inputAlias:"password"
       };
   
       this.handleChange = this.handleChange.bind(this);
