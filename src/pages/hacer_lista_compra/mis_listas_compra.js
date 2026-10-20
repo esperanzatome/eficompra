@@ -3213,7 +3213,7 @@ handleLetraClickMóvil(event, item) {
 
                       
             }
-            if(listasInactivasContent!=""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
+            if(listasInactivasContent!=""&&this.state.listaActiva===""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
                                       content=
                                               <div className="contentWhithListasGuardadas">
                         
