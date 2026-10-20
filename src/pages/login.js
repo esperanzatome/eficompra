@@ -1,0 +1,440 @@
+import React, { Component } from "react";
+import axios from "axios";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrash, faSpinner,faShareNodes } from "@fortawesome/free-solid-svg-icons";
+
+import { Link } from "react-router-dom";
+
+library.add(faTrash, faSpinner, faShareNodes);
+
+export default class Login extends Component {
+
+  constructor(props){
+    super()
+    this.state = {
+        email: "",
+ 
+        password: "",
+      
+        inputType: "password",
+      
+      };
+   this.passwordInput = React.createRef(); 
+      this.handleChange = this.handleChange.bind(this);
+      this.handleOnClick = this.handleOnClick.bind(this);
+      this.handleVerContraseña = this.handleVerContraseña.bind(this);
+     
+      this.teclaEnter=this.teclaEnter.bind(this)
+    
+      
+    }
+    
+teclaEnter = (event, accionAceptar) => {
+  const esTeclaEnter = 
+    event.key === 'Enter' || 
+    event.keyCode === 13 || 
+    event.which === 13;
+
+  if (esTeclaEnter) {
+    event.preventDefault();
+  
+    
+   
+    if (accionAceptar) {
+      accionAceptar(event); 
+    }
+      event.target.blur();  
+  }
+}
+
+    handleChange(event) {
+      this.setState({
+        [event.target.name]: event.target.value
+      });
+    }
+   
+     
+     handleOnClick(event) {
+  let listaId = "";
+  let emailInputValue = this.state.email;
+
+  if (event != undefined && this.state.email != "" && this.state.password != "") {
+    axios
+      .post("https://eficompraserver.onrender.com/login", {
+        email: emailInputValue,
+        password: this.state.password
+      })
+      .then(response => {
+        if (Object.values(response.data)[0].length === 0) {
+          window.alert("E-mail o contraseña incorrectos");
+        } else {
+          localStorage.setItem("id", `${Object.values(response.data)[0][0].id}`);
+          localStorage.setItem("alias", `${Object.values(response.data)[0][0].alias}`);
+
+          
+          const procesarProductosLocales = () => {
+            const products = localStorage.getItem("products");
+            if (products && products !== "") {
+              axios.post("https://eficompraserver.onrender.com/misListasDeLaCompra", {
+                listaId: null,
+                userId: localStorage.getItem("id")
+              })
+              .then(response => {
+                axios.get("https://eficompraserver.onrender.com/misListasDeLaCompra")
+                .then(response => {
+                  listaId = Object.values(response.data[0]);
+
+                  axios.post("https://eficompraserver.onrender.com/usuario", {
+                    userId: localStorage.getItem("id"),
+                    alias: localStorage.getItem("alias"),
+                    listasdelacompra: Object.values(response.data[0]),
+                    comprado: [false],
+                    listaName: localStorage.getItem("listaTitle")
+                  })
+                  .then(response => {
+                    let productsArr = products.split(",");
+            
+                    const promesasProductos = productsArr.map(i => {
+                      return axios.post("https://eficompraserver.onrender.com/miListaCompra", {
+                        listaId: listaId,
+                        product: i
+                      });
+                    });
+
+                    Promise.all(promesasProductos).then(() => {
+                      localStorage.setItem("products", "");
+                      window.location.href = "/mis_listas_compra";
+                    });
+                  });
+                });
+              });
+            } else {
+           
+              window.location.href = "/mis_listas_compra";
+            }
+          };
+
+        
+          const listaCompartida = localStorage.getItem("listaCompartida");
+          
+          if (listaCompartida && listaCompartida !== "") {
+            axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida", {
+              listasdelacompra: listaCompartida
+            })
+            .then(response => {
+         
+              let usuarios = [];
+              let comprado = "";
+              let listaName = "";
+              let usuariosIds = [];
+
+              if (response.data.length > 0) {
+                response.data.map(i => {
+                  usuarios.push(i.alias);
+                  comprado = i.comprado;
+                  listaName = i.listaName;
+                  usuariosIds.push(i.userId);
+                });
+
+                const finalizarListaCompartida = () => {
+         
+                  const promesasRevocar = usuariosIds.map(i => {
+                    return axios.post("https://eficompraserver.onrender.com/revocarPrivilegios", { id: i });
+                  });
+
+                  Promise.all(promesasRevocar).then(() => {
+                    localStorage.setItem("listaCompartida", "");
+                   
+                    procesarProductosLocales();
+                  });
+                };
+
+                if (usuarios.includes(localStorage.getItem("alias")) === false) {
+                  axios.post("https://eficompraserver.onrender.com/usuario", {
+                    userId: localStorage.getItem("id"),
+                    alias: localStorage.getItem("alias"),
+                    listasdelacompra: listaCompartida,
+                    comprado: comprado,
+                    listaName: listaName
+                  })
+                  .then(response => {
+                    console.log("usuario-lista creado");
+                    finalizarListaCompartida();
+                  });
+                } else {
+                  finalizarListaCompartida();
+                }
+              } else {
+             
+                procesarProductosLocales();
+              }
+            })
+            .catch(error => {
+              console.error("Error al recuperar lista compartida:", error);
+              procesarProductosLocales();
+            });
+          } else {
+          
+            procesarProductosLocales();
+          }
+
+        }
+      });
+  }
+}
+       
+    /*
+    handleOnClick(event) {
+   let listaId="";
+   let emailInputValue= this.state.email
+      if(event!=undefined&&this.state.email!=""&&this.state.password!=""){
+
+        axios
+        .post("https://eficompraserver.onrender.com/login",{
+          
+          email:emailInputValue,
+          password:this.state.password
+        })
+        
+    
+        .then(response=>{
+ 
+        if(Object.values(response.data)[0].length===0){
+          window.alert("E-mail o contraseña incorrectos")
+         
+         
+        }else{
+         localStorage.setItem("id",`${Object.values(response.data)[0][0].id}`)
+           localStorage.setItem("alias",`${Object.values(response.data)[0][0].alias}`)
+        if(localStorage.getItem("listaCompartida")!=""){
+   axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida",{
+    
+      listasdelacompra:localStorage.getItem("listaCompartida")
+    
+
+    })
+          .then(response=>{
+          
+       let usuarios=[]
+       let comprado=""
+       let listaName=""
+       let usuariosIds=[]
+
+         if(response.data.length>0){
+      
+          response.data.map(i=>{
+usuarios.push(i.alias)
+comprado=i.comprado
+listaName=i.listaName
+usuariosIds.push(i.userId)
+})
+
+ 
+            if(usuarios.includes(localStorage.getItem("alias"))===false){
+
+axios.post("https://eficompraserver.onrender.com/usuario",{
+                    userId: localStorage.getItem("id"),
+                    alias: localStorage.getItem("alias"),
+                    listasdelacompra:localStorage.getItem("listaCompartida") ,
+                    comprado:comprado,
+                    listaName:listaName
+                  })
+                  .then(response=>{
+                    console.log("usuario-lista creado")
+               
+                      usuariosIds.map(i=>{
+             
+                         axios.post("https://eficompraserver.onrender.com/revocarPrivilegios",{
+                          id:i
+                        }).then(response=>{
+                          console.log(response)
+                        })
+                      })
+                       localStorage.setItem("listaCompartida","")
+                  window.location.href ="/mis_listas_compra"
+                    
+                    })
+            }else{
+                  usuariosIds.map(i=>{
+                
+                         axios.post("https://eficompraserver.onrender.com/revocarPrivilegios",{
+                          id:i
+                        }).then(response=>{
+                          console.log(response)
+                        })
+                      })
+                       localStorage.setItem("listaCompartida","")
+                  window.location.href ="/mis_listas_compra"
+                    
+            }
+            
+              
+
+            
+          
+          
+
+         }
+          
+                      
+          })
+        }
+    if(localStorage.getItem("products")!=""){
+   
+   
+   
+   axios.post("https://eficompraserver.onrender.com/misListasDeLaCompra",{
+        
+           listaId: null,
+           userId: localStorage.getItem("id")
+      
+         })
+          .then(response=>{
+          
+         console.log("lista creada")
+         
+         axios.get("https://eficompraserver.onrender.com/misListasDeLaCompra")
+         .then(response=>{
+           listaId= Object.values(response.data[0])
+         
+           axios.post("https://eficompraserver.onrender.com/usuario",{
+           userId: localStorage.getItem("id"),
+           alias: localStorage.getItem("alias"),
+           listasdelacompra: Object.values(response.data[0]),
+           comprado:[false],
+           listaName:localStorage.getItem("listaTitle")
+         })
+         .then(response=>{
+           console.log("usuario-lista creado")
+      
+           let products=localStorage.getItem("products")
+           products=products.split(",")
+     
+      products.map(i=>{
+             
+            axios.post("https://eficompraserver.onrender.com/miListaCompra",{
+             
+               listaId:listaId,
+               product:i
+               
+         })
+         .then(response=>{
+   
+     localStorage.setItem("products","")
+                 
+   window.location.href="\mis_listas_compra"
+            
+         })
+        })
+         
+             
+       
+         
+     
+       })
+   
+      
+       })})
+   
+   
+   
+   
+   
+   
+             
+               
+                }else{
+                 window.location.href="\mis_listas_compra"
+                }
+      }
+      
+         
+       
+        }
+      )
+       
+    }
+  
+  }
+  */
+  handleVerContraseña(event){
+
+if(event.target.checked===true){
+this.setState({
+  inputType:"text"
+
+})
+}else(
+  this.setState({
+    inputType:"password"
+  })
+)
+  }
+        render() {
+    return (
+      <div className="formulariosContentLogin">
+        <div className="loginTitle">
+          <h1>Login</h1>
+        </div>
+        <div className="form">
+          
+      
+          <div className="emailInput">
+            <div className="inputTitle">Email</div>
+            <input
+              type="email"
+              onKeyDown={(event) => this.teclaEnter(event, () => this.passwordInput.current.focus())}
+              name="email"
+              placeholder="Your email"
+              onChange={this.handleChange}
+      
+            />
+          </div>
+              
+        
+          <div className="contraseña">
+            <div className="contraseñaInput">
+              <div className="inputTitle">Contraseña</div>
+              <input
+                type={this.state.inputType}
+                name="password"
+                 ref={this.passwordInput}
+                placeholder="Your password"
+                value={this.state.password}
+                onChange={this.handleChange}
+     onKeyDown={(event) => this.teclaEnter(event, null)} 
+               
+              />
+            </div>
+            
+      
+            <div className="contraseñaCheckBox">
+              <div className="checkBoxTitle">Ver contraseña</div>
+              <input 
+                type="checkbox" 
+                name="verContraseña" 
+                onChange={this.handleVerContraseña} 
+                checked={this.state.inputType === "text"} 
+                onKeyDown={(event) => this.teclaEnter(event, this.handleVerContraseña)}
+              />
+            </div>
+          </div>
+     
+          <div className="buttons">
+            <div className="loginBtn">
+              <button onClick={this.handleOnClick}>Entrar</button>
+            </div>
+            <div className="registro">
+              <Link to="../registro">Registrar</Link>
+            </div>
+            <div className="exit">
+              <Link to="../hacer_lista_compra"></Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    );
+  }
+
+}
