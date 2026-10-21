@@ -3416,7 +3416,7 @@ handleLetraClickMóvil(event, item) {
                       </div>
                       
             }
-            if(listasInactivasContent!=""&&listaActiva!=""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
+            if(listasInactivasContent!=""&&listaActiva!=""&&this.state.notificacionesAceptadas===false&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
                       content=
                       <div className="contentWhithListasYActiva">
                         
