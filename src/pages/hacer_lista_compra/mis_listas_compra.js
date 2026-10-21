@@ -346,7 +346,8 @@ getContent() {
 
         this.setState({
           listasInactivas: listasInactivas,
-          listasInactivasContent: contenidoHTML
+          listasInactivasContent: contenidoHTML,
+          notificacionesAceptadas:false
         });
 
         this.recuperarNotificacionesFlujo(listasInactivas, notificaciones);
