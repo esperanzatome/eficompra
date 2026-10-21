@@ -2681,7 +2681,8 @@ handleLetraClickMóvil(event, item) {
 
         notificaciones=[]
         this.setState({
-          notificacionesAceptadas:true
+          notificacionesAceptadas:true,
+          productSelected:[]
         })
             if(this.state.listaActiva===""||this.state.listaActivaGuardada===false){
               this.setState({
