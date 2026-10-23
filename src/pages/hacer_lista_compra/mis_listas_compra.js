@@ -6,7 +6,7 @@ import { library, text } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faSpinner, faTruckFieldUn } from "@fortawesome/free-solid-svg-icons";
 import { toBeEnabled, toHaveAccessibleDescription, toHaveAccessibleErrorMessage } from "@testing-library/jest-dom/matchers";
 import { io } from 'socket.io-client';
-
+import carritoImg from '../../carrito-de-compras.png';
 library.add(faTrash, faSpinner);
 
 
