@@ -69,6 +69,10 @@ padding-bottom: 2%;
     background-color: lightgray;
 
 }
+        #compradoCheck:checked ~ .listaCompraCompartida{
+    background-color: lightgray;
+
+}
     .optionsBarList{
         button{
     font-size: x-small;}
