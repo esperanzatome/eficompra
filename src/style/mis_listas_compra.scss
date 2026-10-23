@@ -175,8 +175,13 @@ display: flex;
     justify-content: end;
     margin-inline-end: 3%;
     padding-bottom: 0.5%;
-    button{
-       padding: 0.3%;
+   button{
+     
+       background: #c5bcc5;
+    background-color: #dcd6dc;
+    border: groove;
+    border-width: thick;
+    padding-inline: 1%;
     }
 }
 .modal-overlay{
