@@ -91,6 +91,19 @@ justify-items: center;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 25%;
+    position: relative;
+    animation-name: moverCarro;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moverCarro{
+    0%{
+        left:-150px;
+    }
+    100%{
+        left:100%;
+    }
 }
 
 .categories{
