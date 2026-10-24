@@ -15,11 +15,7 @@ min-height: 100vh;
         @include base-texto();
         background-color: #dcd6dc;
     }
-    /*
-h2{
-    margin-bottom: 0%;
-}
-*/
+   
 }
 .optionsBar{
     display: flex;
@@ -697,7 +693,7 @@ height: 10%;
         display: none;
     }
 
-.contentWhithListTodos{
+.content-wrapper.contentWhithListTodos{
     display: flex;
     font-size: large;
     justify-content: space-around;
