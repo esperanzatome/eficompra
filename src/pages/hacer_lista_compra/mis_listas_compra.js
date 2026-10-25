@@ -1164,7 +1164,7 @@ handleLetraClickMóvil(event, item) {
             listaActivaGuardada:false,
             listaCompraTitle:["Mi lista de la compra"],
             comprado:[false],
-            listasInactivas:[],
+          
             
           
         })
