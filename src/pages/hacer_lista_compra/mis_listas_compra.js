@@ -1180,7 +1180,7 @@ handleLetraClickMóvil(event, item) {
       
     handleAbrirLista(event){
 
-      if(this.state.listaActiva===""||this.state.productSelected.length===0){
+      if(this.state.productSelected.length===0){
               
               let comprado=false
               let usersAliasCompartidos=this.state.usersAliasCompartidos
