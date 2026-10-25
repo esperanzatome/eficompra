@@ -2694,7 +2694,7 @@ handleLetraClickMóvil(event, item) {
             if(this.state.notificacionesLista!=""){
                             notificacionesButton=""
             }
-            if(this.state.listaActiva!=""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0){
+            if(this.state.listaActiva!=""&&this.state.palabrasPorCategoriaClick===false&&this.state.palabrasOnMouseOver.length===0&&this.state.productSelected.length>0){
               content=
                       
                 <div className="contentWhithList">
