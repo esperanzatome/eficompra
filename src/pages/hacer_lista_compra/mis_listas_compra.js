@@ -484,8 +484,9 @@ getContent() {
 this.state.productSelected.map(i=>{
   if(i!=productSelected&&productSelected!=undefined&&productSelected!=""){
     productSelected=event.target.value
+      return productSelected
   }
-  return productSelected
+
 })
             
 
