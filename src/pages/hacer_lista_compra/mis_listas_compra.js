@@ -534,7 +534,7 @@ this.state.productSelected.map(i=>{
 
       
             
-            event.target.value=""
+         
   }
       
   handleOnClickCategory(event){
