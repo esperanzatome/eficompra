@@ -2055,46 +2055,19 @@ button.guardarBtn{
 font-size: x-small;
         height: 31px;
 }
+.container .content-wrapper .content .categories .category{
+height: 59px;
+}
+.container .content-wrapper .productosPorCategory .categoryPalabras .palabra{
+font-size: x-small;
+}
+    .container .content-wrapper .productosPorLetra .palabra{
+    font-size: x-small;
+    }
 .container .content-wrapper .abecedario{
 width: 98%;
 grid-template-columns: repeat(14, 1fr);
     padding-top: 5%;
-}
-}
-
-@media(max-width:375px){
-.content-wrapper{
-        font-size: medium;
-    .abecedario{
-    padding-top: 0%}
-    input{
-font-size: small;
-        margin-inline: 6px}
-
-    }
-    h2{
-    font-size: x-large
-}
-.productosFrecuentes{
-margin-bottom: 1%;
-height: 55px;
-}
-.productoFrecuente{
-font-size: x-small;
-        height: 100%;
-        line-height: 8px;
-        padding-inline: 0;}
-        .category{
-        background-position-y: top;
-    line-height: 6px;
-    height: 42px}
-}
-
-@media(max-width:320px){
-h1{
-font-size: xxx-large;}
-h2{
-font-size: large;}
 }
 
 
