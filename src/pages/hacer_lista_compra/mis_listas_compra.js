@@ -478,16 +478,16 @@ getContent() {
               this.setState({
                 palabrasPorCategoriaClick:false,
                 categoryOnClick:"",
-                 productSelected:this.state.productSelected
+              
 
               })
 
             if(event!=undefined&&this.state.productSelected.includes(productSelected)===false&&productSelected!=''){
 
 
-                  this.state.productSelected.push(productSelected)
+                  const listaActualizada = [...this.state.productSelected, productSelected];
                   this.setState({
-                  productSelected:this.state.productSelected,
+                  productSelected:listaActualizada,
                   palabrasOnMouseOver:[],
                   })
                   if(this.state.listaActivaGuardada===true){
