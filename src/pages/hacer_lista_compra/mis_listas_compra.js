@@ -478,7 +478,7 @@ getContent() {
               this.setState({
                 palabrasPorCategoriaClick:false,
                 categoryOnClick:"",
-              
+                 productSelected:this.state.productSelected
 
               })
 
