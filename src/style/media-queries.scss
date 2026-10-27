@@ -2057,13 +2057,10 @@ font-size: x-small;
 }
 }
 .container .content-wrapper .content .categories {
-grid-template-columns: repeat(5, 1fr);
-    width: 170%;
-    padding-left: 72%;
-    height: 324px;
+
 .category{
 height: 59px;
-}
+
 }
 .container .content-wrapper .productosPorCategory .categoryPalabras .palabra{
 font-size: x-small;
@@ -2083,7 +2080,10 @@ grid-template-columns: repeat(14, 1fr);
         grid-template-columns: repeat(3, 1fr)
         }
         .container .content-wrapper .contentWhithListTodos .columnaCentral .categories{
-         grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(5, 1fr);
+    width: 170%;
+    padding-left: 72%;
+    height: 324px;
         }
         .container .content-wrapper .contentWhithListTodos .listaActiva{
         background-size: 253%;
