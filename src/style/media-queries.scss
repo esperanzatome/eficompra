@@ -2056,8 +2056,14 @@ font-size: x-small;
         height: 42px;
 }
 }
-.container .content-wrapper .content .categories .category{
+.container .content-wrapper .content .categories {
+grid-template-columns: repeat(5, 1fr);
+    width: 170%;
+    padding-left: 72%;
+    height: 324px;
+.category{
 height: 59px;
+}
 }
 .container .content-wrapper .productosPorCategory .categoryPalabras .palabra{
 font-size: x-small;
