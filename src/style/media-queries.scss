@@ -2077,7 +2077,8 @@ grid-template-columns: repeat(14, 1fr);
       width: 59%;
     }
         .container .content-wrapper .contentWhithListTodos .columnaCentral .productosFrecuentes{
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 1fr);
+            height: 50%;
         }
         .container .content-wrapper .contentWhithListTodos .columnaCentral .categories{
         grid-template-columns: repeat(5, 1fr);
