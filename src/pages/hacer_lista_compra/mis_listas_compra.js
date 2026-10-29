@@ -482,11 +482,11 @@ getContent() {
 
               })
 this.state.productSelected.map(i=>{
-  if(i!=productSelected&&productSelected!=undefined&&productSelected!=""){
+  if(i!=event.target.value&&event.target.value!=undefined&&event.target.value!=""){
     productSelected=event.target.value
-      return productSelected
+     return productSelected
   }
-
+ 
 })
             
 
