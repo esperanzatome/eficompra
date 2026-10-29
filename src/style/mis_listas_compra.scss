@@ -157,7 +157,9 @@ display: flex;
 #compradoCheckGuardado:checked ~ .listaCompra{
   background-color: #bbb7bb;
 }
-
+#compradoCheckGuardado:checked ~ .listaCompraCompartida{
+  background-color: #bbb7bb;
+}
 .listaBloque{
     display: inline-block;
 }
