@@ -482,7 +482,7 @@ getContent() {
 
               })
 this.state.productSelected.map(i=>{
-  if(i!=event.target.value&&event.target.value!=undefined&&event.target.value!=""){
+  if(i!=event.target.value&&event.target.value!=undefined&&event.target.value!=""&&i!=""){
     productSelected=event.target.value
      return productSelected
   }
