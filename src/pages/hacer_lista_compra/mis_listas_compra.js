@@ -473,7 +473,7 @@ getContent() {
       }
     }
   handleOnClick(event){
-            let productSelected
+           
            
               this.setState({
                 palabrasPorCategoriaClick:false,
@@ -481,19 +481,19 @@ getContent() {
           
 
               })
-this.state.productSelected.map(i=>{
-  if(i!=event.target.value&&event.target.value!=undefined&&event.target.value!=""&&i!=""){
-    productSelected=event.target.value
-     return productSelected
+
+  if(event.target.value!=undefined&&event.target.value!=""&&this.state.productSelected.includes(event.target.value)===false){
+  this.state.productSelected.push(event.target.value)
+  return this.state.productSelected
   }
  
-})
+
             
 
 
-                 const listaActualizada = [...this.state.productSelected, productSelected];
+                 
                   this.setState({
-                  productSelected:listaActualizada,
+                  productSelected:this.state.productSelected,
                   palabrasOnMouseOver:[],
                   })
                   if(this.state.listaActivaGuardada===true){
@@ -501,7 +501,7 @@ this.state.productSelected.map(i=>{
                       axios.post("https://eficompraserver.onrender.com/miListaCompra",{
                         
                           listaId:this.state.miListaCompraId,
-                          product:productSelected
+                          product:event.target.value
                           
                         })
                   
@@ -517,7 +517,7 @@ this.state.productSelected.map(i=>{
                       
                                       emisor:localStorage.getItem("id"),
                                       receptor:i,
-                                    accion: `${alias}/+/${productSelected}/${this.state.miListaCompraId}/${this.state.listaCompraTitle[0]}`
+                                    accion: `${alias}/+/${event.target.value}/${this.state.miListaCompraId}/${this.state.listaCompraTitle[0]}`
                                         })
                           .then(response=>{
                             console.log("usuario compartido informado de +")
@@ -534,9 +534,8 @@ this.state.productSelected.map(i=>{
 
       
             
-         
+           
   }
-      
   handleOnClickCategory(event){
 
             let categoryOnClick=""
