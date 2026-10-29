@@ -473,7 +473,7 @@ getContent() {
       }
     }
   handleOnClick(event){
-            let productSelected=event.target.value
+            let productSelected
            
               this.setState({
                 palabrasPorCategoriaClick:false,
