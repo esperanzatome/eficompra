@@ -1,10 +1,13 @@
-
+.container{
+    min-height: 100vh;
+}
 .formulariosContentRegistro{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: large;
    backdrop-filter: blur(2.5px);
+     min-height: 100vh;
 }
 .form{
     width: 677px;
