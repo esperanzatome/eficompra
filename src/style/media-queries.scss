@@ -2575,6 +2575,9 @@ height: 569px;
 .formulariosContentRegistro .form .contraseña .contraseñaInput input{
 width: 133%
 }
+.formulariosContentRegistro .form .contraseña .contraseñaInput input[name="passwordConfirm"]{
+width: 111%
+}
 }
 
 
