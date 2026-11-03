@@ -2578,6 +2578,12 @@ width: 133%
 .formulariosContentRegistro .form .contraseña .contraseñaInput input[name="passwordConfirm"]{
 width: 111%
 }
+     .container .formulariosContentLogin .form {
+        font-size: medium;
+        .contraseña .contraseñaInput input{
+        width: 127%
+    }
+}
 }
 
 
