@@ -2565,6 +2565,9 @@ grid-template-columns: repeat(4, 1fr);
         .container .content-wrapper .contentWhithListasYActiva:has(.listasInactivasWrapper:hover) .listaActiva .columnaListaActivaGuardada .listaActivaCompartida .listaCompraGuardada .listaCompraProducts{
         height: 164px;
     }
+     .container .content-wrapper .contentWhithListasYActiva:has(.listasInactivasWrapper:hover){
+height: 569px;
+}
 }
 
 
