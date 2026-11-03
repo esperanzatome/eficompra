@@ -2568,6 +2568,13 @@ grid-template-columns: repeat(4, 1fr);
      .container .content-wrapper .contentWhithListasYActiva:has(.listasInactivasWrapper:hover){
 height: 569px;
 }
+    .formulariosContentRegistro{
+    width: 87%;
+    justify-content: center;
+}
+.formulariosContentRegistro .form .contraseña .contraseñaInput input{
+width: 133%
+}
 }
 
 
