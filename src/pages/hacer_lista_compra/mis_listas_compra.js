@@ -3079,7 +3079,7 @@ handleLetraClickMóvil(event, item) {
                         <div className="columnaCentral">
                           
                                     <div className="buscadorProductos">
-                                    <input type={this.state.inputBuscador}name="buscadorProductos" list="Products" onClick={this.handleOnClick} 
+                                    <input type="text"name="buscadorProductos" list="Products" onClick={this.handleOnClick} 
                               onKeyDown={(event) => this.teclaEnter(event, this.handleOnClick)}  
                               placeholder={this.state.placeholderBuscador} onTouchStart={this.handleInputBuscador}/>
                                     
