@@ -65,6 +65,7 @@ teclaEnter = (event, accionAceptar) => {
         password: this.state.password
       })
       .then(response => {
+        console.log(response)
         if (Object.values(response.data)[0].length === 0) {
           window.alert("E-mail o contraseña incorrectos");
         } else {
