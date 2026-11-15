@@ -105,14 +105,15 @@ teclaEnter = (event, accionAceptar) => {
 
                     Promise.all(promesasProductos).then(() => {
                       localStorage.setItem("products", "");
-               //       window.location.href = "/mis_listas_compra";
+                      
+                      window.location.href = "/mis_listas_compra";
                     });
                   });
                 });
               });
             } else {
            
-             // window.location.href = "/mis_listas_compra";
+              window.location.href = "/mis_listas_compra";
             }
           };
 
