@@ -2235,7 +2235,7 @@ if (!SpeechRecognition) return;
     const ultimoIndice = event.results.length - 1;
     if (!event.results[ultimoIndice].isFinal) return;
 
-    const frase = event.results[ultimoIndice].transcript
+    const frase = event.results[ultimoIndice][0].transcript
       .toLowerCase()
       .replace(/[.,;!?]/g, "")
       .trim();
