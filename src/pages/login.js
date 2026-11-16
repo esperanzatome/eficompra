@@ -65,14 +65,14 @@ teclaEnter = (event, accionAceptar) => {
         password: this.state.password
       })
       .then(response => {
-        console.log(response)
+       
         if (Object.values(response.data)[0].length === 0) {
           window.alert("E-mail o contraseña incorrectos");
         } else {
-          console.log(response)
+          
           localStorage.setItem("id", `${Object.values(response.data)[0][0].id}`);
           localStorage.setItem("alias", `${Object.values(response.data)[0][0].alias}`);
-
+          localStorage.setItem("tokenSesion", response.data.token)
           
           const procesarProductosLocales = () => {
             const products = localStorage.getItem("products");
