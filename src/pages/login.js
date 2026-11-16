@@ -106,14 +106,14 @@ teclaEnter = (event, accionAceptar) => {
                     Promise.all(promesasProductos).then(() => {
                       localStorage.setItem("products", "");
                       
-                     // window.location.href = "/mis_listas_compra";
+                     window.location.href = "/mis_listas_compra";
                     });
                   });
                 });
               });
             } else {
            
-             // window.location.href = "/mis_listas_compra";
+              window.location.href = "/mis_listas_compra";
             }
           };
 
@@ -186,180 +186,7 @@ teclaEnter = (event, accionAceptar) => {
   }
 }
        
-    /*
-    handleOnClick(event) {
-   let listaId="";
-   let emailInputValue= this.state.email
-      if(event!=undefined&&this.state.email!=""&&this.state.password!=""){
-
-        axios
-        .post("https://eficompraserver.onrender.com/login",{
-          
-          email:emailInputValue,
-          password:this.state.password
-        })
-        
-    
-        .then(response=>{
- 
-        if(Object.values(response.data)[0].length===0){
-          window.alert("E-mail o contraseña incorrectos")
-         
-         
-        }else{
-         localStorage.setItem("id",`${Object.values(response.data)[0][0].id}`)
-           localStorage.setItem("alias",`${Object.values(response.data)[0][0].alias}`)
-        if(localStorage.getItem("listaCompartida")!=""){
-   axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida",{
-    
-      listasdelacompra:localStorage.getItem("listaCompartida")
-    
-
-    })
-          .then(response=>{
-          
-       let usuarios=[]
-       let comprado=""
-       let listaName=""
-       let usuariosIds=[]
-
-         if(response.data.length>0){
-      
-          response.data.map(i=>{
-usuarios.push(i.alias)
-comprado=i.comprado
-listaName=i.listaName
-usuariosIds.push(i.userId)
-})
-
- 
-            if(usuarios.includes(localStorage.getItem("alias"))===false){
-
-axios.post("https://eficompraserver.onrender.com/usuario",{
-                    userId: localStorage.getItem("id"),
-                    alias: localStorage.getItem("alias"),
-                    listasdelacompra:localStorage.getItem("listaCompartida") ,
-                    comprado:comprado,
-                    listaName:listaName
-                  })
-                  .then(response=>{
-                    console.log("usuario-lista creado")
-               
-                      usuariosIds.map(i=>{
-             
-                         axios.post("https://eficompraserver.onrender.com/revocarPrivilegios",{
-                          id:i
-                        }).then(response=>{
-                          console.log(response)
-                        })
-                      })
-                       localStorage.setItem("listaCompartida","")
-                  window.location.href ="/mis_listas_compra"
-                    
-                    })
-            }else{
-                  usuariosIds.map(i=>{
-                
-                         axios.post("https://eficompraserver.onrender.com/revocarPrivilegios",{
-                          id:i
-                        }).then(response=>{
-                          console.log(response)
-                        })
-                      })
-                       localStorage.setItem("listaCompartida","")
-                  window.location.href ="/mis_listas_compra"
-                    
-            }
-            
-              
-
-            
-          
-          
-
-         }
-          
-                      
-          })
-        }
-    if(localStorage.getItem("products")!=""){
-   
-   
-   
-   axios.post("https://eficompraserver.onrender.com/misListasDeLaCompra",{
-        
-           listaId: null,
-           userId: localStorage.getItem("id")
-      
-         })
-          .then(response=>{
-          
-         console.log("lista creada")
-         
-         axios.get("https://eficompraserver.onrender.com/misListasDeLaCompra")
-         .then(response=>{
-           listaId= Object.values(response.data[0])
-         
-           axios.post("https://eficompraserver.onrender.com/usuario",{
-           userId: localStorage.getItem("id"),
-           alias: localStorage.getItem("alias"),
-           listasdelacompra: Object.values(response.data[0]),
-           comprado:[false],
-           listaName:localStorage.getItem("listaTitle")
-         })
-         .then(response=>{
-           console.log("usuario-lista creado")
-      
-           let products=localStorage.getItem("products")
-           products=products.split(",")
-     
-      products.map(i=>{
-             
-            axios.post("https://eficompraserver.onrender.com/miListaCompra",{
-             
-               listaId:listaId,
-               product:i
-               
-         })
-         .then(response=>{
-   
-     localStorage.setItem("products","")
-                 
-   window.location.href="\mis_listas_compra"
-            
-         })
-        })
-         
-             
-       
-         
-     
-       })
-   
-      
-       })})
-   
-   
-   
-   
-   
-   
-             
-               
-                }else{
-                 window.location.href="\mis_listas_compra"
-                }
-      }
-      
-         
-       
-        }
-      )
-       
-    }
   
-  }
-  */
   handleVerContraseña(event){
 
 if(event.target.checked===true){
