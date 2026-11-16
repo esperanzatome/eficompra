@@ -23,15 +23,18 @@
    }
 }
 .voice{
-    padding: "10px 18px";
-          fontSize: "16px";
-          backgroundColor: this.state.escuchandoVoz ? "#e53935" : "#4CAF50";
-          color: "white";
-          border: "none";
-          borderRadius: "25px";
+    padding: 10px 18px;
+          fontSize: 16px;
+          backgroundColor: #4CAF50;
+          color: white;
+          border: none;
+          borderRadius: 25px;
        
-          boxShadow: "0 2px 5px rgba(0,0,0,0.2)";
+          boxShadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+        .voice:active{
+            backgroundColor: #e53935
+        }
         .contentMisListas {
     padding-top: 1%;
     column-gap: 5%;
