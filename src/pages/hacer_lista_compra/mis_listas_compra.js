@@ -3204,6 +3204,15 @@ handleLetraClickMóvil(event, item) {
                     
                             <div className="content-wrapper">
                                         {notificacionesLista}
+                 <div className="exit">
+                                    <button className="exitBtn"value="exit"
+                                    onClick={() => { 
+                                      localStorage.removeItem("tokenSesion")
+                                      window.location.href = "/home"; }}>
+                                
+                                    </button>
+                              
+                                  </div>
                                         <div className="title-wrapper">
                                         <div className="title">
                                             {this.state.pageTitle}
