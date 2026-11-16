@@ -3208,7 +3208,7 @@ handleLetraClickMóvil(event, item) {
                                     <button className="exitBtn"value="exit"
                                     onClick={() => { 
                                       localStorage.removeItem("tokenSesion")
-                                      window.location.href = "/home"; }}>
+                                      window.location.href = "/"; }}>
                                 
                                     </button>
                               
