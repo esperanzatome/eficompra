@@ -3204,7 +3204,7 @@ handleLetraClickMóvil(event, item) {
                     
                             <div className="content-wrapper">
                                         {notificacionesLista}
-                 <div className="exit">
+                 <div className="exitPrincipal">
                                     <button className="exitBtn"value="exit"
                                     onClick={() => { 
                                       localStorage.removeItem("tokenSesion")
