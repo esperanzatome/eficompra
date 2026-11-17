@@ -15,7 +15,8 @@ import { faTrash, faSignOutAlt, faShareNodes } from "@fortawesome/free-solid-svg
 library.add(faTrash, faSignOutAlt, faShareNodes);
 function RedireccionInicial({ children }) {
   const token = localStorage.getItem('tokenSesion')
-  return token ? <Navigate to="/mis_listas_compra" replace /> : children;
+  return token ? <Navigate to={`/mis_listas_compra${window.location.search}`} replace /> 
+    : children;
 }
 
 
@@ -62,8 +63,7 @@ function App() {
           <Route path="/hacer_compra_copytoshare" element={<HacerCompraCopyToShare/>}/>
           <Route path="/hacer_lista_compra_todos"element={<HacerListaCompraTodos/>}/>
           <Route path="/registro"element={<Registro/>}/>
-          <Route path="/login"element={<Login/>}/>
-          <Route path="/mis_listas_compra"element={<MisListasDeLaCompra/>}/>
+          
           <Route path="/listaCompraCompartir/:listadelacompra/:alias" element={<ListaCompraCompartir/>}/>
          <Route path="*" element={<NoMatch />} />
 
