@@ -22,6 +22,11 @@ function RedireccionInicial({ children }) {
 
 function RutaPrivada({ children }) {
   const token = localStorage.getItem('tokenSesion'); 
+  const userId = localStorage.getItem('id');
+  const queryParams = window.location.search;
+
+
+  return (token && userId) ? children : <Navigate to={`/login${queryParams}`} replace />;
   return token ? children : <Navigate to="/home" replace />;
 }
 
