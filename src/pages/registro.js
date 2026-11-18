@@ -71,12 +71,12 @@ teclaEnter = (event, accionAceptar) => {
           alias:this.state.alias
         })
         .then(response=>{
-          // Este bloque .then SÓLO se ejecuta si el servidor responde con un estado exitoso (201)
+         
           if( window.confirm(`¡Ya has sido registrado!. \nSe mandará un mensaje de confirmación a ${this.state.email}\n¿Quieres ir a "Mis listas de la compra"?`)===true){
                axios.post("https://eficompraserver.onrender.com/recuperarIdRegistro",{
           email: this.state.email})
           .then(response=>{
-      
+      console.log(response)
              localStorage.setItem("id", `${response.data[0].id}`)
              localStorage.setItem("alias",this.state.alias)
              if(localStorage.getItem("products")!==null&&localStorage.getItem("products").length>0){
