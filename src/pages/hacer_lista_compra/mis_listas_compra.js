@@ -113,7 +113,7 @@ this.tiempoInicioVoz = 0;
 this.timerReinicioVoz = null;  
 this.ultimoErrorVoz = null;
 this.iniciarEscuchaAutomatica = this.iniciarEscuchaAutomatica.bind(this);
-this.desbloquearVozConToque = this.desbloquearVozConToque.bind(this);
+//this.desbloquearVozConToque = this.desbloquearVozConToque.bind(this);
   }
   
   getProductsList() {
