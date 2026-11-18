@@ -22,7 +22,7 @@ function RedireccionInicial({ children }) {
 
 function RutaPrivada({ children }) {
   const token = localStorage.getItem('tokenSesion'); 
-  return token ? children : <Navigate to="/login" replace />;
+  return token ? children : <Navigate to="/home" replace />;
 }
 
 function App() {
