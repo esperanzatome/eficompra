@@ -124,7 +124,7 @@ axios.post("https://eficompraserver.onrender.com/misListasDeLaCompra",{
 
   localStorage.setItem("products","")
               
-window.location.href="\mis_listas_compra"
+window.location.href="/mis_listas_compra"
          
       })
 })
@@ -146,7 +146,7 @@ window.location.href="\mis_listas_compra"
           
             
              }
-               if(localStorage.getItem("listaCompartida")!=""){
+               if(localStorage.getItem("listaCompartida")!=""&&localStorage.getItem("listaCompartida")!=null){
                 axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida",{
                  
                    listasdelacompra:localStorage.getItem("listaCompartida")
@@ -195,16 +195,7 @@ window.location.href="\mis_listas_compra"
                                  
                                  })
                          }else{
-                          /*
-                               usuariosIds.map(i=>{
-                                     console.log(i)
-                                      axios.post("http://localhost:10000/revocarPrivilegios",{
-                                       id:i
-                                     }).then(response=>{
-                                       console.log(response)
-                                     })
-                                   })
-                                     */
+                       
                                     localStorage.setItem("listaCompartida","")
                                window.location.href ="/mis_listas_compra"
                                  
@@ -222,13 +213,13 @@ window.location.href="\mis_listas_compra"
                        })
                      }
                      else{
-              window.location.href="\mis_listas_compra"
+              window.location.href="/mis_listas_compra"
              }
           })
                
               
-              }else{
-                window.location.href="\hacer_lista_compra"
+              }else if(!localStorage.getItem("products")){
+                window.location.href="/hacer_lista_compra"
               }
         })
         .catch(error => {
