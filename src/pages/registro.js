@@ -79,6 +79,7 @@ teclaEnter = (event, accionAceptar) => {
       console.log(response)
              localStorage.setItem("id", `${response.data[0].id}`)
              localStorage.setItem("alias",this.state.alias)
+              localStorage.setItem("tokenSesion", `${response.data[0].token}`)
              if(localStorage.getItem("products")!==null&&localStorage.getItem("products").length>0){
 
 
