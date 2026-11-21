@@ -3557,7 +3557,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
          </p>
                                     </div>   
          <div className="asistenteVoz">
-         <p className="mensajeAsistenteVoz">
+         <p> className="mensajeAsistenteVoz"
          El asistente de tu dispositivo (Google Gemini), puede abrir Eficompra sin necesidad de tocar la pantalla.
          Con el dispositivo encendido y Eficompra instalado, prueba a decir:
          "Hey Google, abre E-fi-com-pra"  
