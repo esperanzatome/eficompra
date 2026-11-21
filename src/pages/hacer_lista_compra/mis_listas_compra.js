@@ -3552,12 +3552,12 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
          instalarApp=
          <div className="instalarApp">
                                   
-         <p> className="mensajeInstalar">
+         <p className="mensajeInstalar">
          Puedes <span onClick={this.handleInstalarApp}>instalar</span> Eficompra en tu dispositivo desde el menú del navegador.
          </p>
                                     </div>   
          <div className="asistenteVoz">
-         <p> className="mensajeAsistenteVoz"
+         <p className="mensajeAsistenteVoz">
          El asistente de tu dispositivo (Google Gemini), puede abrir Eficompra sin necesidad de tocar la pantalla.
          Con el dispositivo encendido y Eficompra instalado, prueba a decir:
          "Hey Google, abre E-fi-com-pra"  
