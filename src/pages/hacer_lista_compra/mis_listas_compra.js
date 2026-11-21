@@ -229,18 +229,23 @@ this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
     event.returnValue = mensaje; 
     return mensaje; 
   }
-  handleVisibilityChange() {
+ handleVisibilityChange() {
   if (document.visibilityState === "hidden") {
-   
-    if (this.state.productSelected.length > 0 && this.state.listaActivaGuardada === false) {
-      if ("Notification" in window && Notification.permission === "granted") {
-        new Notification("EFICOMPRA", {
-          body: "Tu lista de la compra no se ha guardado quieres salir, podrías perder la información."
+    if ("Notification" in window && Notification.permission === "granted") {
+     
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.ready.then((registration) => {
+          registration.showNotification("EFICOMPRA", {
+            body: "Tu lista de la compra no se ha guardado, quieres continuar sin guardar.",
+            tag: "aviso-segundo-plano", 
+            renotify: true
+          });
         });
       }
-     }
+    }
   }
 }
+
 
 getContent() {
   let notificaciones = [];
