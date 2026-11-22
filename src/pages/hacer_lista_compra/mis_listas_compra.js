@@ -3550,9 +3550,10 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
             }
          if(this.state.appYaInstalada===false){
          instalarApp=
+         <div className="instalarAppWrapper">
          <div className="instalarApp">
                                   
-         <p> className="mensajeInstalar">
+         <p className="mensajeInstalar">
          Puedes <span onClick={this.handleInstalarApp}>instalar</span> Eficompra en tu dispositivo desde el menú del navegador.
          </p>
                                     </div>   
@@ -3566,7 +3567,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
          </p>
          </div>                                           
                           
-
+           </div>
          }
             return(
                     
