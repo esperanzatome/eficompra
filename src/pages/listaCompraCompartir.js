@@ -105,7 +105,7 @@ const ListaCompraCompartir = () => {
             });
          
 
-    navigate('mis_listas_compra')
+    navigate('/mis_listas_compra')
    }else{
    navigate('/login');
    }
