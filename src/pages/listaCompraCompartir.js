@@ -18,13 +18,18 @@ const ListaCompraCompartir = () => {
   const [fecha, setFecha] =useState("")
   const listasdelacompra = Number(Object.values(useParams())[0].replace(/[^0-9]/g, ''));
   const navigate = useNavigate()
-console.log(alias)
+
   const handleCompartir = (event) => {
-    // Implementar la lógica de compartir aquí
+   
     localStorage.setItem("listaCompartida",listasdelacompra)
     
    
+  if(localStorage.getItem("tokenSesion")!=""){
+    navigate('/hacer_lista_compra/mis_listas_compra')
+   }else{
    navigate('/login');
+   }
+  
   };
 const handleRechazar = (event) =>{
   navigate('/');
