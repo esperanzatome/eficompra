@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import fondo from "../carrito-de-compras.png";
-
+export default ListaCompraCompartir;
 
 library.add(faTrash, faSpinner);
 
@@ -225,4 +225,4 @@ const ListaCompraCompartir = () => {
     );
   });
 
-export default ListaCompraCompartir;
+
