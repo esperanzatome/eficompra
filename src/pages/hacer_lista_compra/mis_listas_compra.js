@@ -3616,9 +3616,9 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
                                                         </div>
                                                         </div>
                                     }}>
-                                    Voz
+                                   
                                   )
-                                    </button>
+                                     Voz</button>
                                     </div>
 
                                           <div className="exitPrincipal">
