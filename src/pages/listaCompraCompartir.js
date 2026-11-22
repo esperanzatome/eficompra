@@ -1,175 +1,150 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate, useParams } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import fondo from "../carrito-de-compras.png";
-export default ListaCompraCompartir;
 
 library.add(faTrash, faSpinner);
 
 const ListaCompraCompartir = () => {
-  const alias=Object.values(useParams())[1]
-  const [listaName, setListaName] = useState(""); 
-  const [comprado, setComprado] =useState(false);
-  const [products, setProducts] =useState([]);
-  const [fecha, setFecha] =useState("")
-  const listasdelacompra = Number(Object.values(useParams())[0].replace(/[^0-9]/g, ''));
-  const navigate = useNavigate()
+  const params = useParams();
+  const alias = Object.values(params)[1];
+  const listasdelacompra = Number(Object.values(params)[0].replace(/[^0-9]/g, ''));
 
-  const handleCompartir = (event) => {
-  
-    localStorage.setItem("listaCompartida",listasdelacompra)
-    
-   if(localStorage.getItem("tokenSesion")!=""){
-    
-    const procesarProductosLocales = () => {
-         
-            if (products && products !== "") {
-            
-                
-                   products.map(i => {
-                      return axios.post("https://eficompraserver.onrender.com/miListaCompra", {
-                        listaId: listasdelacompra,
-                        product: i
-                      });
-                  });
+  const [listaName, setListaName] = useState("");
+  const [comprado, setComprado] = useState(false);
+  const [products, setProducts] = useState([]);
+  const [fecha, setFecha] = useState("");
+  const navigate = useNavigate();
 
-                    Promise.all(promesasProductos).then(() => {
-                      localStorage.setItem("products", "");
-                      window.location.href = "/mis_listas_compra";
-                    });
-                  
-          };
+  const handleCompartir = () => {
+    localStorage.setItem("listaCompartida", listasdelacompra);
 
-        
-         
-          
-         
-            axios.post("https://eficompraserver.onrender.com/recuperarListaCompartida", {
-              listasdelacompra: listasdelacompra
-            })
-            .then(response => {
-         
-              let usuarios = [];
-              let comprado = "";
-              let listaName = "";
-              let usuariosIds = [];
-
-              if (response.data.length > 0) {
-                response.data.map(i => {
-                  usuarios.push(i.alias);
-                  comprado = i.comprado;
-                  listaName = i.listaName;
-                  usuariosIds.push(i.userId);
-                });
-
-                const finalizarListaCompartida = () => {
-         
-                  const promesasRevocar = usuariosIds.map(i => {
-                    return axios.post("https://eficompraserver.onrender.com/revocarPrivilegios", { id: i });
-                  });
-
-                  Promise.all(promesasRevocar).then(() => {
-                    localStorage.setItem("listaCompartida", "");
-                   
-                    procesarProductosLocales();
-                  });
-                };
-
-                if (usuarios.includes(localStorage.getItem("alias")) === false) {
-                  axios.post("https://eficompraserver.onrender.com/usuario", {
-                    userId: localStorage.getItem("id"),
-                    alias: localStorage.getItem("alias"),
-                    listasdelacompra: listaCompartida,
-                    comprado: comprado,
-                    listaName: listaName
-                  })
-                  .then(response => {
-                    console.log("usuario-lista creado");
-                    finalizarListaCompartida();
-                  });
-                } else {
-                  finalizarListaCompartida();
-                }
-              } else {
-             
-                procesarProductosLocales();
-              }
-            })
-            .catch(error => {
-              console.error("Error al recuperar lista compartida:", error);
-              procesarProductosLocales();
+    // Comprobación segura de sesión (evita el fallo con null)
+    if (localStorage.getItem("tokenSesion")) {
+      const procesarProductosLocales = () => {
+        if (products && products.length > 0) {
+          const promesasProductos = products.map((i) => {
+            return axios.post("https://eficompraserver.onrender.com/miListaCompra", {
+              listaId: listasdelacompra,
+              product: i,
             });
-         
+          });
 
-    navigate('/mis_listas_compra')
-    }
-   }else{
-    navigate('/login');
-    }
-  }
-  const handleRechazar = (event) =>{
-  navigate('/');
+          Promise.all(promesasProductos).then(() => {
+            localStorage.setItem("products", "");
+            navigate("/mis_listas_compra");
+          });
+        } else {
+          navigate("/mis_listas_compra");
+        }
+      };
 
-  }
-  useEffect(() => {
-    axios.post("https://eficompraserver.onrender.com/recuperarUserData", {
-      listasdelacompra: listasdelacompra 
-      
-    })
-    .then(res => {
-       console.log(res);
-       
-      if(res.data[0].comprado===0){
-        setComprado(false)
-      }else{
-         setComprado(true)
-      }
-     
-
-      
-      axios.post("https://eficompraserver.onrender.com/recuperarListaCompra",{
-        listaId: res.data[0].listasdelacompra
-      })
-      .then(res=>{
-       
-        setListaName(res.data[0].listaName);
-     
-        res.data.map(i=>{
-          if(products.includes(i.product)===false){
-            products.push(i.product)
-          }
-         
-          setProducts(products)
+      axios
+        .post("https://eficompraserver.onrender.com/recuperarListaCompartida", {
+          listasdelacompra: listasdelacompra,
         })
-       
-        const fechaNew = new Date(res.data[0].fecha);
+        .then((response) => {
+          let usuarios = [];
+          let compradoResp = false;
+          let listaNameResp = "";
+          let usuariosIds = [];
 
-        const opcionesFechaHora = { 
-        year: 'numeric', 
-        month: '2-digit', 
-        day: '2-digit', 
-        hour: '2-digit', 
-        minute: '2-digit', 
-        hour12: false 
-        };
-        const fechaHoraFormateada = fechaNew.toLocaleString('es-ES', opcionesFechaHora);
-            setFecha(fechaHoraFormateada)
+          if (response.data.length > 0) {
+            response.data.forEach((i) => {
+              usuarios.push(i.alias);
+              compradoResp = i.comprado;
+              listaNameResp = i.listaName;
+              usuariosIds.push(i.userId);
+            });
+
+            const finalizarListaCompartida = () => {
+              const promesasRevocar = usuariosIds.map((idUsuario) => {
+                return axios.post("https://eficompraserver.onrender.com/revocarPrivilegios", {
+                  id: idUsuario,
+                });
+              });
+
+              Promise.all(promesasRevocar).then(() => {
+                localStorage.setItem("listaCompartida", "");
+                procesarProductosLocales();
+              });
+            };
+
+            if (!usuarios.includes(localStorage.getItem("alias"))) {
+              axios
+                .post("https://eficompraserver.onrender.com/usuario", {
+                  userId: localStorage.getItem("id"),
+                  alias: localStorage.getItem("alias"),
+                  listasdelacompra: listasdelacompra, // Corregido (antes ponía listaCompartida)
+                  comprado: compradoResp,
+                  listaName: listaNameResp,
+                })
+                .then(() => {
+                  console.log("usuario-lista creado");
+                  finalizarListaCompartida();
+                });
+            } else {
+              finalizarListaCompartida();
+            }
+          } else {
+            procesarProductosLocales();
+          }
+        })
+        .catch((error) => {
+          console.error("Error al recuperar lista compartida:", error);
+          procesarProductosLocales();
+        });
+    } else {
+      navigate("/login");
+    }
+  };
+
+  const handleRechazar = () => {
+    navigate("/");
+  };
+
+  useEffect(() => {
+    axios
+      .post("https://eficompraserver.onrender.com/recuperarUserData", {
+        listasdelacompra: listasdelacompra,
       })
-        
-        
-       
-    
-      .catch(error => {
-        console.error("Error al recuperar user data:", error);
-      });
-    }, [listasdelacompra]); 
+      .then((res) => {
+        if (!res.data || res.data.length === 0) return;
 
-    return (
-     
+        setComprado(res.data[0].comprado !== 0);
+
+        return axios.post("https://eficompraserver.onrender.com/recuperarListaCompra", {
+          listaId: res.data[0].listasdelacompra,
+        });
+      })
+      .then((resLista) => {
+        if (!resLista || !resLista.data || resLista.data.length === 0) return;
+
+        setListaName(resLista.data[0].listaName);
+
+        // Creamos un array nuevo sin duplicados en lugar de mutar el estado
+        const productosUnicos = [...new Set(resLista.data.map((i) => i.product))];
+        setProducts(productosUnicos);
+
+        const fechaNew = new Date(resLista.data[0].fecha);
+        const opcionesFechaHora = {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        };
+        setFecha(fechaNew.toLocaleString("es-ES", opcionesFechaHora));
+      })
+      .catch((error) => {
+        console.error("Error al recuperar datos de la lista:", error);
+      });
+  }, [listasdelacompra]);
+
+  return (
     <div className="content-wrapper-listaCompartir">
       <div className="title-wrapper-listaCompartir">
         <div className="titleListaCompartir">
@@ -188,41 +163,35 @@ const ListaCompraCompartir = () => {
         <div className="title">{listaName}</div>
         <div className="listaCompartir">
           <div className="cabecero">
-    <div className="estadoComprado">
+            <div className="estadoComprado">
               Comprado
-      
-              <input type="checkbox" id="compradoCheck" checked = {comprado} disabled />
+              <input type="checkbox" id="compradoCheck" checked={comprado} disabled />
             </div>
-            <div className="fecha">
-            {fecha}
-
-            </div>
-            </div>
-          
-            <div className="listaCompraProducts-listaCompartir">
-
-    <div className="products">
-
-      {products.map(i=>{
-        return(
-          <div className="product">
-            {i}
+            <div className="fecha">{fecha}</div>
           </div>
-        )
-      })}
-    </div>
+
+          <div className="listaCompraProducts-listaCompartir">
+            <div className="products">
+              {products.map((i, idx) => (
+                <div className="product" key={idx}>
+                  {i}
+                </div>
+              ))}
+            </div>
 
             <div className="optionsBar-listaCompartir">
               <button className="compartir" onClick={handleCompartir}>
-              Aceptar
+                Aceptar
               </button>
-              <button className="rechazar" onClick={handleRechazar}>Rechazar</button>
+              <button className="rechazar" onClick={handleRechazar}>
+                Rechazar
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    );
-  });
+  );
+};
 
-
+export default ListaCompraCompartir;
