@@ -7,7 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faTrash, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import fondo from "../carrito-de-compras.png";
 
-// Agregar iconos a la biblioteca
+
 library.add(faTrash, faSpinner);
 
 const ListaCompraCompartir = () => {
@@ -25,7 +25,7 @@ const ListaCompraCompartir = () => {
     
    
   if(localStorage.getItem("tokenSesion")!=""){
-    navigate('/hacer_lista_compra/mis_listas_compra')
+    navigate('/mis_listas_compra')
    }else{
    navigate('/login');
    }
