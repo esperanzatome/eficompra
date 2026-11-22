@@ -106,7 +106,7 @@ const ListaCompraCompartir = () => {
          
 
     navigate('/mis_listas_compra');
-   }else(
+   }}else(
    navigate('/login');
    )
 const handleRechazar = (event) =>{
