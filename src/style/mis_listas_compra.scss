@@ -79,6 +79,9 @@
     background-color: #dcd6dc;
     .voiceExplainTitle{
         display:flex;
+        .exitBtn{
+            background-image: url('../exit.png');
+        }
        
     }  
 }
@@ -1589,4 +1592,5 @@ width: 8px;
 }
     }
 }
+
 
