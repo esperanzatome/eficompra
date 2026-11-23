@@ -3582,9 +3582,9 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
     <div className="voiceExplain">
       <div className="voiceExplainTitle">
         <div className="title">Haz tus listas de la compra por voz.</div>
-        <div className="Micro">MicroIcono</div>
+        <div className="Micro"></div>
         
-        <button className="exitBtn" onClick={this.handleVoice}>X</button>
+        <button className="exitBtn" onClick={this.handleVoice}></button>
       </div>
       <div className="voiceExplainContent">
         {instalarApp}
@@ -3663,3 +3663,4 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
 }
 
                   
+
