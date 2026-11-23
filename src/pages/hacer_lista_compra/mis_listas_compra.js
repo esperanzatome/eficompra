@@ -2840,7 +2840,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
     
        
      if(this.state.voiceExplication=true){
-     content=
+   
         content=
    <div className="voiceExplain">
     <div className="voiceExplainTitle">
