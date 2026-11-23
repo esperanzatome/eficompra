@@ -2446,7 +2446,7 @@ iniciarEscuchaAutomatica() {
           if(this.state.listaActivaGuardada===false){
          this.handleAbrirLista({target: { value: 0 }})
           }
-          }, * 150);
+          }, 150);
 
 
         setTimeout(() => {
