@@ -3617,8 +3617,8 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
                                         {notificacionesLista}
                                
                                     <div className="options_bar">
-                                  <div className="voiceButton">
-          <button className="voiceButton" onClick={this.handleVoice}>Voice</button>
+                                 <div className="voiceButton"onClick={this.handleVoice}>
+                                    Voice
       </div>
 
                                           <div className="exitPrincipal">
