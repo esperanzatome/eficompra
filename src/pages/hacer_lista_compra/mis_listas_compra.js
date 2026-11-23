@@ -290,7 +290,7 @@ async handleInstalarApp() {
 }
 
 
-this.handleVoice(event){
+handleVoice(event){
 this.setState({
 voiceExplication=true
 })
