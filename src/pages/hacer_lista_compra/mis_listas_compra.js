@@ -291,9 +291,11 @@ async handleInstalarApp() {
 
 
 handleVoice(event){
+  return(
 this.setState({
 voiceExplication:true
 })
+    )
 }
 
 getContent() {
@@ -2835,10 +2837,8 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
      
             
      let productSelected= this.state.productSelected 
-     let voiceButton=
-       <div className="voiceButton">
-          <button className="voiceButton" onClick={this.handleVoice}>Voice</button>
-      </div>
+    
+       
      if(this.state.voiceExplication=true){
      content=
         content=
@@ -3624,7 +3624,9 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
                                         {notificacionesLista}
                                
                                     <div className="options_bar">
-                                   {voiceButton}
+                                  <div className="voiceButton">
+          <button className="voiceButton" onClick={this.handleVoice}>Voice</button>
+      </div>
 
                                           <div className="exitPrincipal">
                                                 <button className="exitBtn"value="exit"
