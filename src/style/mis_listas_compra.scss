@@ -34,6 +34,7 @@
           borderRadius: 25px;
        
           boxShadow: 0 2px 5px rgba(0,0,0,0.2);
+     background-image: url('../comando-de-voz.png');
 }
         .voice:active{
             backgroundColor: #e53935
@@ -47,6 +48,12 @@
     width: 80%;
     align-self: center;
     margin-bottom: 2%;
+          font-size: smaller;
+    background-color: #dcd6dc;
+    .voiceExplainTitle{
+        display:flex;
+       
+    }  
 }
         .contentMisListas {
     padding-top: 1%;
