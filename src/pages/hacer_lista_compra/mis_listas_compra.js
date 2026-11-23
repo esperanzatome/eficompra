@@ -3599,6 +3599,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
             }
          if(this.state.appYaInstalada===false){
             instalarApp=
+              <div className="InstalarAppWrapper">
             <div className="instalarApp">
                                       
             <p> className="mensajeInstalar">
@@ -3614,7 +3615,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
             Ahora puedes pedirle que realice una acción.
             </p>
             </div>                                           
-                          
+              </div>       
 
          }
             return(
