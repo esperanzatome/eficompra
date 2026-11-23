@@ -25,7 +25,7 @@
     width: 39%;
    }
 }
-.voice{
+.voiceButton{
     padding: 10px 18px;
           fontSize: 16px;
           backgroundColor: #4CAF50;
@@ -36,7 +36,7 @@
           boxShadow: 0 2px 5px rgba(0,0,0,0.2);
      background-image: url('../comando-de-voz.png');
 }
-        .voice:active{
+        .voiceButton:active{
             backgroundColor: #e53935
         }
         .voiceExplain{
