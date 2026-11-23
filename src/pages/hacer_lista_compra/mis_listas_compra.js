@@ -3618,9 +3618,9 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
                                
                                     <div className="options_bar">
                                  <div className="voiceButton"onClick={this.handleVoice}>
-                                    Voice
+                                
       </div>
-               <div className="Micro">MicroIcono</div>
+               <div className="Micro"></div>
 
                                           <div className="exitPrincipal">
                                                 <button className="exitBtn"value="exit"
