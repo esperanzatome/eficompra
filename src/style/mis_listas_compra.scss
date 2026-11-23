@@ -26,19 +26,15 @@
    }
 }
 .voiceButton{
-    padding: 10px 18px;
-          fontSize: 16px;
-          backgroundColor: #4CAF50;
-          color: white;
-          border: none;
-          borderRadius: 25px;
-       
-          boxShadow: 0 2px 5px rgba(0,0,0,0.2);
      background-image: url('../comando-de-voz.png');
+       
+          background-size: 27%;
+    background-repeat: no-repeat;
+    font-size: x-large;
+    padding: 0%;
+
 }
-        .voiceButton:active{
-            backgroundColor: #e53935
-        }
+      
         .voiceExplain{
         display: flex;
     flex-direction: column;
