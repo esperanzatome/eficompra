@@ -71,7 +71,7 @@ export default class MisListasDeLaCompra extends Component {
         productoBorrado:false,
         deferredPrompt: null,
         appYaInstalada: window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true,
-       voiceExplication=false
+       voiceExplication:false
             
             
           }
