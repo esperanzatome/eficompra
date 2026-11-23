@@ -2446,7 +2446,7 @@ iniciarEscuchaAutomatica() {
           if(this.state.listaActivaGuardada===false){
          this.handleAbrirLista({target: { value: 0 }})
           }
-          }, index * 150);
+          }, * 150);
 
 
         setTimeout(() => {
@@ -2469,7 +2469,7 @@ iniciarEscuchaAutomatica() {
           };
 
           window.speechSynthesis.speak(voz);
-        }, productoABorrar.length * 150);
+        }, listaAAbrir.length * 150);
       }
     }
   };
