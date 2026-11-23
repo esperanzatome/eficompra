@@ -25,16 +25,26 @@
     width: 39%;
    }
 }
+        
+.options_bar{
+    display: flex;
+
+    justify-content: space-between;
+}
 .voiceButton{
      background-image: url('../comando-de-voz.png');
        
-          background-size: 27%;
+          background-size: 50%;
     background-repeat: no-repeat;
     font-size: x-large;
     padding: 0%;
-
+width: 6%;
+    padding-left: 1%;
+    background-position-x: center;
 }
-      
+      .Micro{
+    background-image: url('../grabadora-de-voz.png');
+}
         .voiceExplain{
         display: flex;
     flex-direction: column;
