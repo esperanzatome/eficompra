@@ -38,6 +38,16 @@
         .voice:active{
             backgroundColor: #e53935
         }
+        .voiceExplain{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: groove 9px;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 2%;
+}
         .contentMisListas {
     padding-top: 1%;
     column-gap: 5%;
