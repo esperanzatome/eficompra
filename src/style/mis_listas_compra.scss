@@ -108,7 +108,7 @@
        
     }  
             .voiceExplainContent{
-           font-size: 22px;
+           font-size: large;
     display: list-item;
     margin-left: 4%;
     margin-right: 1%;
@@ -120,12 +120,52 @@
                     color: #562e74;
     font-weight: 700;
                 }
-                .orden{
+                .ordenes{
                     display: flex;
     margin-top: 2%;
     justify-self: anchor-center;
     font-style: oblique;
     font-weight: 600;
+                    margin-bottom: -2%;
+                }
+                p{
+                    display: list-item
+                }
+                .voiceExplication{
+                    display: list-item;
+                    .micro{
+                        background-image: url('../grabadora-de-voz.png');
+          height: 34px;
+    width: 32px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    background-position-y: bottom;
+    margin-left: 1%;
+    background-color: #c5bcc5;
+    border-radius: 70%;
+    border: solid 1px;
+                    }
+                }
+                .ordenesVoz{
+                    justify-self: center;
+    margin-top: 2%;
+                    border: groove;
+    padding: 1%;
+                    margin-bottom: 2%
+ 
+                    .ordenes{
+                        display: block;
+ 
+    border-bottom: groove;
+    text-align: center;
+   
+ 
+    
+    
+   
+
+                    }
                 }
         }
 }
@@ -1636,6 +1676,7 @@ width: 8px;
 }
     }
 }
+
 
 
 
