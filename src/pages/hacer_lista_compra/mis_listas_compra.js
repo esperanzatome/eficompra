@@ -2701,8 +2701,7 @@ window.addEventListener("appinstalled", this.handleAppInstalled);
 if (this.recognition) {
   this.recognition.stop();
 }
-//document.removeEventListener('touchstart', this.desbloquearVozConToque);
-//document.removeEventListener('click', this.desbloquearVozConToque);
+
 window.removeEventListener("focus", this.reintentarAlRecuperarFoco);
 document.removeEventListener("visibilitychange", this.reintentarAlRecuperarFoco);
 window.removeEventListener("touchstart", this.gestionarToqueEnPantalla);
