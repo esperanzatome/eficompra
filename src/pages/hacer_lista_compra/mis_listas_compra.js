@@ -2842,8 +2842,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
     <div className="InstalarAppWrapper">
       <div className="instalarApp">
         <p >
-          Puedes <span onClick={this.handleInstalarApp}>instalar</span> <span className="marcaPalabra">Eficompra</span>
-    en tu dispositivo desde el menú del navegador.
+          Puedes <span onClick={this.handleInstalarApp}>instalar</span> <span className="marcaPalabra">Eficompra</span> en tu dispositivo desde el menú del navegador.
         </p>
       </div>
       <div className="asistenteVoz">
@@ -3600,8 +3599,8 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
         {instalarApp}
         <div className="voiceExplication">
           Puedes modificar tu lista de la compra activa o tu última lista de la compra guardada solamente con tu voz.< br/>
-          Si el icono del micrófono <span className="micro"></span> está desconectado, púlsalo <span className="micro"></span> y prueba a solicitar una de las acciones disponibles.< br/>
-          Si pulsas de nuevo la pantalla el micrófono se desconectará.<span className="micro"></span>
+          Si el icono del micrófono <span className="micro"></span> está desconectado, púlsalo, <span className="micro"></span> y prueba a solicitar una de las acciones disponibles.< br/>
+          Si pulsas de nuevo la pantalla, el micrófono se desconectará.<span className="micro"></span>
         </div>
         <div className="ordenesVoz">
           Para <strong>AÑADIR</strong> un producto a la lista de la compra prueba a decir:< br/>
@@ -3671,6 +3670,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
 }
 
                   
+
 
 
 
