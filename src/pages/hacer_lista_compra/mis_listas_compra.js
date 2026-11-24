@@ -2841,20 +2841,28 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
   instalarApp = (
     <div className="InstalarAppWrapper">
       <div className="instalarApp">
-        <p className="mensajeInstalar">
-          Puedes <span onClick={this.handleInstalarApp}>instalar</span> Eficompra en tu dispositivo desde el menú del navegador.
+        <p >
+          Puedes <span onClick={this.handleInstalarApp}>instalar</span> <span className="marcaPalabra">Eficompra</span>
+    en tu dispositivo desde el menú del navegador.
         </p>
       </div>
       <div className="asistenteVoz">
-        <p className="mensajeAsistenteVoz">
-          El asistente de tu dispositivo (Google Gemini), puede abrir Eficompra sin necesidad de tocar la pantalla.
-          Con el dispositivo encendido y Eficompra instalado, prueba a decir:
-          "Hey Google, abre E-fi-com-pra"
-          Si todo es correcto, oirás el tono del micrófono escuchando desde tus listas de la compra.
+        <p >
+          El asistente de tu dispositivo (Google Gemini), puede abrir <span className="marcaPalabra">Eficompra</span> sin necesidad de tocar la pantalla.<br />
+          Con el dispositivo encendido y <span className="marcaPalabra">Eficompra</span> instalado, prueba a decir:<br />
+          <span className="ordenes">"Hey Google, abre E-fi-com-pra"</span>< br />
+          Si todo es correcto, oirás el tono del micrófono escuchando desde tus listas de la compra.< br />
           Ahora puedes pedirle que realice una acción.
         </p>
       </div>
+    
     </div>
+          <div className="notificacionesExplication">
+     <p>
+          Cuando instalas <span className="marcaPalabra">Eficompra</span> en tu dispositivo, se solicita permiso para enviar notificaciones.< br/>
+          Estas notificaciones sólo te avisan si te dejas una lista de la compra sin guardar, 
+    ya que podrías perder la información en caso de cerrar la sesión o entrar a la app por medio del asistente de voz.
+        </div>
   );
 }
 
@@ -3589,23 +3597,21 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
       <div className="voiceExplainContent">
         {instalarApp}
         <div className="voiceExplication">
-          Puedes modificar tu lista de la compra activa o tu última lista de la compra guardada solamente con tu voz.
-          Pulsa el icono del micrófono si éste está desconectado y prueba a solicitar una de las acciones disponibles.
-          Si pulsas de nuevo la pantalla el micrófono se desconectará.
+          Puedes modificar tu lista de la compra activa o tu última lista de la compra guardada solamente con tu voz.< br/>
+          Si el icono del micrófono <span className="micro"></span> está desconectado, púlsalo <span className="micro"></span> y prueba a solicitar una de las acciones disponibles.< br/>
+          Si pulsas de nuevo la pantalla el micrófono se desconectará.<span className="micro"></span>
         </div>
         <div className="ordenesVoz">
-          Para añadir un producto a la lista de la compra prueba a decir:
-          "Apunta (nombre del producto)" por ejemplo, "Apunta manzanas", o, "Apunta filetes tiernos"
-          Para borrar un producto de tu lista de la compra prueba a decir:
-          "Borra (nombre del producto)" por ejemplo, "Borra manzanas", o, "Borra filetes tiernos"
-          Para abrir la última lista guardada y poder modificarla, prueba a decir:
-          "Abrir lista"
+          Para <strong>AÑADIR</strong> un producto a la lista de la compra prueba a decir:< br/>
+           <span className="ordenes">"<strong>APUNTA</strong> (nombre del producto)" < br/>
+            por ejemplo; "<strong>APUNTA</strong> manzanas", o, "<strong>APUNTA</strong> filetes tiernos"</span>< br/>
+          Para <strong>BORRAR</strong> un producto de tu lista de la compra prueba a decir:< br/>
+          <span className="ordenes">"<strong>BORRA</strong> (nombre del producto)" < br/>
+            por ejemplo; "<strong>BORRA</strong> manzanas", o, "<strong>BORRA</strong> filetes tiernos"</span>< br/>
+          Para <strong>ABRIR</strong> la última lista guardada y poder modificarla, prueba a decir:< br/>
+          <span className="ordenes">"<strong>ABRIR</strong> lista"</span>< br/>
         </div>
-        <div className="notificacionesExplication">
-          Cuando instalas Eficompra en tu dispositivo, se solicita permiso para enviar notificaciones.
-          Estas notificaciones solo te avisan por si te dejas una lista de la compra sin guardar,
-          ya que podrías perder la información en el caso de cerrar la sesión o entrar a la app por medio del asistente de voz.
-        </div>
+       
       </div>
     </div>
   );
@@ -3663,5 +3669,6 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
 }
 
                   
+
 
 
