@@ -3620,7 +3620,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
     <div className="voiceExplain">
       <div className="voiceExplainTitle">
         <div className="title">Haz tus listas de la compra por voz.</div>
-        <div className="Micro"></div>
+        <div className={`Micro ${this.state.escuchando ? 'micro-activo' : ''}`}onClick={this.toggleMicrofono}></div>
         
         <button className="xBtn" onClick={this.handleVoice}>X</button>
       </div>
@@ -3628,8 +3628,8 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
         {instalarApp}
         <div className="voiceExplication">
           Puedes modificar tu lista de la compra activa o tu última lista de la compra guardada solamente con tu voz.< br/>
-          Si el icono del micrófono <span className="micro" onClick={this.toggleMicrofono}></span> está desconectado, púlsalo, <span className="micro"onClick={this.toggleMicrofono}></span> y prueba a solicitar una de las acciones disponibles.< br/>
-          Si pulsas de nuevo la pantalla, el micrófono se desconectará.<span className="micro"onClick={this.toggleMicrofono}></span>
+          Si el icono del micrófono <span className={`micro ${this.state.escuchando ? 'micro-activo' : ''}`} onClick={this.toggleMicrofono}></span> está desconectado, púlsalo, <span className={`micro ${this.state.escuchando ? 'micro-activo' : ''}`}onClick={this.toggleMicrofono}></span> y prueba a solicitar una de las acciones disponibles.< br/>
+          Si pulsas de nuevo la pantalla, el micrófono se desconectará.<span className={`micro ${this.state.escuchando ? 'micro-activo' : ''}`}onClick={this.toggleMicrofono}></span>
         </div>
         <div className="ordenesVoz">
           Para <strong>AÑADIR</strong> un producto a la lista de la compra prueba a decir:< br/>
