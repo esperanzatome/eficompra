@@ -134,14 +134,19 @@
                 .voiceExplication{
                     display: list-item;
                     .micro{
+                        display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin: 0%;
+    
+    background-color: transparent
                         background-image: url('../grabadora-de-voz.png');
-          height: 34px;
-    width: 32px;
+          
     background-size: 100%;
     background-repeat: no-repeat;
 
     background-position-y: bottom;
-    margin-left: 1%;
+   
     background-color: #c5bcc5;
     border-radius: 70%;
     border: solid 1px;
@@ -156,7 +161,7 @@
  
                     .ordenes{
                         display: block;
- 
+ font-weight: 400;
     border-bottom: groove;
     text-align: center;
    
@@ -1676,6 +1681,7 @@ width: 8px;
 }
     }
 }
+
 
 
 
