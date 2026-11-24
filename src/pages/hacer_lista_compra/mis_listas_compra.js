@@ -2842,7 +2842,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
     <div className="InstalarAppWrapper">
       <div className="instalarApp">
         <p >
-          Puedes <span onClick={this.handleInstalarApp}>instalar</span> <span className="marcaPalabra">Eficompra</span> en tu dispositivo desde el menú del navegador.
+          Puedes <span className="accionSpan"onClick={this.handleInstalarApp}>instalar</span> <span className="marcaPalabra">Eficompra</span> en tu dispositivo desde el menú del navegador.
         </p>
       </div>
       <div className="asistenteVoz">
@@ -3670,6 +3670,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
 }
 
                   
+
 
 
 
