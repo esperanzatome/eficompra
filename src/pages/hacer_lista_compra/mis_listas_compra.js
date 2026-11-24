@@ -2316,7 +2316,6 @@ iniciarEscuchaAutomatica() {
   this.escuchandoActivo = true;
   clearTimeout(this.timerReinicioVoz);
 
-  
   if (this.recognition) {
     try {
       this.recognition.onend = null;
@@ -2386,7 +2385,8 @@ iniciarEscuchaAutomatica() {
         }, productosAAñadir.length * 150);
       }
     }
-     if (frase.includes("borra")) {
+
+    if (frase.includes("borra")) {
       const partes = frase.split(/\bborra\b/i);
       const productoABorrar = partes
         .slice(1)
@@ -2400,13 +2400,12 @@ iniciarEscuchaAutomatica() {
 
         productoABorrar.forEach((producto, index) => {
           setTimeout(() => {
-          if(this.state.listaActivaGuardada===false){
-            this.handleDelete({ target: { value: producto } });
-            }else{
-            this.handleDeleteGuardado({ target: { value: producto } })
+            if (this.state.listaActivaGuardada === false) {
+              this.handleDelete({ target: { value: producto } });
+            } else {
+              this.handleDeleteGuardado({ target: { value: producto } });
             }
           }, index * 150);
-
         });
 
         setTimeout(() => {
@@ -2432,6 +2431,7 @@ iniciarEscuchaAutomatica() {
         }, productoABorrar.length * 150);
       }
     }
+
     if (frase.includes("abrir lista")) {
       const partes = frase.split(/\babrir lista\b/i);
       const listaAAbrir = partes
@@ -2444,13 +2444,11 @@ iniciarEscuchaAutomatica() {
         clearTimeout(this.timerReinicioVoz);
         try { this.recognition.stop(); } catch (e) {}
 
-        
-          setTimeout(() => {
-          if(this.state.listaActivaGuardada===false){
-         this.handleAbrirLista({target: { value: 0 }})
+        setTimeout(() => {
+          if (this.state.listaActivaGuardada === false) {
+            this.handleAbrirLista({ target: { value: 0 } });
           }
-          }, 150);
-
+        }, 150);
 
         setTimeout(() => {
           window.speechSynthesis.cancel();
@@ -2478,23 +2476,20 @@ iniciarEscuchaAutomatica() {
   };
 
   this.recognition.onerror = (event) => {
-  this.intentosFallidos += 1;
-  if (this.intentosFallidos >= 4) {
-    this.setState({ escuchando: false }); 
-  }
+    this.intentosFallidos += 1;
+  };
 
- this.recognition.onend = () => {
-  if (!this.escuchandoActivo) {
-    this.setState({ escuchando: false }); 
-    return;
-  }
-  if (this.intentosFallidos >= 4) {
-    this.escuchandoActivo = false;
-    this.setState({ escuchando: false });
-    return;
-  }
+  this.recognition.onend = () => {
+    if (!this.escuchandoActivo) {
+      this.setState({ escuchando: false });
+      return;
+    }
+    if (this.intentosFallidos >= 4) {
+      this.escuchandoActivo = false;
+      this.setState({ escuchando: false });
+      return;
+    }
 
-  
     this.timerReinicioVoz = setTimeout(() => {
       if (this.escuchandoActivo) {
         this.iniciarEscuchaAutomatica();
@@ -2505,9 +2500,6 @@ iniciarEscuchaAutomatica() {
   try {
     this.recognition.start();
   } catch (e) {}
-}
-
-
 }
 
 
@@ -2535,19 +2527,14 @@ toggleMicrofono(event) {
   if (event) event.stopPropagation();
 
   if (this.escuchandoActivo) {
-  
     this.escuchandoActivo = false;
     clearTimeout(this.timerReinicioVoz);
     if (this.recognition) {
-      try {
-        this.recognition.abort();
-      } catch (e) {}
+      try { this.recognition.abort(); } catch (e) {}
     }
     this.setState({ escuchando: false });
   } else {
-   
     this.intentosFallidos = 0;
-    this.setState({ escuchando: true });
     this.iniciarEscuchaAutomatica();
   }
 }
