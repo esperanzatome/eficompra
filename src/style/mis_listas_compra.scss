@@ -95,15 +95,15 @@
         .Micro{
             background-color: transparent;
         }
-        .exitBtn{
-            background-image: url('../exit.png');
-            background-size: contain;
-    background-repeat: no-repeat;
-    height: 37px;
-    width: 37px;
-    border: none;
-    background-color: transparent;
-    margin-right: 1%;
+        .xBtn{
+            margin-right: 3px;
+    display: flex;
+    justify-content: center;
+  
+    height: 18px;
+    width: 18px;
+    background-color: #c5bcc5;
+    font-weight: 700;
         }
        
     }  
@@ -1621,6 +1621,7 @@ width: 8px;
 }
     }
 }
+
 
 
 
