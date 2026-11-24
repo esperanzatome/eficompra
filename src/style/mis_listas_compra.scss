@@ -65,10 +65,11 @@
     background-color: #c5bcc5;
     border-radius: 70%;
     border: solid 1px;
-          .micro-activo{
+         
+}
+        .Micro  micro-activo{
            background-color:#76be04;
           }
-}
         .voiceExplain{
         display: flex;
     flex-direction: column;
@@ -97,10 +98,11 @@
         }
         .Micro{
             background-color: transparent;
-            .micro-activo{
+           
+        }
+        .Micro  micro-activo{
            background-color:#76be04;
           }
-        }
         .xBtn{
             margin-right: 3px;
     display: flex;
@@ -156,10 +158,11 @@
 margin-left: 1%;
     border-radius: 70%;
     border: solid 1px;
-                        .micro-activo{
+                       
+                    }
+                    .micro  micro-activo{
            background-color:#76be04;
           }
-                    }
                 }
                 .ordenesVoz{
                     justify-self: center;
