@@ -2508,7 +2508,7 @@ iniciarEscuchaAutomatica() {
 }
 
 
-
+}
 
 
 gestionarToqueEnPantalla(event) {
