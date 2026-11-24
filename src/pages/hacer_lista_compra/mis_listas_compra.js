@@ -2856,13 +2856,15 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
         </p>
       </div>
     
-    </div>
+   
           <div className="notificacionesExplication">
      <p>
           Cuando instalas <span className="marcaPalabra">Eficompra</span> en tu dispositivo, se solicita permiso para enviar notificaciones.< br/>
           Estas notificaciones sólo te avisan si te dejas una lista de la compra sin guardar, 
     ya que podrías perder la información en caso de cerrar la sesión o entrar a la app por medio del asistente de voz.
-        </div>
+    </p>    
+    </div>
+          </div>
   );
 }
 
@@ -3669,6 +3671,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
 }
 
                   
+
 
 
 
