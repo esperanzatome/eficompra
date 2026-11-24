@@ -3656,7 +3656,7 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
                                  <div className="voiceButton"onClick={this.handleVoice}>
                                 
       </div>
-               <div className="Micro"onClick={this.toggleMicrofono}></div>
+               <div className={`Micro ${this.state.escuchando ? 'micro-activo' : ''}`}onClick={this.toggleMicrofono}></div>
 
                                           <div className="exitPrincipal">
                                                 <button className="exitBtn"value="exit"
