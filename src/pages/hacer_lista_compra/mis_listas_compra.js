@@ -591,7 +591,7 @@ getContent() {
         const alias = localStorage.getItem("alias");
 
         this.state.usersIdCompartidos.forEach(receptorId => {
-          axios.post("https://onrender.com", {
+          axios.post("https://eficompraserver.onrender.com/notificaciones", {
             emisor: localStorage.getItem("id"),
             receptor: receptorId,
             accion: `${alias}/+/${productoSeleccionado}/${this.state.miListaCompraId}/${this.state.listaCompraTitle[0]}`
