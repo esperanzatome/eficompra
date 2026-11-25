@@ -2416,46 +2416,53 @@ iniciarEscuchaAutomatica() {
       }
     }
 
-    if (frase.includes("abrir lista")) {
-      const partes = frase.split(/\babrir lista\b/i);
-      const listaAAbrir = partes
-        .slice(1)
-        .map((p) => p.trim())
-        .filter((p) => p.length > 0);
+if (frase.includes("abrir lista")) {
+  this.escuchandoActivo = false;
+  clearTimeout(this.timerReinicioVoz);
+  try { this.recognition.stop(); } catch (e) {}
 
-      if (listaAAbrir.length > 0) {
-        this.escuchandoActivo = false;
-        clearTimeout(this.timerReinicioVoz);
-        try { this.recognition.stop(); } catch (e) {}
+  let mensajeVoz = "Hecho";
 
-        setTimeout(() => {
-          if (this.state.listaActivaGuardada === false) {
-            this.handleAbrirLista({ target: { value: 0 } });
-          }
-        }, 150);
+  if (this.state.listaActivaGuardada === true) {
+   
+    mensajeVoz = "La lista ya está abierta";
+  } else if (this.state.listasInactivas.length > 0) {
+    if (this.state.productSelected.length === 0) {
+   
+      setTimeout(() => {
+        this.handleAbrirLista({ target: { value: 0 } });
+      }, 150);
+    } else {
+   
+      mensajeVoz = "Tienes una lista sin guardar en pantalla";
+    }
+  } else {
+    mensajeVoz = "No tienes listas guardadas";
+  }
 
-        setTimeout(() => {
-          window.speechSynthesis.cancel();
-          const voz = new SpeechSynthesisUtterance("Hecho");
-          voz.lang = "es-ES";
+  setTimeout(() => {
+    window.speechSynthesis.cancel();
+    const voz = new SpeechSynthesisUtterance(mensajeVoz);
+    voz.lang = "es-ES";
 
-          const reanudar = () => {
-            this.iniciarEscuchaAutomatica();
-          };
+    const reanudar = () => {
+      this.iniciarEscuchaAutomatica();
+    };
 
-          const respaldo = setTimeout(reanudar, 1500);
-          voz.onend = () => {
-            clearTimeout(respaldo);
-            setTimeout(reanudar, 300);
-          };
-          voz.onerror = () => {
-            clearTimeout(respaldo);
-            reanudar();
-          };
+    const respaldo = setTimeout(reanudar, 2000);
+    voz.onend = () => {
+      clearTimeout(respaldo);
+      setTimeout(reanudar, 300);
+    };
+    voz.onerror = () => {
+      clearTimeout(respaldo);
+      reanudar();
+    };
 
-          window.speechSynthesis.speak(voz);
-        }, listaAAbrir.length * 150);
-      }
+    window.speechSynthesis.speak(voz);
+  }, 200);
+}
+
     }
   };
 
