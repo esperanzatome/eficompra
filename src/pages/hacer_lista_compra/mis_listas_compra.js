@@ -556,71 +556,54 @@ getContent() {
         });
       }
     }
-  handleOnClick(event){
-           
-           
-              this.setState({
-                palabrasPorCategoriaClick:false,
-                categoryOnClick:"",
-          
+ handleOnClick(event) {
 
-              })
+  const productoSeleccionado = event.target.value;
 
-            if(event.target.value!=undefined&&event.target.value!=""&&this.state.productSelected.includes(event.target.value)===false){
-            this.state.productSelected.push(event.target.value)
-            return this.state.productSelected
-            }
+  this.setState({
+    palabrasPorCategoriaClick: false,
+    categoryOnClick: ""
+  });
+
  
-
-            
-
-
-                 
-                  this.setState({
-                  productSelected:this.state.productSelected,
-                  palabrasOnMouseOver:[],
-                  })
-                  if(this.state.listaActivaGuardada===true){
-
-                      axios.post("https://eficompraserver.onrender.com/miListaCompra",{
-                        
-                          listaId:this.state.miListaCompraId,
-                          product:event.target.value
-                          
-                        })
-                  
-                        .then(response=>{
-                      
-                          console.log("productosGuardados")
-                          if(this.state.compartida===true){
-                            let alias= localStorage.getItem("alias")
-                          
-                            this.state.usersIdCompartidos.map(i=>{
-              
-                                axios.post("https://eficompraserver.onrender.com/notificaciones",{
-                      
-                                      emisor:localStorage.getItem("id"),
-                                      receptor:i,
-                                    accion: `${alias}/+/${event.target.value}/${this.state.miListaCompraId}/${this.state.listaCompraTitle[0]}`
-                                        })
-                          .then(response=>{
-                            console.log("usuario compartido informado de +")
-                          })
-                          })
-                          }
-
-                      
-
-                        })
-              
-                  }
-      
-
-      
-            
-           
+  if (!productoSeleccionado || productoSeleccionado === "" || this.state.productSelected.includes(productoSeleccionado)) {
+    return;
   }
+
  
+  const nuevosProductos = [...this.state.productSelected, productoSeleccionado];
+
+  this.setState({
+    productSelected: nuevosProductos,
+    palabrasOnMouseOver: []
+  });
+
+
+  if (this.state.listaActivaGuardada === true) {
+    axios.post("https://eficompraserver.onrender.com/miListaCompra", {
+      listaId: this.state.miListaCompraId,
+      product: productoSeleccionado
+    })
+    .then(response => {
+      console.log("Producto guardado en lista existente");
+
+      if (this.state.compartida === true) {
+        const alias = localStorage.getItem("alias");
+
+        this.state.usersIdCompartidos.forEach(receptorId => {
+          axios.post("https://onrender.com", {
+            emisor: localStorage.getItem("id"),
+            receptor: receptorId,
+            accion: `${alias}/+/${productoSeleccionado}/${this.state.miListaCompraId}/${this.state.listaCompraTitle[0]}`
+          })
+          .then(() => console.log("Usuario compartido informado de +"));
+        });
+      }
+    })
+    .catch(err => console.error("Error al añadir producto a lista guardada:", err));
+  }
+}
+
 
   handleOnClickCategory(event){
 
