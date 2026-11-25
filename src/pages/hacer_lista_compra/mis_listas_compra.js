@@ -2462,8 +2462,6 @@ if (frase.includes("abrir lista")) {
     window.speechSynthesis.speak(voz);
   }, 200);
 }
-
-    }
   };
 
   this.recognition.onerror = (event) => {
