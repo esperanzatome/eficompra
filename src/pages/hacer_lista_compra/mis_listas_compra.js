@@ -967,7 +967,8 @@ getContent() {
                           listaCompraTitle:["Mi lista de la compra"],
                           comprado:[false],
                           usersIdCompartidos:[],
-                   
+                   usersAliasCompartidos: [],
+  compartida: false
 
                         })    
                         return this.state.productSelected
@@ -1203,7 +1204,11 @@ getContent() {
                       listaActivaGuardada:false,
                       listaCompraTitle:["Mi lista de la compra"],
                       comprado:[false],
-                      listaActiva:""
+                      listaActiva:"",
+                          compartida: false,
+  usersAliasCompartidos: [],
+  usersIdCompartidos: [],
+ 
                         })
                       )
     }
@@ -1237,24 +1242,27 @@ handleLetraClickMóvil(event, item) {
   }
 }
       
-    handleCrearListaNueva(event){
-
-        this.setState({
-          miListaCompraId:"",
-            productSelected:[],
-            listaActivaGuardada:false,
-            listaCompraTitle:["Mi lista de la compra"],
-            comprado:[false],
-             isLoading: true,
-             listaActiva:"",
-             listasInactivasContent: "",
-          }, () => {
-            this.getContent() 
-          
-        })
+  
   
        
-    }
+    handleCrearListaNueva(event) {
+  this.setState({
+    miListaCompraId: "",
+    productSelected: [],
+    listaActivaGuardada: false,
+    listaCompraTitle: ["Mi lista de la compra"],
+    comprado: [false],
+    compartida: false,
+    usersAliasCompartidos: [],
+    usersIdCompartidos: [],
+    isLoading: true,
+    listaActiva: "",
+    listasInactivasContent: "",
+  }, () => {
+    this.getContent();
+  });
+}
+
       
     handleAbrirLista(event){
 
