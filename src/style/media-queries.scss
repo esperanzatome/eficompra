@@ -1330,9 +1330,15 @@ font-size: medium;
         .voiceExplainContent {
             font-size: small;
     margin-left: 5%;
-            .voiceExplication .micro{
+            .voiceExplication {
+                .micro{
                 height: 18px;
     width: 18px
+            }
+                .micro-activo{
+                    height: 18px;
+    width: 18px;
+                }
             }
         }
     }
@@ -2247,7 +2253,34 @@ display: none;
 }
 }
 @media(max-width:360px){
-
+.container .content-wrapper {
+    .voiceButton{
+    height: 20px;
+    width: 20px;
+    border: groove;
+}
+    .Micro {
+        height: 26px;
+    width: 25px;
+    }
+    .voiceExplain{
+        width: 95%;
+    border: 5px groove;
+        .voiceExplainTitle {
+            .title{
+            font-size: 15px;
+        }
+            .Micro {
+                height: 20px;
+    width: 20px;
+    margin-left: 0%
+            }
+        }
+        .voiceExplainContent{
+            margin-left: 7%;
+        }
+    }
+    }
 .container .content-wrapper .content .productosFrecuentes{ 
 height: 78px;
 .productoFrecuente{
