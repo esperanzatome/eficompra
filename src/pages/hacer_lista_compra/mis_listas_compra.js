@@ -2668,9 +2668,7 @@ window.addEventListener("touchstart", this.gestionarToqueEnPantalla, { passive: 
 
 
 
-this.timerReinicioVoz = setTimeout(() => {
-  this.iniciarEscuchaAutomatica();
-}, 2800);
+
 window.addEventListener("beforeinstallprompt", this.handleBeforeInstallPrompt);
 window.addEventListener("appinstalled", this.handleAppInstalled);
       }
@@ -2710,25 +2708,34 @@ window.removeEventListener("appinstalled", this.handleAppInstalled);
       
 
 
-    componentDidUpdate(){
     
-      if(this.state.options.length===0){
+    
+   componentDidUpdate(prevProps, prevState) {
 
-        this.getOptions()
-        this.getOptionsByLetter()
-        this.getOptionsByCategory()
-        this.getContent()
-        
-      }
-      if(this.state.productoBorrado===true){
-        this.setState({
-          productSelected:this.state.productSelected,
-          productoBorrado:false
-        })
-      }
+  if (this.state.data.length > 0 && this.state.options.length === 0) {
+    this.getOptions();
+    this.getOptionsByLetter();
+    this.getOptionsByCategory();
+    this.getContent();
+  }
+
+
+  if (prevState.isLoading === true && this.state.isLoading === false) {
+    this.timerReinicioVoz = setTimeout(() => {
+      this.iniciarEscuchaAutomatica();
+    }, 500);
+  }
+
+  if (this.state.productoBorrado === true) {
+    this.setState({
+      productSelected: this.state.productSelected,
+      productoBorrado: false
+    });
+  }
+}
 
       
-    }
+    
 
       
 
