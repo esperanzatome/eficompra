@@ -1292,12 +1292,17 @@ margin-top: 32%;
 font-size: medium;
     .title-wrapper{
         margin-top: 1%;
+        .title{
+            font-size: x-large;
+        }
     }
     .exitPrincipal{
-    background-size: 44%;
-    height: 21px;
+    background-size: 8%;
+  
     button{
         height: 100%;
+        width: 8%;
+
     }
     }
     .voiceButton{
@@ -1309,6 +1314,27 @@ font-size: medium;
         height: 30px;
     align-self: anchor-center;
     margin-left: 2%;
+    }
+    .voiceExplain{
+        width: 88%;
+        .voiceExplainTitle{
+            font-size: 15px;
+            .title{
+                margin-left: 0%
+            }
+            .Micro {
+                height: 26px;
+    width: 26px;
+            }
+        }
+        .voiceExplainContent {
+            font-size: small;
+    margin-left: 5%;
+            .voiceExplication .micro{
+                height: 18px;
+    width: 18px
+            }
+        }
     }
 .notificacionesLista{
 width: 74%;
