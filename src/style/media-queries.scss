@@ -1,5 +1,14 @@
 @media (max-width:1024px){
     .container{
+         .content-wrapper .voiceExplain .voiceExplainTitle {
+            .title{
+            font-size: smaller;
+    margin-left: 10%;
+        }
+            .xBtn{
+                margin-right: 1%;
+            }
+        }
     .content-wrapper{
         .content{
         .productosFrecuentes{
@@ -14,15 +23,7 @@
         grid-template-columns: repeat(8, 1fr)
     }
 }
-        .content-wrapper .voiceExplain .voiceExplainTitle {
-            .title{
-            font-size: smaller;
-    margin-left: 10%;
-        }
-            .xBtn{
-                margin-right: 1%;
-            }
-        }
+       
 .productosPorCategory{
 .categoryPalabras{
 grid-template-columns: repeat(4, 1fr);
