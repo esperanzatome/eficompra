@@ -1290,13 +1290,26 @@ margin-top: 32%;
 
 .container .content-wrapper{
 font-size: medium;
+    .title-wrapper{
+        margin-top: 1%;
+    }
     .exitPrincipal{
     background-size: 44%;
     height: 21px;
     button{
         height: 100%;
     }
-}
+    }
+    .voiceButton{
+        width: 6%;
+    height: 27px;
+    align-self: anchor-center;
+    }
+    .Micro{
+        height: 30px;
+    align-self: anchor-center;
+    margin-left: 2%;
+    }
 .notificacionesLista{
 width: 74%;
 font-size: medium;
