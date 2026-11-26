@@ -14,6 +14,15 @@
         grid-template-columns: repeat(8, 1fr)
     }
 }
+        .content-wrapper .voiceExplain .voiceExplainTitle {
+            .title{
+            font-size: smaller;
+    margin-left: 10%;
+        }
+            .xBtn{
+                margin-right: 1%;
+            }
+        }
 .productosPorCategory{
 .categoryPalabras{
 grid-template-columns: repeat(4, 1fr);
