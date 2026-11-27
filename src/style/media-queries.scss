@@ -2253,6 +2253,12 @@ display: none;
 }
     
 
+ 
+  .container .content-wrapper .contentWhithListasYActiva:has(.bloque-ampliado) .listasInactivasWrapper:hover ~ .listaActiva {
+    margin-left: 0 !important;
+  }
+
+ 
   .container .content-wrapper .listaActiva.bloque-ampliado {
     position: fixed !important;
     top: 50% !important;
@@ -2271,7 +2277,7 @@ display: none;
 
     .columnaListaActiva,
     .columnaListaActivaGuardada {
-      padding-top: 22% !important; /* Ajusta el margen superior respecto a las anillas del cuaderno */
+      padding-top: 22% !important;
       width: 90% !important;
       margin: 0 auto !important;
       height: auto !important;
@@ -2280,12 +2286,17 @@ display: none;
 
     .columnaTitle {
       font-size: large !important;
+      padding-top: 0 !important;
     }
 
-    .optionsBarList button {
-      font-size: small !important;
-      padding: 4px 8px !important;
-      width: auto !important;
+    .optionsBarList {
+      width: 100% !important;
+      justify-content: space-evenly !important;
+      button {
+        font-size: small !important;
+        padding: 4px 8px !important;
+        width: auto !important;
+      }
     }
 
     .listaCompra,
@@ -2295,13 +2306,17 @@ display: none;
       margin: 0 !important;
     }
 
-    .listaCompraTitle input {
-      font-size: x-large !important;
+    .listaCompraTitle {
+      width: 94% !important;
+      input {
+        font-size: x-large !important;
+      }
     }
 
     .listaCompraProducts {
       height: 44vh !important;
       width: 92% !important;
+      padding-left: 10% !important;
       font-size: medium !important;
     }
 
@@ -2321,7 +2336,7 @@ display: none;
     }
   }
 
-
+  
   .container .content-wrapper .listasInactivasWrapper.bloque-ampliado {
     position: fixed !important;
     top: 50% !important;
@@ -2346,7 +2361,6 @@ display: none;
       background: transparent !important;
     }
 
-  
     .listasGuardadas {
       display: flex !important;
       flex-direction: column !important;
@@ -2398,6 +2412,7 @@ display: none;
       width: auto !important;
     }
   }
+
 
 }
 @media(max-width:360px){
