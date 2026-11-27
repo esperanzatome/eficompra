@@ -2251,7 +2251,155 @@ display: none;
         width: 100%;
     }
 }
-}
+    
+
+  .container .content-wrapper .listaActiva.bloque-ampliado {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    height: 82vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 9999 !important;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+    border-radius: 14px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.72), 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+    overflow-y: auto !important;
+
+    .columnaListaActiva,
+    .columnaListaActivaGuardada {
+      padding-top: 22% !important; /* Ajusta el margen superior respecto a las anillas del cuaderno */
+      width: 90% !important;
+      margin: 0 auto !important;
+      height: auto !important;
+      font-size: medium !important;
+    }
+
+    .columnaTitle {
+      font-size: large !important;
+    }
+
+    .optionsBarList button {
+      font-size: small !important;
+      padding: 4px 8px !important;
+      width: auto !important;
+    }
+
+    .listaCompra,
+    .listaCompraGuardada {
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 !important;
+    }
+
+    .listaCompraTitle input {
+      font-size: x-large !important;
+    }
+
+    .listaCompraProducts {
+      height: 44vh !important;
+      width: 92% !important;
+      font-size: medium !important;
+    }
+
+    .productSelectedName {
+      font-size: large !important;
+    }
+
+    .borrarBtn button,
+    .borrarBtnGuardado {
+      width: 22px !important;
+      height: 22px !important;
+    }
+
+    .opcionesGuardarLista button {
+      font-size: small !important;
+      padding: 5px 12px !important;
+    }
+  }
+
+
+  .container .content-wrapper .listasInactivasWrapper.bloque-ampliado {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    height: 82vh !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    z-index: 9999 !important;
+    background-color: #dcd6dc !important;
+    border: groove 4px !important;
+    border-radius: 14px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.72), 0 15px 35px rgba(0, 0, 0, 0.5) !important;
+    display: flex !important;
+    flex-direction: column !important;
+
+    .columnaTitle {
+      font-size: large !important;
+      margin-bottom: 10px !important;
+      border: none !important;
+      background: transparent !important;
+    }
+
+  
+    .listasGuardadas {
+      display: flex !important;
+      flex-direction: column !important;
+      height: 100% !important;
+      width: 100% !important;
+      overflow-y: auto !important;
+      padding: 8px 0 !important;
+    }
+
+    .listasGuardadas > div {
+      width: 94% !important;
+      margin-bottom: 14px !important;
+      padding-left: 0 !important;
+    }
+
+    .listaCompra,
+    .listaCompraCompartida {
+      width: 100% !important;
+      height: auto !important;
+      padding: 8px !important;
+      box-sizing: border-box;
+    }
+
+    .listaCompraTitle {
+      font-size: large !important;
+    }
+
+    .listaCompraFecha {
+      font-size: small !important;
+    }
+
+    .optionsBarList {
+      margin: 8px 0 !important;
+      button {
+        font-size: x-small !important;
+        padding: 5px 8px !important;
+        width: auto !important;
+      }
+    }
+
+    .listaCompraProducts {
+      height: auto !important;
+      max-height: 22vh !important;
+      font-size: medium !important;
+    }
+
+    .productSelectedName {
+      font-size: medium !important;
+      width: auto !important;
+    }
+  }
+
+
 @media(max-width:360px){
 .container .content-wrapper {
     .voiceButton{
