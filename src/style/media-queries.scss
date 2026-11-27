@@ -2269,18 +2269,23 @@ display: none;
     margin: 0 !important;
     padding: 0 !important;
     z-index: 9999 !important;
-    background-size: 100% 100% !important;
-    background-position: center !important;
+    
+ 
+    background-size: 195% 135% !important;
+    background-position: 50% 20% !important;
+    background-repeat: no-repeat !important;
+    
     border-radius: 14px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.72), 0 15px 35px rgba(0, 0, 0, 0.5) !important;
-    overflow-y: auto !important;
+    overflow: hidden !important; 
 
     .columnaListaActiva,
     .columnaListaActivaGuardada {
-      padding-top: 22% !important;
-      width: 90% !important;
+      padding-top: 24% !important; 
+      width: 86% !important;
       margin: 0 auto !important;
-      height: auto !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
       font-size: medium !important;
     }
 
@@ -2314,10 +2319,11 @@ display: none;
     }
 
     .listaCompraProducts {
-      height: 44vh !important;
+      height: 40vh !important;
       width: 92% !important;
       padding-left: 10% !important;
       font-size: medium !important;
+      overflow-y: auto !important; 
     }
 
     .productSelectedName {
@@ -2336,70 +2342,6 @@ display: none;
     }
   }
 
-  
-  .container .content-wrapper .listasInactivasWrapper.bloque-ampliado {
-    position: fixed !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 92vw !important;
-    height: 82vh !important;
-    margin: 0 !important;
-    padding: 16px !important;
-    z-index: 9999 !important;
-    background-color: #dcd6dc !important;
-    border: groove 4px !important;
-    border-radius: 14px;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.72), 0 15px 35px rgba(0, 0, 0, 0.5) !important;
-    display: flex !important;
-    flex-direction: column !important;
-
-    .columnaTitle {
-      font-size: large !important;
-      margin-bottom: 10px !important;
-      border: none !important;
-      background: transparent !important;
-    }
-
-    .listasGuardadas {
-      display: flex !important;
-      flex-direction: column !important;
-      height: 100% !important;
-      width: 100% !important;
-      overflow-y: auto !important;
-      padding: 8px 0 !important;
-    }
-
-    .listasGuardadas > div {
-      width: 94% !important;
-      margin-bottom: 14px !important;
-      padding-left: 0 !important;
-    }
-
-    .listaCompra,
-    .listaCompraCompartida {
-      width: 100% !important;
-      height: auto !important;
-      padding: 8px !important;
-      box-sizing: border-box;
-    }
-
-    .listaCompraTitle {
-      font-size: large !important;
-    }
-
-    .listaCompraFecha {
-      font-size: small !important;
-    }
-
-    .optionsBarList {
-      margin: 8px 0 !important;
-      button {
-        font-size: x-small !important;
-        padding: 5px 8px !important;
-        width: auto !important;
-      }
-    }
 
     .listaCompraProducts {
       height: auto !important;
